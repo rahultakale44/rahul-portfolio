@@ -68,6 +68,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* SCROLL REVEAL ANIMATION */
+/* SCROLL REVEAL ANIMATION */
 if (typeof ScrollReveal !== "undefined") {
   const sr = ScrollReveal({
     distance: "70px",
@@ -76,7 +77,14 @@ if (typeof ScrollReveal !== "undefined") {
     reset: false,
   });
 
-  sr.reveal(".home-content", { origin: "left" });
+  sr.reveal(".home-content", {
+    distance: "0px",
+    opacity: 0,
+    duration: 1300,
+    delay: 120,
+    easing: "ease-in-out"
+  });
+
   sr.reveal(".about-img", { origin: "left" });
   sr.reveal(".about-content", { origin: "right" });
   sr.reveal(".about-card", { origin: "bottom", interval: 150 });
@@ -110,3 +118,31 @@ if (contactForm) {
       });
   });
 }
+
+/* Premium Card Reveal Animation */
+const animatedCards = document.querySelectorAll(
+  ".tech-card, .project-card, .experience-card, .experience-gallery, .achievement-card"
+);
+
+animatedCards.forEach((card) => {
+  card.classList.add("reveal-card");
+});
+
+const cardObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("show");
+        }, index * 120);
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
+);
+
+animatedCards.forEach((card) => {
+  cardObserver.observe(card);
+});

@@ -1445,3 +1445,49 @@ section {
     align-items: flex-start;
   }
 }
+
+/* PREMIUM SCROLL ANIMATION */
+.reveal-card {
+  opacity: 0;
+  transform: translateY(45px) scale(0.96);
+  transition: 0.8s ease;
+}
+
+.reveal-card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.tech-card,
+.project-card,
+.experience-card,
+.experience-gallery,
+.achievement-card {
+  will-change: transform, opacity;
+}
+
+
+
+.home-content h1,
+.home-content h3,
+.home-text,
+.hero-badges,
+.home-buttons {
+    opacity: 0;
+    animation: fadeOnly 1.2s ease forwards;
+}
+
+.home-content h1 { animation-delay: .2s; }
+.home-content h3 { animation-delay: .5s; }
+.home-text { animation-delay: .8s; }
+.hero-badges { animation-delay: 1s; }
+.home-buttons { animation-delay: 1.2s; }
+
+@keyframes fadeOnly {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
