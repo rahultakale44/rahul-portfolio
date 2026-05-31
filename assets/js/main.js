@@ -81,3 +81,32 @@ if (typeof ScrollReveal !== "undefined") {
   sr.reveal(".about-content", { origin: "right" });
   sr.reveal(".about-card", { origin: "bottom", interval: 150 });
 }
+
+emailjs.init("Oe2zLK_m-zVxayU5f");
+
+const contactForm = document.getElementById("contact-form");
+const contactBtn = document.getElementById("contact-btn");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    contactBtn.innerHTML = `<i class="bx bx-loader-alt bx-spin"></i> Sending...`;
+    contactBtn.disabled = true;
+
+    emailjs
+      .sendForm("service_wpdzrqh", "template_9omquwt", contactForm)
+      .then(() => {
+        alert("Message sent successfully!");
+        contactForm.reset();
+        contactBtn.innerHTML = `<i class="bx bx-send"></i> Send Message`;
+        contactBtn.disabled = false;
+      })
+      .catch((error) => {
+        console.log("EmailJS Error:", error);
+        alert("Message failed. Please try again.");
+        contactBtn.innerHTML = `<i class="bx bx-send"></i> Send Message`;
+        contactBtn.disabled = false;
+      });
+  });
+}
