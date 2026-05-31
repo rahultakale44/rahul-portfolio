@@ -518,8 +518,20 @@ section {
 
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(2, 8, 20, 0.96), rgba(2, 8, 20, 0.78)),
-      linear-gradient(180deg, rgba(2, 8, 20, 0.2), rgba(2, 8, 20, 0.96));
+      linear-gradient(
+      90deg,
+      rgba(2, 8, 20, 0.75),
+      rgba(2, 8, 20, 0.45)
+      ),
+      linear-gradient(
+      180deg,
+      rgba(2, 8, 20, 0.05),
+      rgba(2, 8, 20, 0.65)
+      );
+  }
+
+  .slide{
+      filter: brightness(1.15) contrast(1.05);
   }
 
   .home-content h1 {
