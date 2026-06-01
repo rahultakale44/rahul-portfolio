@@ -1491,3 +1491,44 @@ section {
         opacity: 1;
     }
 }
+
+/* PREMIUM SECTION TITLE ANIMATION */
+.tech-heading,
+.projects-heading,
+.experience-heading,
+.achievements-heading,
+.contact-heading {
+  opacity: 0;
+  transform: translateY(30px) scale(0.96);
+  animation: sectionFade 0.9s ease forwards;
+}
+
+@keyframes sectionFade {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* PREMIUM CARD HOVER MOVEMENT */
+.tech-card:hover,
+.project-card:hover,
+.experience-card:hover,
+.achievement-card:hover,
+.contact-card:hover {
+  transform: translateY(-12px) scale(1.015);
+}
+
+/* IMAGE CINEMATIC HOVER */
+.project-img img,
+.experience-gallery img,
+.achievement-gallery img {
+  transition: transform 0.7s ease, filter 0.7s ease;
+}
+
+.project-card:hover .project-img img,
+.experience-gallery img:hover,
+.achievement-gallery img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.08) contrast(1.08) saturate(1.15);
+}

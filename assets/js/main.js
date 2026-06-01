@@ -15,8 +15,10 @@ const sections = document.querySelectorAll("section[id]");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    menuIcon.classList.remove("bx-x");
-    navbar.classList.remove("active");
+    if (menuIcon && navbar) {
+      menuIcon.classList.remove("bx-x");
+      navbar.classList.remove("active");
+    }
   });
 });
 
@@ -54,12 +56,14 @@ function showNextSlide() {
   slides[slideIndex].classList.add("active");
 }
 
-setInterval(showNextSlide, 3500);
+setInterval(showNextSlide, 5000);
 
 /* HEADER SHADOW ON SCROLL */
 const header = document.querySelector(".header");
 
 window.addEventListener("scroll", () => {
+  if (!header) return;
+
   if (window.scrollY > 60) {
     header.style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.35)";
   } else {
@@ -68,13 +72,13 @@ window.addEventListener("scroll", () => {
 });
 
 /* SCROLL REVEAL ANIMATION */
-/* SCROLL REVEAL ANIMATION */
 if (typeof ScrollReveal !== "undefined") {
   const sr = ScrollReveal({
     distance: "70px",
-    duration: 1600,
-    delay: 160,
+    duration: 1500,
+    delay: 120,
     reset: false,
+    easing: "ease-in-out",
   });
 
   sr.reveal(".home-content", {
@@ -82,20 +86,22 @@ if (typeof ScrollReveal !== "undefined") {
     opacity: 0,
     duration: 1300,
     delay: 120,
-    easing: "ease-in-out"
   });
 
   sr.reveal(".about-img", { origin: "left" });
   sr.reveal(".about-content", { origin: "right" });
-  sr.reveal(".about-card", { origin: "bottom", interval: 150 });
+  sr.reveal(".about-card", { origin: "bottom", interval: 120 });
 }
 
-emailjs.init("Oe2zLK_m-zVxayU5f");
+/* EMAILJS CONTACT FORM */
+if (typeof emailjs !== "undefined") {
+  emailjs.init("Oe2zLK_m-zVxayU5f");
+}
 
 const contactForm = document.getElementById("contact-form");
 const contactBtn = document.getElementById("contact-btn");
 
-if (contactForm) {
+if (contactForm && contactBtn && typeof emailjs !== "undefined") {
   contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -119,9 +125,9 @@ if (contactForm) {
   });
 }
 
-/* Premium Card Reveal Animation */
+/* PREMIUM CARD + SECTION HEADING REVEAL ANIMATION */
 const animatedCards = document.querySelectorAll(
-  ".tech-card, .project-card, .experience-card, .experience-gallery, .achievement-card"
+  ".tech-heading, .projects-heading, .experience-heading, .achievements-heading, .contact-heading, .tech-card, .project-card, .experience-card, .experience-gallery, .achievement-card, .contact-card, .contact-form"
 );
 
 animatedCards.forEach((card) => {
@@ -130,16 +136,14 @@ animatedCards.forEach((card) => {
 
 const cardObserver = new IntersectionObserver(
   (entries) => {
-    entries.forEach((entry, index) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add("show");
-        }, index * 120);
+        entry.target.classList.add("show");
       }
     });
   },
   {
-    threshold: 0.15,
+    threshold: 0.12,
   }
 );
 
