@@ -640,10 +640,8 @@ section {
 
 }
 
- .tech-section {
-  padding: 100px 48px;
-  background: #020814;
-  color: #fff;
+.tech-section {
+  padding: 100px 48px 50px;
 }
 
 .tech-heading {
@@ -2200,6 +2198,10 @@ section {
     color: rgba(255,255,255,0.5);
 }
 
-.contact-section{
-    padding: 70px 0 100px;
+.achievements-section{
+    padding-bottom: 160px;
+}
+
+.tech-grid{
+    padding-bottom: 95px;
 }
