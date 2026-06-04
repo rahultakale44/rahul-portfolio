@@ -2205,3 +2205,20 @@ section {
 .tech-grid{
     padding-bottom: 95px;
 }
+
+.tech-card{
+    background: #07111f;
+    border: 1px solid rgba(24,224,168,.25);
+    border-radius: 22px;
+    padding: 35px;
+
+    height: 420px;   /* add this */
+}
+
+.tagline{
+    margin-bottom: 8px; /* pehle 20-30px hoga */
+}
+
+.home-content h1{
+    margin-top: 0;
+}
