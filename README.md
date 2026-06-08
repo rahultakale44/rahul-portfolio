@@ -1,4 +1,4 @@
-# 🚀 Rahul Takale Portfolio
+#  Rahul Takale Portfolio
 
 A modern and responsive personal portfolio website showcasing my projects, technical skills, achievements, internship experience, and journey as an aspiring AI Engineer & Software Developer.
 
