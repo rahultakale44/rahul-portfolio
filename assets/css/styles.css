@@ -2222,3 +2222,16 @@ section {
 .home-content h1{
     margin-top: 0;
 }
+
+.project-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.project-title-row h3 {
+  margin: 0;
+  flex: 1;
+}
