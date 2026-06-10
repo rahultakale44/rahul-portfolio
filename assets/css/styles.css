@@ -2227,11 +2227,44 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 16px;
+  margin-bottom: 18px;
 }
 
 .project-title-row h3 {
   margin: 0;
   flex: 1;
+}
+
+.project-github {
+  position: relative;
+  z-index: 5;
+  min-width: 82px;
+  height: 40px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 12px;
+  background: rgba(24, 224, 168, 0.14);
+  border: 1px solid rgba(24, 224, 168, 0.45);
+  color: #18e0a8 !important;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.project-github i {
+  font-size: 20px;
+  color: #18e0a8 !important;
+}
+
+.project-github:hover {
+  background: #18e0a8;
+  color: #08111f !important;
+}
+
+.project-github:hover i {
+  color: #08111f !important;
 }
