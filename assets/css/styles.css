@@ -376,8 +376,8 @@ img {
 }
 
 .about-img img {
-  width: 330px;
-  height: 430px;
+  width: 400px;
+  height: 640px;
   object-fit: cover;
   object-position: center;
   border-radius: 22px;
