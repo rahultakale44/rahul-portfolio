@@ -4481,3 +4481,124 @@ main,
 }
 
 /* Agar aur space chahiye toh 30px ko 38px kar dena */
+
+/* =====================================================
+   MOBILE HERO CLEANUP FINAL
+   Mobile pe khichdi remove + clean layout
+===================================================== */
+
+@media (max-width: 768px) {
+
+  /* Hero section clean height */
+  .home {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 105px 22px 55px !important;
+    align-items: flex-start !important;
+    overflow: hidden !important;
+  }
+
+  /* Hero content full width */
+  .home-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    transform: none !important;
+    z-index: 90 !important;
+  }
+
+  /* Hide extra grid cards/nodes on mobile */
+  .grid-card,
+  .grid-line,
+  .grid-node,
+  .home > .floating-badges,
+  .hero-badges.floating-badges {
+    display: none !important;
+  }
+
+  /* Background grid subtle */
+  .hero-grid-bg {
+    opacity: 0.35 !important;
+    background-size: 46px 46px !important;
+  }
+
+  .hero-grid-bg::before,
+  .hero-grid-bg::after {
+    opacity: 0.35 !important;
+  }
+
+  /* Tagline smaller */
+  .tagline {
+    font-size: 14px !important;
+    padding: 9px 15px !important;
+    margin-bottom: 22px !important;
+  }
+
+  /* Name compact */
+  #finalHeroName.final-hero-name {
+    min-height: 112px !important;
+    margin: 0 0 22px !important;
+
+    font-size: 56px !important;
+    line-height: 0.86 !important;
+    letter-spacing: -2px !important;
+  }
+
+  .final-last-name {
+    margin-left: 18px !important;
+    margin-top: -2px !important;
+  }
+
+  /* Role line should not overflow */
+  .hero-role,
+  .home-content h3 {
+    display: block !important;
+    max-width: 100% !important;
+
+    font-size: 28px !important;
+    line-height: 1.18 !important;
+    margin-bottom: 18px !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Description readable */
+  .home-text {
+    max-width: 100% !important;
+    font-size: 18px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 34px !important;
+
+    color: #d8e2f2 !important;
+  }
+
+  /* Buttons clean full width */
+  .home-buttons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .home-buttons .btn {
+    width: 100% !important;
+    justify-content: center !important;
+
+    padding: 18px 22px !important;
+    font-size: 18px !important;
+    border-radius: 14px !important;
+  }
+
+  /* Hide scroll icon on mobile */
+  .scroll-down {
+    display: none !important;
+  }
+
+  /* Remove huge desktop floating effects from mobile */
+  .cursor-orb,
+  .cursor-dot,
+  #cosmic-canvas {
+    display: none !important;
+  }
+}
