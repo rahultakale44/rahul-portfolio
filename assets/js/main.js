@@ -675,3 +675,31 @@ if (finalFirstName && finalLastName) {
 
   runFinalNameTyping();
 }
+
+// UNESCO video: play when visible, pause when out of view
+const unescoVideo = document.getElementById("unesco-video");
+
+if (unescoVideo) {
+  const videoObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          const playPromise = unescoVideo.play();
+
+          if (playPromise !== undefined) {
+            playPromise.catch((error) => {
+              console.log("Video autoplay was blocked:", error);
+            });
+          }
+        } else {
+          unescoVideo.pause();
+        }
+      });
+    },
+    {
+      threshold: [0, 0.5, 1],
+    }
+  );
+
+  videoObserver.observe(unescoVideo);
+}

@@ -229,96 +229,584 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="projects-section section-motion" id="projects">
-      <div class="motion-bg projects-bg" aria-hidden="true">
-        <span class="tool tool-vscode">⌨ VS Code</span>
-        <span class="tool tool-postman">⚡ Postman</span>
-        <span class="tool tool-github">⌘ GitHub</span>
-        <span class="tool tool-api">{ API }</span>
-        <span class="tool tool-terminal">$ npm run dev</span>
-        <span class="tool tool-database">🗄 Database</span>
-        <span class="tool tool-coderabbit">🐇 CodeRabbit</span>
-        <span class="tool tool-docker">🐳 Docker</span>
-        <span class="code-rain">const build = () =&gt; impact;</span>
-        <span class="code-rain">POST /api/projects</span>
+    <!-- ==================== PROJECTS ==================== -->
+<section class="projects-section section-motion" id="projects">
+
+  <!-- Background Motion -->
+  <div class="motion-bg projects-bg" aria-hidden="true">
+    <span class="tool tool-vscode">⌨ VS Code</span>
+    <span class="tool tool-postman">⚡ Postman</span>
+    <span class="tool tool-github">⌘ GitHub</span>
+    <span class="tool tool-api">{ API }</span>
+    <span class="tool tool-terminal">$ npm run dev</span>
+    <span class="tool tool-database">🗄 Database</span>
+    <span class="tool tool-coderabbit">🐇 CodeRabbit</span>
+    <span class="tool tool-docker">🐳 Docker</span>
+    <span class="code-rain">const build = () =&gt; impact;</span>
+    <span class="code-rain">POST /api/projects</span>
+  </div>
+
+  <!-- Section Heading -->
+  <div class="section-heading projects-heading">
+    <p class="section-badge">Portfolio Highlights</p>
+
+    <h2>Projects That Solve Real Problems</h2>
+
+    <span>
+      Real-world software, AI and computer vision solutions built through
+      internships, hackathons and independent development.
+    </span>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+
+    <!-- ==================== DOCMATE PROJECT ==================== -->
+    <article class="project-card">
+
+      <div class="project-img">
+        <img
+          src="assets/img/docmate.png"
+          alt="DocMate Healthcare Appointment Management Platform"
+        />
       </div>
 
-      <div class="section-heading projects-heading">
-        <p class="section-badge">Portfolio Highlights</p>
-        <h2>Projects That Solve Real Problems</h2>
-        <span>Real-world software, AI and computer vision solutions built through internships, hackathons and independent development.</span>
-      </div>
+      <div class="project-content">
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-img"><img src="assets/img/project-cctv.jpg" alt="AI CCTV Surveillance System" /></div>
-          <div class="project-content">
-            <span class="project-type">AI & Computer Vision</span>
-            <div class="project-title-row"><h3>AI Powered CCTV Surveillance System for Kumbh Mela</h3><a href="https://github.com/rahultakale44" target="_blank" rel="noopener noreferrer" class="project-github"><i class="bx bxl-github"></i><span>Code</span></a></div>
-            <p>Designed and studied an AI-powered CCTV surveillance solution for crowd management and public safety during large-scale religious gatherings. Explored Python, OpenCV, object detection, people counting and crowd density estimation for CCTV video streams.</p>
-            <div class="project-tech"><span>OpenCV</span><span>YOLO</span><span>Flask</span><span>Python</span><span>HTML CSS JS</span></div>
-          </div>
-        </article>
+        <span class="project-type">
+          MERN Stack Development
+        </span>
 
-        <article class="project-card">
-          <div class="project-img"><img src="assets/img/project-aeroponics.jpg" alt="AI IoT Aeroponics System" /></div>
-          <div class="project-content">
-            <span class="project-type">Dynamic Water Optimization for Agriculture</span>
-            <div class="project-title-row"><h3>AI & IoT Aeroponics System</h3><a href="https://github.com/rahultakale44" target="_blank" rel="noopener noreferrer" class="project-github"><i class="bx bxl-github"></i><span>Code</span></a></div>
-            <p>Developed an AI and IoT-powered aeroponics system for sustainable urban farming with real-time sensor monitoring and an LLM-powered plant assistant using Ollama for intelligent crop and nutrient recommendations.</p>
-            <div class="project-tech"><span>Node.js</span><span>React JS</span><span>IoT</span><span>LLM integration</span><span>ESP32</span></div>
-          </div>
-        </article>
+        <div class="project-title-row">
 
-        <article class="project-card">
-          <div class="project-img"><img src="assets/img/project-fitness.jpg" alt="Fitness Posture Detection" /></div>
-          <div class="project-content">
-            <span class="project-type">AI Fitness App</span>
-            <div class="project-title-row"><h3>Intelligent Fitness Posture Detection System</h3><a href="https://github.com/rahultakale44/ai-fitness-coach" target="_blank" rel="noopener noreferrer" class="project-github"><i class="bx bxl-github"></i><span>Code</span></a></div>
-            <p>Developed a computer vision-based fitness posture detection system using Python, OpenCV and MediaPipe Pose to analyze body movements, calculate joint angles and provide corrective posture feedback.</p>
-            <div class="project-tech"><span>Python</span><span>OpenCV</span><span>Pose Estimation</span><span>MediaPipe</span><span>SQLite</span></div>
-          </div>
-        </article>
+          <h3>
+            DocMate – Healthcare Appointment Management Platform
+          </h3>
 
-        <article class="project-card">
-          <div class="project-img"><img src="assets/img/ach-campuscare.jpeg" alt="CampusCare Project" /></div>
-          <div class="project-content">
-            <span class="project-type">Java Full Stack Dev</span>
-            <div class="project-title-row"><h3>CampusCare – Smart Campus Complaint Management System</h3><a href="https://github.com/rahultakale44/campuscare-backend" target="_blank" rel="noopener noreferrer" class="project-github"><i class="bx bxl-github"></i><span>Code</span></a></div>
-            <p>CampusCare is a full-stack campus complaint management platform using React.js, Spring Boot and MySQL with JWT authentication, role-based access control, complaint tracking, analytics and CSV export.</p>
-            <div class="project-tech"><span>React.js</span><span>Spring Boot</span><span>JWT</span><span>MySQL</span><span>REST APIs</span></div>
-          </div>
-        </article>
-      </div>
-    </section>
+          <a
+            href="https://github.com/rahultakale44/docmate-healthcare-platform"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-github"
+          >
+            <i class="bx bxl-github"></i>
+            <span>Code</span>
+          </a>
 
-    <!-- EXPERIENCE -->
-    <section class="experience-section section-motion" id="experience">
-      <div class="motion-bg experience-bg" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-      <div class="section-heading experience-heading">
-        <p class="section-badge">Professional Journey</p>
-        <h2>Experience That Built My Foundation</h2>
-        <span class="experience-subtitle">Practical exposure through internship work, web development, frontend implementation and real-world project collaboration.</span>
-      </div>
-
-      <div class="experience-grid">
-        <div class="experience-gallery"><img src="assets/img/innobytes-1.jpg" alt="BizGrowth Website Screenshot" /><img src="assets/img/innobytes-2.jpg" alt="InnoHubs Website Screenshot" /></div>
-        <div class="experience-card">
-          <div class="experience-top"><i class="bx bx-briefcase-alt-2"></i><div><h3>Development Intern</h3><h4>INNOBYTES (Erfinden Technologies Pvt. Ltd.)</h4><p>Pimpri Chinchwad, Maharashtra · 2025</p></div></div>
-          <div class="experience-project"><h5>BizGrowth</h5><ul><li>Developed a responsive business networking website using HTML, CSS and JavaScript.</li><li>Designed modern UI pages and business listing modules.</li><li>Improved responsiveness and frontend performance across devices.</li></ul></div>
-          <div class="experience-project"><h5>InnoHubs</h5><ul><li>Built responsive web application components using modern web technologies.</li><li>Assisted in frontend integration, testing and debugging.</li><li>Contributed to website optimization and user experience improvements.</li></ul></div>
-          <div class="experience-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span></div>
         </div>
 
-        <div class="experience-gallery"><img src="assets/img/redcrest-1.jpg" alt="Red Crest IoT Monitoring Device" /><img src="assets/img/redcrest-2.jpg" alt="Smart Agriculture IoT Work" /></div>
-        <div class="experience-card">
-          <div class="experience-top"><i class="bx bx-chip"></i><div><h3>Technical Intern</h3><h4>Red Crest Charitable Trust</h4><p>Jun 2025 – Jul 2025 · 2 mos</p></div></div>
-          <div class="experience-project"><h5>Low-Cost IoT Monitoring Device</h5><ul><li>Assisted in development and testing of an IoT monitoring device for smart agriculture.</li><li>Analyzed sensor-generated agricultural data to monitor environmental conditions.</li><li>Contributed to documentation, testing workflows and performance evaluation.</li></ul></div>
-          <div class="experience-tech"><span>IoT</span><span>Sensors</span><span>Data Analysis</span><span>Smart Agriculture</span></div>
+        <p>
+          DocMate is a full-stack healthcare appointment platform that allows
+          patients to discover doctors, book or cancel appointments and manage
+          their consultation history. It provides secure role-based dashboards
+          for patients, doctors and administrators with JWT authentication and
+          appointment management.
+        </p>
+
+        <div class="project-tech">
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>JWT</span>
         </div>
+
       </div>
-    </section>
+    </article>
+
+
+    <!-- ==================== SHOPSPHERE PROJECT ==================== -->
+    <article class="project-card">
+
+      <div class="project-img">
+        <img
+          src="assets/img/shopsphere.png"
+          alt="ShopSphere Java Full Stack E-Commerce Platform"
+        />
+      </div>
+
+      <div class="project-content">
+
+        <span class="project-type">
+          Java Full Stack Development
+        </span>
+
+        <div class="project-title-row">
+
+          <h3>
+            ShopSphere – Java Full Stack E-Commerce Platform
+          </h3>
+
+          <a
+            href="https://github.com/rahultakale44"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-github"
+          >
+            <i class="bx bxl-github"></i>
+            <span>Code</span>
+          </a>
+
+        </div>
+
+        <p>
+          ShopSphere is a complete Java full-stack e-commerce platform featuring
+          secure user authentication, product browsing, search, cart and
+          wishlist management, checkout, online payment and order tracking.
+          It also includes an admin dashboard for managing products, inventory
+          and customer orders.
+        </p>
+
+        <div class="project-tech">
+          <span>React.js</span>
+          <span>Spring Boot</span>
+          <span>Spring Security</span>
+          <span>MySQL</span>
+          <span>JWT</span>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ==================== CAMPUSCARE PROJECT ==================== -->
+    <article class="project-card">
+
+      <div class="project-img">
+        <img
+          src="assets/img/ach-campuscare.jpeg"
+          alt="CampusCare Smart Campus Complaint Management System"
+        />
+      </div>
+
+      <div class="project-content">
+
+        <span class="project-type">
+          Java Full Stack Development
+        </span>
+
+        <div class="project-title-row">
+
+          <h3>
+            CampusCare – Smart Campus Complaint Management System
+          </h3>
+
+          <a
+            href="https://github.com/rahultakale44/campuscare-backend"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-github"
+          >
+            <i class="bx bxl-github"></i>
+            <span>Code</span>
+          </a>
+
+        </div>
+
+        <p>
+          CampusCare is a full-stack campus complaint management platform built
+          using React.js, Spring Boot and MySQL. It includes JWT authentication,
+          role-based access control, complaint tracking, analytics and CSV
+          report export.
+        </p>
+
+        <div class="project-tech">
+          <span>React.js</span>
+          <span>Spring Boot</span>
+          <span>JWT</span>
+          <span>MySQL</span>
+          <span>REST APIs</span>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ==================== FITNESS PROJECT ==================== -->
+    <article class="project-card">
+
+      <div class="project-img">
+        <img
+          src="assets/img/project-fitness.jpg"
+          alt="Intelligent Fitness Posture Detection System"
+        />
+      </div>
+
+      <div class="project-content">
+
+        <span class="project-type">
+          AI Fitness Application
+        </span>
+
+        <div class="project-title-row">
+
+          <h3>
+            Intelligent Fitness Posture Detection System
+          </h3>
+
+          <a
+            href="https://github.com/rahultakale44/ai-fitness-coach"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-github"
+          >
+            <i class="bx bxl-github"></i>
+            <span>Code</span>
+          </a>
+
+        </div>
+
+        <p>
+          Developed a computer vision-based fitness posture detection system
+          using Python, OpenCV and MediaPipe Pose to analyze body movements,
+          calculate joint angles and provide corrective posture feedback.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>Pose Estimation</span>
+          <span>MediaPipe</span>
+          <span>SQLite</span>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ==================== AEROPONICS PROJECT ==================== -->
+    <article class="project-card">
+
+      <div class="project-img">
+        <img
+          src="assets/img/project-aeroponics.jpg"
+          alt="AI and IoT Aeroponics System"
+        />
+      </div>
+
+      <div class="project-content">
+
+        <span class="project-type">
+          AI, IoT and Smart Agriculture
+        </span>
+
+        <div class="project-title-row">
+
+          <h3>
+            AI &amp; IoT Aeroponics System
+          </h3>
+
+          <a
+            href="https://github.com/rahultakale44"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-github"
+          >
+            <i class="bx bxl-github"></i>
+            <span>Code</span>
+          </a>
+
+        </div>
+
+        <p>
+          Developed an AI and IoT-powered aeroponics system for sustainable
+          urban farming with real-time sensor monitoring and an LLM-powered
+          plant assistant using Ollama for intelligent crop and nutrient
+          recommendations.
+        </p>
+
+        <div class="project-tech">
+          <span>Node.js</span>
+          <span>React.js</span>
+          <span>IoT</span>
+          <span>LLM Integration</span>
+          <span>ESP32</span>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ==================== CCTV PROJECT ==================== -->
+    <article class="project-card">
+
+      <div class="project-img">
+        <img
+          src="assets/img/project-cctv.jpg"
+          alt="AI Powered CCTV Surveillance System"
+        />
+      </div>
+
+      <div class="project-content">
+
+        <span class="project-type">
+          AI &amp; Computer Vision
+        </span>
+
+        <div class="project-title-row">
+
+          <h3>
+            AI Powered CCTV Surveillance System for Kumbh Mela
+          </h3>
+
+          <a
+            href="https://github.com/rahultakale44"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-github"
+          >
+            <i class="bx bxl-github"></i>
+            <span>Code</span>
+          </a>
+
+        </div>
+
+        <p>
+          Designed and studied an AI-powered CCTV surveillance solution for
+          crowd management and public safety during large-scale religious
+          gatherings. Explored Python, OpenCV, object detection, people counting
+          and crowd-density estimation for CCTV video streams.
+        </p>
+
+        <div class="project-tech">
+          <span>OpenCV</span>
+          <span>YOLO</span>
+          <span>Flask</span>
+          <span>Python</span>
+          <span>HTML CSS JS</span>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ==================== EXPERIENCE ==================== -->
+<section class="experience-section section-motion" id="experience">
+
+  <!-- Background Animation -->
+  <div class="motion-bg experience-bg" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Section Heading -->
+  <div class="section-heading experience-heading">
+    <p class="section-badge">Professional Journey</p>
+
+    <h2>Experience That Built My Foundation</h2>
+
+    <span class="experience-subtitle">
+      Practical exposure through full-stack development, hardware prototyping,
+      IoT systems and real-world project collaboration.
+    </span>
+  </div>
+
+  <!-- Experience Cards -->
+  <div class="experience-grid">
+
+    <!-- ==================== INNOBYTES EXPERIENCE ==================== -->
+    <article class="experience-card">
+
+      <!-- Experience Images -->
+      <div class="experience-images">
+        <img
+          src="assets/img/innobytes-1.jpg"
+          alt="BizGrowth Business Networking Platform"
+        />
+
+        <img
+          src="assets/img/innobytes-2.jpg"
+          alt="InnoHubs Innovation Platform"
+        />
+      </div>
+
+      <!-- Experience Content -->
+      <div class="experience-content">
+
+        <div class="experience-top">
+
+          <span class="experience-icon">
+            <i class="bx bx-code-alt"></i>
+          </span>
+
+          <div>
+            <h3>Development Intern</h3>
+
+            <h4>
+              INNOBYTES
+              <span>(Erfinden Technologies Pvt. Ltd.)</span>
+            </h4>
+
+            <p>Pimpri Chinchwad, Maharashtra · 2025</p>
+          </div>
+
+        </div>
+
+        <!-- BizGrowth -->
+        <div class="experience-project">
+
+          <h5>BizGrowth – Business Networking Platform</h5>
+
+          <ul>
+            <li>
+              Developed a full-stack MERN business networking platform that
+              connects entrepreneurs, startups and enterprises.
+            </li>
+
+            <li>
+              Implemented JWT authentication, protected routes, password
+              hashing and token-based user sessions.
+            </li>
+
+            <li>
+              Built business listing management, advanced search, category
+              filters and user-specific dashboards.
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- InnoHubs -->
+        <div class="experience-project">
+
+          <h5>InnoHubs – Innovation Networking Platform</h5>
+
+          <ul>
+            <li>
+              Contributed to a MERN-based platform for discovering innovation
+              programs, opportunities and professional networks.
+            </li>
+
+            <li>
+              Developed responsive React components and integrated frontend
+              pages with backend APIs.
+            </li>
+
+            <li>
+              Assisted with UI implementation, debugging, testing and
+              performance improvements across multiple devices.
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- Technology Tags -->
+        <div class="experience-tech">
+          <span>MongoDB</span>
+          <span>Express.js</span>
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>JWT</span>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- ==================== RED CREST EXPERIENCE ==================== -->
+    <article class="experience-card">
+
+      <!-- Experience Images -->
+      <div class="experience-images">
+        <img
+          src="assets/img/redcrest-1.jpg"
+          alt="PrakritiAI Hardware Prototype"
+        />
+
+        <img
+          src="assets/img/redcrest-2.jpg"
+          alt="PrakritiAI Smart Farming Monitoring System"
+        />
+      </div>
+
+      <!-- Experience Content -->
+      <div class="experience-content">
+
+        <div class="experience-top">
+
+          <span class="experience-icon">
+            <i class="bx bx-chip"></i>
+          </span>
+
+          <div>
+            <h3>Hardware Intern</h3>
+
+            <h4>
+              Red Crest Charitable Trust
+              <span>under NGO Tech Work</span>
+            </h4>
+
+            <p>15 June 2025 – 15 July 2025 · 4 Weeks</p>
+          </div>
+
+        </div>
+
+        <!-- PrakritiAI -->
+        <div class="experience-project">
+
+          <h5>PrakritiAI – Smart Farming Monitoring System</h5>
+
+          <ul>
+            <li>
+              Contributed to the hardware prototyping and sensor integration
+              of an IoT-based smart farming monitoring system.
+            </li>
+
+            <li>
+              Worked with NodeMCU ESP8266 and environmental sensors for
+              temperature, humidity, soil moisture and air-quality monitoring.
+            </li>
+
+            <li>
+              Assisted in testing sensor readings, embedded components and
+              real-world hardware outputs.
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- Technical Contributions -->
+        <div class="experience-project">
+
+          <h5>Monitoring and System Integration</h5>
+
+          <ul>
+            <li>
+              Supported real-time sensor data monitoring through dashboards,
+              visual summaries and threshold-based alerts.
+            </li>
+
+            <li>
+              Explored MQTT and Wi-Fi communication for transmitting sensor
+              readings to a central processing system.
+            </li>
+
+            <li>
+              Contributed to documentation, calibration, testing workflows
+              and evaluation of the working prototype.
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- Technology Tags -->
+        <div class="experience-tech">
+          <span>NodeMCU</span>
+          <span>ESP8266</span>
+          <span>IoT Sensors</span>
+          <span>MQTT</span>
+          <span>Hardware Testing</span>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+</section>
 
     <!-- ACHIEVEMENTS -->
     <section class="achievements-section section-motion" id="achievements">
@@ -332,7 +820,7 @@
       <div class="achievements-grid">
         <article class="achievement-card featured-achievement">
           <div class="achievement-gallery"><img src="assets/img/ach-indradhanu-1.jpeg" alt="Indradhanu Grand Finale" /><img src="assets/img/ach-indradhanu-2.jpeg" alt="Indradhanu Certificate" /><img src="assets/img/ach-indradhanu-3.jpeg" alt="Indradhanu Team" /></div>
-          <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-trophy"></i></span><div><h3>Indradhanu International Grand Challenge Finale</h3><p>PCCOE · AI for Climate Change</p></div></div><div class="achievement-badges"><span>Top 20 Finalist</span><span>1002+ Teams</span><span>3-Month Phase</span></div><p>Our team <b>CODEXCELLENCE</b> was shortlisted among the Top 20 teams and presented <b>Seed2Sustain</b>, an AI-driven climate-smart aeroponics solution for urban sustainability.</p><ul><li>Designed a soil-less aeroponics system for sustainable farming.</li><li>Integrated IoT-based real-time monitoring for plant conditions.</li><li>Applied AI-driven insights for plant health and system reliability.</li><li>Aligned the solution with UN SDGs for sustainability and climate action.</li></ul></div>
+          <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-trophy"></i></span><div><h3>Indradhanu International Grand Challenge Finale</h3><p>PCCOE · AI for Climate Change</p></div></div><div class="achievement-badges"><span>Top 20 Finalist</span><span>1002+ Teams</span><span>3-Month Phase</span></div><p>Our team <b>CODEXCELLENCE</b> was shortlisted among the Top 20 teams and presented <b>Seed2Sustain</b>, an AI-driven climate-smart aeroponics solution for urban sustainability.</p><ul><li>Designed a soil-less aeroponics system for sustainable farming.</li><li>Integrated IoT-based real-time monitoring for plant conditions.</li><li>Applied AI-driven insights for plant health and system reliability.</li></ul></div>
         </article>
 
         <article class="achievement-card">
@@ -340,15 +828,111 @@
           <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-leaf"></i></span><div><h3>PRISM Sociothon 2025</h3><p>BRACT’s VIT Bibwewadi, Pune</p></div></div><div class="achievement-badges"><span>Top 180</span><span>792 Participants</span><span>Team Leader</span></div><p>Led team <b>Sync4Tech</b> under the theme “Tech for a Sustainable Planet” and proposed <b>CarbonVision</b>, an AI-powered industrial emission monitoring system.</p><ul><li>Analyzed chimney/drone video feeds using computer vision.</li><li>Estimated smoke density, color and emission levels.</li><li>Planned real-time dashboards, alerts and trend analytics.</li><li>Explored weather API integration for pollution dispersion prediction.</li></ul></div>
         </article>
 
-        <article class="achievement-card">
-          <div class="achievement-gallery"><img src="assets/img/ach-kumbathon-1.jpg" alt="Kumbathon 2026" /><img src="assets/img/ach-kumbathon-2.jpg" alt="Smart CCTV Prototype" /><img src="assets/img/ach-kumbathon-3.jpg" alt="Kumbathon Team" /></div>
-          <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-cctv"></i></span><div><h3>Kumbathon 2026</h3><p>MIT ADT University · National Startup Day</p></div></div><div class="achievement-badges"><span>AI Surveillance</span><span>Working Prototype</span><span>Command Centre</span></div><p>Team <b>Triveni Tech</b> showcased an AI-Based Smart CCTV Surveillance and Command Centre System for large-scale events like Kumbh Mela.</p><ul><li>Detected crowd density risks and unsafe situations.</li><li>Converted CCTV feeds into real-time decision support systems.</li><li>Built alert flow for a centralized admin dashboard.</li><li>Received encouraging jury feedback for future development.</li></ul></div>
-        </article>
+<!-- ==================== KUMBATHON ACHIEVEMENT ==================== -->
+<article class="achievement-card">
+  <div class="achievement-gallery">
+    <img src="assets/img/ach-kumbathon-1.jpg" alt="Kumbathon 2026" />
+    <img src="assets/img/ach-kumbathon-2.jpg" alt="Smart CCTV Prototype" />
+    <img src="assets/img/ach-kumbathon-3.jpg" alt="Kumbathon Team" />
+  </div>
 
-        <article class="achievement-card">
-          <div class="achievement-gallery"><img src="assets/img/ach-auditx-1.jpg" alt="AuditX Presentation" /><img src="assets/img/ach-auditx-2.jpeg" alt="AI Grand Challenge" /><img src="assets/img/ach-auditx-3.jpg" alt="AuditX Team" /></div>
-          <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-shield-quarter"></i></span><div><h3>MIT ADT AI Grand Challenge 2026</h3><p>Blockchain & AI Innovation Category</p></div></div><div class="achievement-badges"><span>Top 7 Teams</span><span>Blockchain</span><span>AI Fraud Detection</span></div><p>Developed <b>AuditX</b>, an AI and Blockchain-powered financial fraud prevention system designed to detect suspicious transactions before execution through real-time risk analysis, smart contract validation and tamper-proof blockchain logging.</p><ul><li>Implemented Isolation Forest-based anomaly detection for fraud risk scoring.</li><li>Designed Solidity smart contract rules for transaction validation.</li><li>Integrated blockchain logging to ensure transaction integrity and transparency.</li><li>Recognized among the Top 7 teams in the Blockchain category.</li></ul></div>
-        </article>
+  <div class="achievement-content">
+    <div class="achievement-top">
+      <span class="achievement-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="6" width="13" height="10" rx="2"></rect>
+          <path d="M16 9L21 6V16L16 13Z"></path>
+          <circle cx="9.5" cy="11" r="2.5"></circle>
+          <path d="M7 19H14"></path>
+          <path d="M10.5 16V19"></path>
+        </svg>
+      </span>
+
+      <div>
+        <h3>Kumbathon 2026</h3>
+        <p>MIT ADT University · National Startup Day</p>
+      </div>
+    </div>
+
+    <div class="achievement-badges">
+      <span>AI Surveillance</span>
+      <span>Working Prototype</span>
+      <span>Command Centre</span>
+    </div>
+
+    <p>
+      Team <b>Triveni Tech</b> showcased an AI-Based Smart CCTV Surveillance
+      and Command Centre System designed for monitoring large-scale events such
+      as the Kumbh Mela.
+    </p>
+
+    <ul>
+      <li>Detected crowd-density risks and potentially unsafe situations.</li>
+      <li>
+        Converted live CCTV feeds into real-time monitoring and decision-support
+        insights.
+      </li>
+      <li>
+        Built an alert workflow connected to a centralized administration
+        dashboard.
+      </li>
+
+    </ul>
+  </div>
+</article>
+
+
+<!-- ==================== AUDITX ACHIEVEMENT ==================== -->
+<article class="achievement-card">
+  <div class="achievement-gallery">
+    <img src="assets/img/ach-auditx-1.jpg" alt="AuditX Presentation" />
+    <img src="assets/img/ach-auditx-2.jpeg" alt="AI Grand Challenge" />
+    <img src="assets/img/ach-auditx-3.jpg" alt="AuditX Team" />
+  </div>
+
+  <div class="achievement-content">
+    <div class="achievement-top">
+      <span class="achievement-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 3L20 6V11C20 16.2 16.6 20.4 12 22C7.4 20.4 4 16.2 4 11V6L12 3Z"
+          ></path>
+          <path d="M12 7V17"></path>
+          <path d="M8 11H16"></path>
+        </svg>
+      </span>
+
+      <div>
+        <h3>MIT ADT AI Grand Challenge 2026</h3>
+        <p>Blockchain &amp; AI Innovation Category</p>
+      </div>
+    </div>
+
+    <div class="achievement-badges">
+      <span>Top 7 Teams</span>
+      <span>Blockchain</span>
+      <span>AI Fraud Detection</span>
+    </div>
+
+    <p>
+      Developed <b>AuditX</b>, an AI and Blockchain-powered financial fraud
+      prevention system designed to detect suspicious transactions before
+      execution through real-time risk analysis.
+    </p>
+
+    <ul>
+      <li>
+        Implemented Isolation Forest-based anomaly detection for fraud-risk
+        scoring.
+      </li>
+      <li>Designed Solidity smart-contract rules for transaction validation.</li>
+      <li>
+        Integrated blockchain logging to maintain transaction integrity and
+        transparency.
+      </li>
+    </ul>
+  </div>
+</article>
 
         <article class="achievement-card">
           <div class="achievement-gallery"><img src="assets/img/ach-unesco-1.png" alt="UNESCO Youth Hackathon" /><img src="assets/img/ach-unesco-2.png" alt="NutriCheck Project" /><img src="assets/img/ach-unesco-3.png" alt="UNESCO Team" /></div>

@@ -4602,3 +4602,593 @@ main,
     display: none !important;
   }
 }
+
+
+
+
+
+/* ==================== FINAL ACHIEVEMENT ICON FIX ==================== */
+
+.achievement-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.achievement-icon {
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+  flex: 0 0 68px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+  background: rgba(20, 230, 190, 0.12);
+  border: 1px solid rgba(20, 230, 190, 0.12);
+
+  position: relative;
+  z-index: 10;
+
+  overflow: visible;
+}
+
+.achievement-icon svg {
+  width: 31px !important;
+  height: 31px !important;
+
+  display: block !important;
+
+  fill: none !important;
+  stroke: #20e6bd !important;
+  stroke-width: 1.8 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  position: relative;
+  z-index: 11;
+
+  overflow: visible;
+}
+
+/* Prevent global SVG rules from turning icons black */
+.achievement-icon svg *,
+.achievement-icon svg path,
+.achievement-icon svg rect,
+.achievement-icon svg circle,
+.achievement-icon svg line,
+.achievement-icon svg polyline,
+.achievement-icon svg polygon {
+  fill: none !important;
+  stroke: #20e6bd !important;
+  stroke-width: 1.8 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .achievement-top {
+    gap: 14px;
+  }
+
+  .achievement-icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    flex: 0 0 54px;
+    border-radius: 16px;
+  }
+
+  .achievement-icon svg {
+    width: 26px !important;
+    height: 26px !important;
+  }
+}
+
+
+/* ==================== EXPERIENCE SECTION ==================== */
+
+.experience-section {
+  position: relative;
+  padding: 110px 8%;
+  overflow: hidden;
+}
+
+.experience-grid {
+  width: 100%;
+  max-width: 1320px;
+  margin: 55px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ==================== EXPERIENCE CARD ==================== */
+
+.experience-card {
+  min-width: 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(7, 27, 40, 0.98),
+      rgba(5, 18, 29, 0.98)
+    );
+
+  border: 1px solid rgba(30, 230, 190, 0.22);
+
+  box-shadow:
+    0 22px 55px rgba(4, 20, 30, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(31, 231, 190, 0.65);
+
+  box-shadow:
+    0 28px 70px rgba(8, 34, 45, 0.28),
+    0 0 30px rgba(31, 231, 190, 0.1);
+}
+
+
+/* ==================== EXPERIENCE IMAGES ==================== */
+
+.experience-images {
+  width: 100%;
+  height: 330px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  padding: 14px 14px 0;
+}
+
+.experience-images img {
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+
+  display: block;
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.45s ease,
+    filter 0.45s ease;
+}
+
+.experience-card:hover .experience-images img {
+  transform: scale(1.025);
+}
+
+.experience-images img:first-child {
+  object-position: top center;
+}
+
+.experience-images img:last-child {
+  object-position: center;
+}
+
+
+/* ==================== EXPERIENCE CONTENT ==================== */
+
+.experience-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+}
+
+.experience-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+
+  margin-bottom: 25px;
+}
+
+.experience-icon {
+  width: 62px;
+  height: 62px;
+  min-width: 62px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: rgba(18, 226, 184, 0.12);
+  border: 1px solid rgba(18, 226, 184, 0.08);
+}
+
+.experience-icon i {
+  font-size: 31px;
+  color: #20e6bd;
+}
+
+.experience-top h3 {
+  margin: 0 0 8px;
+
+  font-size: 28px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.experience-top h4 {
+  margin: 0 0 7px;
+
+  font-size: 16px;
+  line-height: 1.45;
+  color: #20e6bd;
+}
+
+.experience-top h4 span {
+  color: inherit;
+}
+
+.experience-top p {
+  margin: 0;
+
+  font-size: 15px;
+  color: #aab8c8;
+}
+
+
+/* ==================== EXPERIENCE PROJECT DETAILS ==================== */
+
+.experience-project {
+  margin-top: 8px;
+}
+
+.experience-project + .experience-project {
+  margin-top: 20px;
+}
+
+.experience-project h5 {
+  margin: 0 0 11px;
+
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.experience-project ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.experience-project li {
+  margin-bottom: 9px;
+
+  font-size: 16px;
+  line-height: 1.7;
+  color: #bdc8d6;
+}
+
+.experience-project li::marker {
+  color: #20e6bd;
+}
+
+
+/* ==================== EXPERIENCE TAGS ==================== */
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: auto;
+  padding-top: 25px;
+}
+
+.experience-tech span {
+  padding: 9px 15px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  color: #20e6bd;
+
+  background: rgba(20, 230, 189, 0.1);
+  border: 1px solid rgba(20, 230, 189, 0.24);
+}
+
+
+/* ==================== TABLET ==================== */
+
+@media (max-width: 1050px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+  }
+
+  .experience-images {
+    height: 360px;
+  }
+}
+
+
+/* ==================== MOBILE ==================== */
+
+@media (max-width: 650px) {
+  .experience-section {
+    padding: 85px 20px;
+  }
+
+  .experience-grid {
+    margin-top: 38px;
+    gap: 24px;
+  }
+
+  .experience-card {
+    border-radius: 22px;
+  }
+
+  .experience-images {
+    height: auto;
+
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    padding: 10px 10px 0;
+  }
+
+  .experience-images img {
+    height: 220px;
+    border-radius: 15px;
+  }
+
+  .experience-content {
+    padding: 23px 19px 24px;
+  }
+
+  .experience-top {
+    gap: 13px;
+    margin-bottom: 20px;
+  }
+
+  .experience-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    border-radius: 15px;
+  }
+
+  .experience-icon i {
+    font-size: 26px;
+  }
+
+  .experience-top h3 {
+    font-size: 22px;
+  }
+
+  .experience-top h4 {
+    font-size: 14px;
+  }
+
+  .experience-top p {
+    font-size: 13px;
+  }
+
+  .experience-project h5 {
+    font-size: 18px;
+  }
+
+  .experience-project li {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .experience-tech span {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* ==================== EQUAL EXPERIENCE CARD HEIGHT ==================== */
+
+.experience-grid {
+  align-items: stretch;
+}
+
+.experience-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-project {
+  flex-shrink: 0;
+}
+
+.experience-tech {
+  margin-top: auto;
+  padding-top: 26px;
+}
+
+/* Keep both image areas equal */
+.experience-images {
+  height: 320px;
+}
+
+.experience-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tablet and mobile */
+@media (max-width: 1050px) {
+  .experience-card {
+    height: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .experience-images {
+    height: auto;
+  }
+
+  .experience-images img {
+    height: 220px;
+  }
+}
+
+
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+.experience-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex: initial;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 24px;
+  padding-top: 0;
+}
+
+@media (max-width: 1050px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================== UNESCO VERTICAL VIDEO CARD ==================== */
+
+.unesco-video-card {
+  display: grid;
+  grid-template-columns: 390px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 34px;
+}
+
+.achievement-video-wrapper {
+  width: 100%;
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(8, 29, 39, 0.95),
+      rgba(4, 18, 29, 0.98)
+    );
+
+  border-radius: 26px 0 0 26px;
+  overflow: hidden;
+}
+
+.achievement-video {
+  width: 100%;
+  max-width: 310px;
+
+  aspect-ratio: 9 / 16;
+
+  display: block;
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  background: #000;
+
+  border: 1px solid rgba(32, 230, 189, 0.28);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.35),
+    0 0 24px rgba(32, 230, 189, 0.08);
+}
+
+
+/* Tablet */
+
+@media (max-width: 1050px) {
+  .unesco-video-card {
+    grid-template-columns: 330px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .achievement-video {
+    max-width: 275px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .unesco-video-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .achievement-video-wrapper {
+    width: 100%;
+    padding: 18px;
+
+    border-radius: 22px 22px 0 0;
+  }
+
+  .achievement-video {
+    width: min(100%, 290px);
+    max-width: 290px;
+  }
+}
