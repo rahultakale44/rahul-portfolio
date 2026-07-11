@@ -5107,88 +5107,77 @@ main,
     grid-template-columns: 1fr;
   }
 }
-
-/* ==================== UNESCO VERTICAL VIDEO CARD ==================== */
+/* ==================== UNESCO 16:9 VIDEO CARD ==================== */
 
 .unesco-video-card {
   display: grid;
-  grid-template-columns: 390px minmax(0, 1fr);
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  align-items: center;
   gap: 34px;
 }
 
 .achievement-video-wrapper {
   width: 100%;
-  padding: 24px;
+  padding: 22px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(8, 29, 39, 0.95),
-      rgba(4, 18, 29, 0.98)
-    );
-
+  background: rgba(5, 22, 32, 0.8);
   border-radius: 26px 0 0 26px;
   overflow: hidden;
 }
 
 .achievement-video {
   width: 100%;
-  max-width: 310px;
-
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 16 / 9;
 
   display: block;
   object-fit: cover;
 
-  border-radius: 20px;
-
+  border-radius: 18px;
   background: #000;
 
-  border: 1px solid rgba(32, 230, 189, 0.28);
+  border: 1px solid rgba(32, 230, 189, 0.3);
 
   box-shadow:
-    0 20px 45px rgba(0, 0, 0, 0.35),
+    0 18px 42px rgba(0, 0, 0, 0.32),
     0 0 24px rgba(32, 230, 189, 0.08);
 }
 
-
 /* Tablet */
-
 @media (max-width: 1050px) {
   .unesco-video-card {
-    grid-template-columns: 330px minmax(0, 1fr);
-    gap: 24px;
-  }
-
-  .achievement-video {
-    max-width: 275px;
-  }
-}
-
-
-/* Mobile */
-
-@media (max-width: 768px) {
-  .unesco-video-card {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 0;
   }
 
   .achievement-video-wrapper {
-    width: 100%;
-    padding: 18px;
-
-    border-radius: 22px 22px 0 0;
+    border-radius: 24px 24px 0 0;
   }
 
   .achievement-video {
-    width: min(100%, 290px);
-    max-width: 290px;
+    max-width: 850px;
   }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .achievement-video-wrapper {
+    padding: 12px;
+  }
+
+  .achievement-video {
+    border-radius: 14px;
+  }
+}
+
+.achievement-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  object-fit: cover;
+  background: #000;
+  border-radius: 18px;
 }
