@@ -703,3 +703,59 @@ if (unescoVideo) {
 
   videoObserver.observe(unescoVideo);
 }
+
+/* =====================================================
+   ABOUT CARDS INTERSECTION ANIMATION
+===================================================== */
+
+const aboutCards = document.querySelectorAll(".about-card");
+
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+if (isMobile) {
+  /*
+   * Mobile par cards ko turant visible rakho.
+   * ScrollReveal ya observer ke wait ki zarurat nahi.
+   */
+  aboutCards.forEach((card) => {
+    card.classList.remove("about-animate");
+    card.classList.add("about-visible");
+
+    card.style.opacity = "1";
+    card.style.visibility = "visible";
+    card.style.transform = "none";
+  });
+} else {
+  /*
+   * Desktop par cards left/right se animate honge.
+   */
+  aboutCards.forEach((card) => {
+    card.classList.add("about-animate");
+  });
+
+  const aboutCardObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("about-visible");
+          entry.target.classList.remove("about-animate");
+
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+
+      /*
+       * Section screen ke thoda neeche hote hue hi animation
+       * start ho jayegi, user ko wait nahi karna padega.
+       */
+      rootMargin: "0px 0px 120px 0px",
+    }
+  );
+
+  aboutCards.forEach((card) => {
+    aboutCardObserver.observe(card);
+  });
+}

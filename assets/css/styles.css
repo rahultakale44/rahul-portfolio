@@ -5181,3 +5181,128 @@ main,
   background: #000;
   border-radius: 18px;
 }
+
+/* =====================================================
+   ABOUT CARDS – SMOOTH AND MOBILE-SAFE ANIMATION
+===================================================== */
+
+.about-card {
+  position: relative;
+
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+  transition:
+    transform 0.45s ease,
+    border-color 0.45s ease,
+    box-shadow 0.45s ease,
+    background 0.45s ease;
+}
+
+/* Different starting directions for desktop animation */
+.about-card.about-animate {
+  opacity: 0;
+}
+
+.about-card:nth-child(1).about-animate {
+  transform: translateX(-45px);
+}
+
+.about-card:nth-child(2).about-animate {
+  transform: translateX(45px);
+}
+
+.about-card:nth-child(3).about-animate {
+  transform: translateX(-45px);
+}
+
+.about-card:nth-child(4).about-animate {
+  transform: translateX(45px);
+}
+
+/* Visible state */
+.about-card.about-visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* Stagger timing */
+.about-card:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
+.about-card:nth-child(2) {
+  transition-delay: 0.12s;
+}
+
+.about-card:nth-child(3) {
+  transition-delay: 0.19s;
+}
+
+.about-card:nth-child(4) {
+  transition-delay: 0.26s;
+}
+
+/* Hover effect */
+.about-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(32, 230, 189, 0.55);
+
+  box-shadow:
+    0 18px 45px rgba(8, 35, 48, 0.18),
+    0 0 25px rgba(32, 230, 189, 0.1);
+}
+
+/* Small icon movement */
+.about-card:hover i {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.about-card i {
+  transition: transform 0.35s ease;
+}
+
+
+/* =====================================================
+   MOBILE – SHOW CARDS IMMEDIATELY
+===================================================== */
+
+@media (max-width: 768px) {
+  .about-card,
+  .about-card.about-animate,
+  .about-card.about-visible,
+  .about-card:nth-child(1).about-animate,
+  .about-card:nth-child(2).about-animate,
+  .about-card:nth-child(3).about-animate,
+  .about-card:nth-child(4).about-animate {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease !important;
+
+    transition-delay: 0s !important;
+  }
+
+  .about-card:hover {
+    transform: translateY(-4px) !important;
+  }
+}
+
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .about-card,
+  .about-card.about-animate,
+  .about-card.about-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
