@@ -1,4 +1,62 @@
 /* =====================================================
+   THEME PRELOADER — 1 TO 100
+===================================================== */
+
+(function initializePortfolioLoader() {
+  const loader = document.getElementById("site-preloader");
+  const count = document.getElementById("loader-count");
+  const bar = document.getElementById("loader-progress-bar");
+
+  if (!loader || !count || !bar) {
+    document.body.classList.remove("is-loading");
+    return;
+  }
+
+  let progress = 1;
+  let pageReady = document.readyState === "complete";
+  const startedAt = performance.now();
+  const minimumDuration = 1850;
+
+  window.addEventListener("load", () => {
+    pageReady = true;
+  }, { once: true });
+
+  function completeLoader() {
+    count.textContent = "100";
+    bar.style.width = "100%";
+    loader.classList.add("loader-complete");
+    document.body.classList.remove("is-loading");
+
+    window.setTimeout(() => {
+      loader.remove();
+    }, 850);
+  }
+
+  function advanceLoader() {
+    const elapsed = performance.now() - startedAt;
+
+    if (progress < 92) {
+      const step = progress < 55 ? 2 : progress < 80 ? 1 : Math.random() > 0.55 ? 1 : 0;
+      progress = Math.min(92, progress + step);
+    } else if (pageReady && elapsed >= minimumDuration) {
+      progress += 2;
+    }
+
+    count.textContent = String(Math.min(progress, 100));
+    bar.style.width = `${Math.min(progress, 100)}%`;
+
+    if (progress >= 100) {
+      completeLoader();
+      return;
+    }
+
+    window.setTimeout(advanceLoader, 24 + Math.random() * 20);
+  }
+
+  advanceLoader();
+})();
+
+/* =====================================================
    MENU TOGGLE
 ===================================================== */
 

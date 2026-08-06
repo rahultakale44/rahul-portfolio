@@ -8,7 +8,29 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
-<body>
+<body class="is-loading">
+  <!-- THEME PRELOADER -->
+  <div class="site-preloader" id="site-preloader" role="status" aria-live="polite" aria-label="Loading portfolio">
+    <div class="loader-grid" aria-hidden="true"></div>
+    <div class="loader-orbit loader-orbit-one" aria-hidden="true"></div>
+    <div class="loader-orbit loader-orbit-two" aria-hidden="true"></div>
+
+    <div class="loader-panel">
+      <div class="loader-mark" aria-hidden="true">
+        <i class="bx bx-code-alt"></i>
+      </div>
+      <p class="loader-kicker">INITIALIZING PORTFOLIO</p>
+      <h1>Rahul <span>Takale</span></h1>
+      <div class="loader-track" aria-hidden="true">
+        <span id="loader-progress-bar"></span>
+      </div>
+      <div class="loader-meta">
+        <span>AI SYSTEMS · FULL STACK · INNOVATION</span>
+        <strong><span id="loader-count">1</span>%</strong>
+      </div>
+    </div>
+  </div>
+
   <div class="cursor-orb" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="scroll-progress" aria-hidden="true"></div>
@@ -714,6 +736,69 @@
 
   </div>
 </article>
+
+
+    <!-- ==================== FEATURED CONTACTLESS BIOMETRICS PROJECT ==================== -->
+    <article class="project-card project-card-featured biometric-project">
+      <div class="biometric-visual" aria-hidden="true">
+        <div class="biometric-grid"></div>
+        <div class="fingerprint-shell">
+          <i class="bx bx-fingerprint"></i>
+          <span class="scan-line"></span>
+          <span class="scan-corner corner-one"></span>
+          <span class="scan-corner corner-two"></span>
+          <span class="scan-corner corner-three"></span>
+          <span class="scan-corner corner-four"></span>
+        </div>
+        <div class="biometric-status">
+          <span><i class="bx bx-radio-circle-marked"></i> CONTACTLESS CAPTURE</span>
+          <strong>IDENTITY VERIFIED</strong>
+        </div>
+      </div>
+
+      <div class="project-content biometric-content">
+        <span class="project-type">Computer Vision & Biometric Security</span>
+
+        <div class="project-title-row">
+          <h3>Contactless Biometric Fingerprint Authentication System</h3>
+          <a
+            href="https://github.com/rahultakale44"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-github"
+            aria-label="View biometric project code on GitHub"
+          >
+            <i class="bx bxl-github"></i>
+            <span>Code</span>
+          </a>
+        </div>
+
+        <p>
+          Designed a contactless biometric authentication prototype that captures
+          fingerprint imagery without requiring a physical scanner. The workflow
+          applies computer-vision preprocessing to isolate the fingerprint region,
+          improve ridge visibility and prepare distinctive biometric features for
+          identity matching. The project explores a hygienic, touch-free alternative
+          to conventional fingerprint devices for attendance, access control and
+          secure identity verification scenarios.
+        </p>
+
+        <div class="biometric-highlights">
+          <span><i class="bx bx-camera"></i> Touch-free image capture</span>
+          <span><i class="bx bx-scan"></i> Fingerprint region extraction</span>
+          <span><i class="bx bx-shield-quarter"></i> Secure identity matching</span>
+        </div>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>Image Processing</span>
+          <span>Biometrics</span>
+          <span>Feature Matching</span>
+          <span>Computer Vision</span>
+        </div>
+      </div>
+    </article>
 
   </div>
   <!-- ==================== PROJECTS GRID END ==================== -->

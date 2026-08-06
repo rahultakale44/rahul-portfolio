@@ -5306,3 +5306,390 @@ main,
     transition: none !important;
   }
 }
+
+/* =====================================================
+   THEME PRELOADER
+===================================================== */
+body.is-loading {
+  overflow: hidden;
+}
+
+.site-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding: 28px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 74% 28%, rgba(24, 224, 168, 0.18), transparent 28%),
+    radial-gradient(circle at 24% 76%, rgba(0, 170, 255, 0.12), transparent 30%),
+    #020814;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+.site-preloader.loader-complete {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(24, 224, 168, 0.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 224, 168, 0.075) 1px, transparent 1px);
+  background-size: 58px 58px;
+  mask-image: radial-gradient(circle at center, #000 18%, transparent 75%);
+  animation: loaderGridMove 8s linear infinite;
+}
+
+.loader-orbit {
+  position: absolute;
+  border: 1px solid rgba(24, 224, 168, 0.2);
+  border-radius: 50%;
+  animation: loaderOrbitSpin 14s linear infinite;
+}
+
+.loader-orbit::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 12%;
+  left: 14%;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 28px rgba(24, 224, 168, 0.9);
+}
+
+.loader-orbit-one {
+  width: min(72vw, 760px);
+  aspect-ratio: 1;
+}
+
+.loader-orbit-two {
+  width: min(48vw, 510px);
+  aspect-ratio: 1;
+  animation-direction: reverse;
+  animation-duration: 10s;
+}
+
+.loader-panel {
+  position: relative;
+  z-index: 2;
+  width: min(620px, 92vw);
+  padding: 44px;
+  border: 1px solid rgba(24, 224, 168, 0.28);
+  border-radius: 28px;
+  background: linear-gradient(145deg, rgba(8, 17, 31, 0.92), rgba(2, 8, 20, 0.8));
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.5), 0 0 70px rgba(24, 224, 168, 0.09);
+  backdrop-filter: blur(20px);
+}
+
+.loader-mark {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 26px;
+  border: 1px solid rgba(24, 224, 168, 0.38);
+  border-radius: 20px;
+  color: var(--primary);
+  font-size: 36px;
+  background: rgba(24, 224, 168, 0.08);
+  box-shadow: inset 0 0 22px rgba(24, 224, 168, 0.08), 0 0 30px rgba(24, 224, 168, 0.12);
+  animation: loaderMarkPulse 1.8s ease-in-out infinite;
+}
+
+.loader-kicker {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+  margin-bottom: 10px;
+}
+
+.loader-panel h1 {
+  color: #fff;
+  font-size: clamp(42px, 8vw, 72px);
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+}
+
+.loader-panel h1 span {
+  color: var(--primary);
+}
+
+.loader-track {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.loader-track span {
+  display: block;
+  width: 1%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--primary), var(--cyan));
+  box-shadow: 0 0 24px rgba(24, 224, 168, 0.7);
+  transition: width 0.08s linear;
+}
+
+.loader-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 16px;
+  color: #8fa0b8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.loader-meta strong {
+  min-width: 68px;
+  color: #fff;
+  font-size: 24px;
+  text-align: right;
+  letter-spacing: -1px;
+}
+
+@keyframes loaderGridMove {
+  to { background-position: 58px 58px; }
+}
+
+@keyframes loaderOrbitSpin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes loaderMarkPulse {
+  50% { transform: translateY(-5px) scale(1.05); box-shadow: 0 0 42px rgba(24, 224, 168, 0.28); }
+}
+
+/* =====================================================
+   FEATURED CONTACTLESS BIOMETRICS PROJECT
+===================================================== */
+.project-card-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(340px, 0.9fr) minmax(0, 1.35fr);
+  min-height: 500px;
+  border-color: rgba(24, 224, 168, 0.34);
+  background:
+    radial-gradient(circle at 14% 50%, rgba(24, 224, 168, 0.12), transparent 31%),
+    #08111f;
+}
+
+.project-card-featured .project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(34px, 5vw, 68px);
+}
+
+.project-card-featured .project-content h3 {
+  max-width: 760px;
+  font-size: clamp(30px, 4vw, 48px);
+  letter-spacing: -1.2px;
+}
+
+.biometric-visual {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border-right: 1px solid rgba(24, 224, 168, 0.18);
+  background:
+    radial-gradient(circle at center, rgba(24, 224, 168, 0.14), transparent 44%),
+    linear-gradient(145deg, rgba(5, 24, 35, 0.98), rgba(2, 8, 20, 0.98));
+}
+
+.biometric-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(24, 224, 168, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 224, 168, 0.07) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at center, #000 15%, transparent 82%);
+}
+
+.fingerprint-shell {
+  position: relative;
+  width: min(280px, 66%);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(24, 224, 168, 0.34);
+  border-radius: 34px;
+  background: rgba(3, 16, 25, 0.74);
+  box-shadow: inset 0 0 60px rgba(24, 224, 168, 0.08), 0 0 70px rgba(24, 224, 168, 0.14);
+}
+
+.fingerprint-shell > i {
+  color: var(--primary);
+  font-size: clamp(120px, 14vw, 210px);
+  filter: drop-shadow(0 0 28px rgba(24, 224, 168, 0.38));
+  animation: fingerprintPulse 2.8s ease-in-out infinite;
+}
+
+.scan-line {
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  height: 2px;
+  top: 10%;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  box-shadow: 0 0 20px rgba(24, 224, 168, 0.95);
+  animation: biometricScan 2.5s ease-in-out infinite;
+}
+
+.scan-corner {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-color: var(--primary);
+  border-style: solid;
+  filter: drop-shadow(0 0 10px rgba(24, 224, 168, 0.5));
+}
+
+.corner-one { top: 16px; left: 16px; border-width: 2px 0 0 2px; }
+.corner-two { top: 16px; right: 16px; border-width: 2px 2px 0 0; }
+.corner-three { bottom: 16px; left: 16px; border-width: 0 0 2px 2px; }
+.corner-four { bottom: 16px; right: 16px; border-width: 0 2px 2px 0; }
+
+.biometric-status {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 18px;
+  border: 1px solid rgba(24, 224, 168, 0.22);
+  border-radius: 15px;
+  background: rgba(2, 8, 20, 0.72);
+  color: #9aabc1;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  backdrop-filter: blur(14px);
+}
+
+.biometric-status i,
+.biometric-status strong {
+  color: var(--primary);
+}
+
+.biometric-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 18px 0 4px;
+}
+
+.biometric-highlights span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 14px;
+  border: 1px solid rgba(24, 224, 168, 0.17);
+  border-radius: 13px;
+  background: rgba(24, 224, 168, 0.055);
+  color: #cfd8e6;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.biometric-highlights i {
+  color: var(--primary);
+  font-size: 19px;
+}
+
+@keyframes fingerprintPulse {
+  50% { transform: scale(1.035); opacity: 0.76; }
+}
+
+@keyframes biometricScan {
+  0%, 100% { top: 11%; opacity: 0.35; }
+  50% { top: 88%; opacity: 1; }
+}
+
+@media (max-width: 900px) {
+  .project-card-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .biometric-visual {
+    min-height: 410px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(24, 224, 168, 0.18);
+  }
+
+  .biometric-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .loader-panel {
+    padding: 30px 24px;
+    border-radius: 22px;
+  }
+
+  .loader-meta {
+    align-items: flex-end;
+  }
+
+  .loader-meta > span {
+    max-width: 190px;
+    line-height: 1.5;
+  }
+
+  .loader-orbit-one { width: 155vw; }
+  .loader-orbit-two { width: 105vw; }
+
+  .project-card-featured .project-content {
+    padding: 28px 22px 32px;
+  }
+
+  .biometric-visual {
+    min-height: 350px;
+  }
+
+  .fingerprint-shell {
+    width: 220px;
+  }
+
+  .biometric-status {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader-grid,
+  .loader-orbit,
+  .loader-mark,
+  .fingerprint-shell > i,
+  .scan-line {
+    animation: none !important;
+  }
+}
