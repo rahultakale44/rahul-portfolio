@@ -7,6 +7,23 @@
   const count = document.getElementById("loader-count");
   const bar = document.getElementById("loader-progress-bar");
 
+  const heroSlides = document.querySelectorAll(".hero-slider .slide");
+  const heroVideos = document.querySelectorAll(".hero-slider video.slide");
+
+  /*
+    Loader ke peeche video play nahi hogi.
+    Isse first video ka starting part miss nahi hoga.
+  */
+  heroVideos.forEach((video) => {
+    video.pause();
+
+    try {
+      video.currentTime = 0;
+    } catch (error) {
+      console.log("Video reset waiting for metadata");
+    }
+  });
+
   if (!loader || !count || !bar) {
     document.body.classList.remove("is-loading");
     return;
@@ -14,20 +31,65 @@
 
   let progress = 1;
   let pageReady = document.readyState === "complete";
+
   const startedAt = performance.now();
   const minimumDuration = 1850;
 
-  window.addEventListener("load", () => {
-    pageReady = true;
-  }, { once: true });
+  window.addEventListener(
+    "load",
+    () => {
+      pageReady = true;
+    },
+    { once: true }
+  );
 
   function completeLoader() {
     count.textContent = "100";
     bar.style.width = "100%";
+
+    /*
+      Loader remove hone se pehle first slide ko active karo.
+    */
+    heroSlides.forEach((slide, index) => {
+      slide.classList.toggle("active", index === 0);
+    });
+
+    const firstSlide = heroSlides[0];
+
+    /*
+      Agar first slide video hai toh usko beginning se play karo.
+    */
+    if (firstSlide instanceof HTMLVideoElement) {
+      const startFirstVideo = () => {
+        try {
+          firstSlide.currentTime = 0;
+        } catch (error) {
+          console.log("Unable to reset video immediately");
+        }
+
+        firstSlide.play().catch((error) => {
+          console.log("Video autoplay blocked:", error);
+        });
+      };
+
+      if (firstSlide.readyState >= 1) {
+        startFirstVideo();
+      } else {
+        firstSlide.addEventListener("loadedmetadata", startFirstVideo, {
+          once: true,
+        });
+      }
+    }
+
     loader.classList.add("loader-complete");
     document.body.classList.remove("is-loading");
 
-    window.setTimeout(() => {
+    /*
+      Slideshow timer ab loader complete hone ke baad start hoga.
+    */
+    window.dispatchEvent(new CustomEvent("portfolio:ready"));
+
+    setTimeout(() => {
       loader.remove();
     }, 850);
   }
@@ -36,21 +98,32 @@
     const elapsed = performance.now() - startedAt;
 
     if (progress < 92) {
-      const step = progress < 55 ? 2 : progress < 80 ? 1 : Math.random() > 0.55 ? 1 : 0;
+      let step = 0;
+
+      if (progress < 55) {
+        step = 2;
+      } else if (progress < 80) {
+        step = 1;
+      } else if (Math.random() > 0.55) {
+        step = 1;
+      }
+
       progress = Math.min(92, progress + step);
     } else if (pageReady && elapsed >= minimumDuration) {
       progress += 2;
     }
 
-    count.textContent = String(Math.min(progress, 100));
-    bar.style.width = `${Math.min(progress, 100)}%`;
+    const visibleProgress = Math.min(progress, 100);
+
+    count.textContent = String(visibleProgress);
+    bar.style.width = `${visibleProgress}%`;
 
     if (progress >= 100) {
       completeLoader();
       return;
     }
 
-    window.setTimeout(advanceLoader, 24 + Math.random() * 20);
+    setTimeout(advanceLoader, 24 + Math.random() * 20);
   }
 
   advanceLoader();
@@ -125,21 +198,77 @@ window.addEventListener("load", handleScrollEffects);
    HERO SLIDESHOW
 ===================================================== */
 
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".hero-slider .slide");
+
 let slideIndex = 0;
+let slideTimer = null;
+
+function activateSlide(nextIndex) {
+  if (!slides.length) return;
+
+  slides.forEach((slide, index) => {
+    const isActive = index === nextIndex;
+
+    slide.classList.toggle("active", isActive);
+
+    if (slide instanceof HTMLVideoElement) {
+      if (isActive) {
+        const playActiveVideo = () => {
+          try {
+            slide.currentTime = 0;
+          } catch (error) {
+            console.log("Video reset pending");
+          }
+
+          slide.play().catch((error) => {
+            console.log("Video playback failed:", error);
+          });
+        };
+
+        if (slide.readyState >= 1) {
+          playActiveVideo();
+        } else {
+          slide.addEventListener("loadedmetadata", playActiveVideo, {
+            once: true,
+          });
+        }
+      } else {
+        slide.pause();
+      }
+    }
+  });
+
+  slideIndex = nextIndex;
+}
 
 function showNextSlide() {
   if (!slides.length) return;
 
-  slides[slideIndex].classList.remove("active");
-  slideIndex = (slideIndex + 1) % slides.length;
-  slides[slideIndex].classList.add("active");
+  const nextIndex = (slideIndex + 1) % slides.length;
+  activateSlide(nextIndex);
 }
 
-if (slides.length > 1) {
-  setInterval(showNextSlide, 5000);
+function startHeroSlideshow() {
+  if (!slides.length || slideTimer) return;
+
+  /*
+    Loader ke baad hamesha first slide se start hoga.
+  */
+  activateSlide(0);
+
+  /*
+    First video ko clearly dikhane ke liye 7 seconds rakha hai.
+  */
+  slideTimer = window.setInterval(showNextSlide, 7000);
 }
 
+if (document.body.classList.contains("is-loading")) {
+  window.addEventListener("portfolio:ready", startHeroSlideshow, {
+    once: true,
+  });
+} else {
+  startHeroSlideshow();
+}
 
 /* =====================================================
    HERO NAME TYPING + BACKSPACE ANIMATION
