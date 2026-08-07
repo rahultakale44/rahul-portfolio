@@ -946,3 +946,46 @@ if (isMobile) {
     aboutCardObserver.observe(card);
   });
 }
+
+/* =====================================================
+   RESEARCH → EXPERIENCE VAULT TRANSITION
+   Runs once when the divider becomes visible.
+===================================================== */
+
+(function initializeVaultTransition() {
+  const vaultTransition = document.getElementById("vault-transition");
+
+  if (!vaultTransition) return;
+
+  const statusText = vaultTransition.querySelector(".vault-status-text");
+  const statusNext = vaultTransition.querySelector(".vault-status-next");
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    vaultTransition.classList.add("is-active");
+    if (statusText) statusText.textContent = "RESEARCH ARCHIVE SECURED";
+    if (statusNext) statusNext.textContent = "PROFESSIONAL MODE";
+    return;
+  }
+
+  const vaultObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        vaultTransition.classList.add("is-active");
+
+        window.setTimeout(() => {
+          if (statusText) statusText.textContent = "RESEARCH ARCHIVE SECURED";
+          if (statusNext) statusNext.textContent = "PROFESSIONAL MODE ACTIVE";
+        }, 2350);
+
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.45,
+    }
+  );
+
+  vaultObserver.observe(vaultTransition);
+})();
