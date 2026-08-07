@@ -393,7 +393,7 @@ if (contactForm && contactBtn && typeof emailjs !== "undefined") {
 ===================================================== */
 
 const animatedElements = document.querySelectorAll(
-  ".section-heading, .tech-card, .project-card, .experience-card, .experience-gallery, .achievement-card, .contact-card, .contact-form"
+  ".section-heading, .tech-card, .project-card, .research-card, .experience-card, .experience-gallery, .achievement-card, .contact-card, .contact-form"
 );
 
 animatedElements.forEach((element) => {
@@ -462,7 +462,7 @@ animatedElements.forEach((element) => {
   animateCursor();
 
   const hoverTargets = document.querySelectorAll(
-    "a, button, .tech-card, .project-card, .about-card, .experience-card, .achievement-card, .contact-card, .contact-form"
+    "a, button, .tech-card, .project-card, .research-card, .about-card, .experience-card, .achievement-card, .contact-card, .contact-form"
   );
 
   hoverTargets.forEach((element) => {
@@ -593,7 +593,7 @@ animatedElements.forEach((element) => {
 
   /* Card tilt */
   const tiltCards = document.querySelectorAll(
-    ".tech-card, .project-card, .about-card, .experience-card, .achievement-card, .contact-card, .contact-form"
+    ".tech-card, .project-card, .research-card, .about-card, .experience-card, .achievement-card, .contact-card, .contact-form"
   );
 
   tiltCards.forEach((card) => {
