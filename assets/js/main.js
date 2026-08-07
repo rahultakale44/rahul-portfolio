@@ -989,3 +989,67 @@ if (isMobile) {
 
   vaultObserver.observe(vaultTransition);
 })();
+
+
+/* =====================================================
+   TECHNOLOGY CAPABILITY CONSOLE
+===================================================== */
+(function initializeTechCapabilityConsole() {
+  const triggers = document.querySelectorAll(".tech-rail-item");
+  const panels = document.querySelectorAll(".tech-console-panel");
+
+  if (!triggers.length || !panels.length) return;
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const target = trigger.dataset.techPanel;
+
+      triggers.forEach((item) => item.classList.remove("active"));
+      panels.forEach((panel) => panel.classList.remove("active"));
+
+      trigger.classList.add("active");
+
+      const activePanel = document.querySelector(
+        `.tech-console-panel[data-tech-content="${target}"]`
+      );
+
+      if (activePanel) activePanel.classList.add("active");
+    });
+  });
+})();
+
+
+/* =====================================================
+   FINAL ABOUT PRESENTER — FIRST VIEW ANIMATION
+===================================================== */
+(function initFinalAboutPresenter() {
+  const about = document.querySelector(".final-about");
+  if (!about) return;
+
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reduced) {
+    about.classList.add("presenter-started");
+    return;
+  }
+
+  let played = false;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting || played) return;
+
+        played = true;
+        about.classList.add("presenter-started");
+        observer.unobserve(about);
+      });
+    },
+    {
+      threshold: 0.22,
+      rootMargin: "0px 0px -8% 0px",
+    }
+  );
+
+  observer.observe(about);
+})();
