@@ -1053,3 +1053,48 @@ if (isMobile) {
 
   observer.observe(about);
 })();
+
+/* =====================================================
+   HOME → ABOUT CINEMATIC ENTRY
+   Plays once as the About section starts entering view.
+===================================================== */
+(function initializeAboutEntryAnimation() {
+  const aboutSection = document.querySelector("#about.about-cinematic");
+
+  if (!aboutSection) return;
+
+  aboutSection.classList.add("about-entry-ready");
+
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  if (prefersReducedMotion) {
+    aboutSection.classList.add("about-entry-active");
+    return;
+  }
+
+  let hasPlayed = false;
+
+  const aboutEntryObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting || hasPlayed) return;
+
+        hasPlayed = true;
+
+        requestAnimationFrame(() => {
+          aboutSection.classList.add("about-entry-active");
+        });
+
+        observer.unobserve(aboutSection);
+      });
+    },
+    {
+      threshold: 0.08,
+      rootMargin: "0px 0px -10% 0px",
+    }
+  );
+
+  aboutEntryObserver.observe(aboutSection);
+})();

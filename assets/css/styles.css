@@ -8534,3 +8534,110 @@ body.is-loading {
   .about-cinematic-bg { object-position: 50% center !important; }
   .about-cinematic-row { grid-template-columns: 38px 1fr; gap: 10px; padding: 12px 0; }
 }
+
+/* =====================================================
+   HOME → ABOUT CINEMATIC ENTRY
+   Animation only — no About layout/content changes.
+===================================================== */
+.about-cinematic.about-entry-ready {
+  --about-entry-ease: cubic-bezier(.2,.78,.22,1);
+}
+
+/* Background arrives with a very soft cinematic focus/zoom. */
+.about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-bg {
+  transform: scale(1.075) translateY(18px);
+  filter: saturate(.92) contrast(.98) brightness(.9) blur(2px);
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-bg {
+  transition:
+    transform 1.55s var(--about-entry-ease),
+    filter 1.35s ease;
+  will-change: transform, filter;
+}
+
+/* Heading rises into place. */
+.about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-heading {
+  opacity: 0;
+  transform: translateY(42px) scale(.985);
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-heading {
+  transition:
+    opacity .82s ease,
+    transform 1.05s var(--about-entry-ease);
+  will-change: opacity, transform;
+}
+
+/* Right-side introduction follows after the heading. */
+.about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-lead,
+.about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-footer {
+  opacity: 0;
+  transform: translateX(46px);
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-lead {
+  transition:
+    opacity .78s ease .18s,
+    transform .95s var(--about-entry-ease) .18s;
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-footer {
+  transition:
+    opacity .72s ease .62s,
+    transform .88s var(--about-entry-ease) .62s;
+}
+
+/* 01 / 02 / 03 reveal one-by-one. */
+.about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-row {
+  opacity: 0;
+  transform: translateX(34px) translateY(10px);
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-row {
+  transition:
+    opacity .7s ease,
+    transform .9s var(--about-entry-ease),
+    border-color .3s ease;
+  will-change: opacity, transform;
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-row:nth-child(1) {
+  transition-delay: .30s;
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-row:nth-child(2) {
+  transition-delay: .43s;
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-row:nth-child(3) {
+  transition-delay: .56s;
+}
+
+/* Texture softly fades in so the transition does not feel abrupt. */
+.about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-texture {
+  opacity: 0;
+}
+
+.about-cinematic.about-entry-ready .about-cinematic-texture {
+  transition: opacity 1.2s ease .12s;
+}
+
+.about-cinematic.about-entry-ready.about-entry-active .about-cinematic-texture {
+  opacity: .07;
+}
+
+/* Keep the user's OS reduced-motion preference respected. */
+@media (prefers-reduced-motion: reduce) {
+  .about-cinematic.about-entry-ready .about-cinematic-bg,
+  .about-cinematic.about-entry-ready .about-cinematic-heading,
+  .about-cinematic.about-entry-ready .about-cinematic-lead,
+  .about-cinematic.about-entry-ready .about-cinematic-row,
+  .about-cinematic.about-entry-ready .about-cinematic-footer,
+  .about-cinematic.about-entry-ready .about-cinematic-texture {
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+}
