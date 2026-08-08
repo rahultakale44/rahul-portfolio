@@ -1,743 +1,552 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="assets/img/favicon.jpg" />
-  <title>Rahul Takale | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="assets/img/favicon.jpg" rel="icon" type="image/png"/>
+<title>Rahul Takale | Portfolio</title>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 </head>
 <body class="is-loading">
-  <!-- THEME PRELOADER -->
-  <div class="site-preloader" id="site-preloader" role="status" aria-live="polite" aria-label="Loading portfolio">
-    <div class="loader-grid" aria-hidden="true"></div>
-    <div class="loader-orbit loader-orbit-one" aria-hidden="true"></div>
-    <div class="loader-orbit loader-orbit-two" aria-hidden="true"></div>
-
-    <div class="loader-panel">
-      <div class="loader-mark" aria-hidden="true">
-        <i class="bx bx-code-alt"></i>
-      </div>
-      <p class="loader-kicker">INITIALIZING PORTFOLIO</p>
-      <h1>Rahul <span>Takale</span></h1>
-      <div class="loader-track" aria-hidden="true">
-        <span id="loader-progress-bar"></span>
-      </div>
-      <div class="loader-meta">
-        <span>AI SYSTEMS · FULL STACK · INNOVATION</span>
-        <strong><span id="loader-count">1</span>%</strong>
-      </div>
-    </div>
-  </div>
-
-  <div class="cursor-orb" aria-hidden="true"></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <canvas id="cosmic-canvas" aria-hidden="true"></canvas>
-  <header class="header">
-    <a href="#home" class="logo">Portfolio</a>
-    <i class="bx bx-menu" id="menu-icon"></i>
-
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#research">Research</a>
-      <a href="#experience">Experience</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <a href="ResumeRahulTakale.pdf" class="resume-btn" download>Resume <i class="bx bx-download"></i></a>
-  </header>
-
-  <main>
+<!-- THEME PRELOADER -->
+<div aria-label="Loading portfolio" aria-live="polite" class="site-preloader" id="site-preloader" role="status">
+<div aria-hidden="true" class="loader-grid"></div>
+<div aria-hidden="true" class="loader-orbit loader-orbit-one"></div>
+<div aria-hidden="true" class="loader-orbit loader-orbit-two"></div>
+<div class="loader-panel">
+<div aria-hidden="true" class="loader-mark">
+<i class="bx bx-code-alt"></i>
+</div>
+<p class="loader-kicker">INITIALIZING PORTFOLIO</p>
+<h1>Rahul <span>Takale</span></h1>
+<div aria-hidden="true" class="loader-track">
+<span id="loader-progress-bar"></span>
+</div>
+<div class="loader-meta">
+<span>AI SYSTEMS · FULL STACK · INNOVATION</span>
+<strong><span id="loader-count">1</span>%</strong>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="cursor-orb"></div>
+<div aria-hidden="true" class="cursor-dot"></div>
+<div aria-hidden="true" class="scroll-progress"></div>
+<canvas aria-hidden="true" id="cosmic-canvas"></canvas>
+<header class="header">
+<a class="logo" href="#home">Portfolio</a>
+<i class="bx bx-menu" id="menu-icon"></i>
+<nav class="navbar">
+<a class="active" href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#research">Research</a>
+<a href="#experience">Experience</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</nav>
+<a class="resume-btn" download="" href="ResumeRahulTakale.pdf">Resume <i class="bx bx-download"></i></a>
+</header>
+<main>
 <!-- HOME -->
 <section class="home section-motion" id="home">
-  <div class="hero-slider">
-    <video class="slide active" autoplay muted loop playsinline>
-    <source src="assets/video/hero-video.mp4" type="video/mp4" />
-    </video>
-
-    <img src="assets/img/slide1.jpeg" class="slide" alt="Hackathon Achievement" />
-    <img src="assets/img/slide2.jpeg" class="slide" alt="Certificate Moment" />
-    <img src="assets/img/slide6.jpeg" class="slide" alt="Team Achievement" />
-    <img src="assets/img/slide4.jpeg" class="slide" alt="Project Presentation" />
-    <img src="assets/img/slide5.jpeg" class="slide" alt="Indradhanu Finale" />
-  </div>
-
-  <div class="hero-overlay"></div>
-
-  <div class="home-cosmic-bg hero-grid-bg" aria-hidden="true">
-  <span class="grid-node node-1"></span>
-  <span class="grid-node node-2"></span>
-  <span class="grid-node node-3"></span>
-  <span class="grid-node node-4"></span>
-  <span class="grid-node node-5"></span>
-
-  <span class="grid-card grid-card-1">
-    <i class="bx bx-code-alt"></i>
+<div class="hero-slider">
+<video autoplay="" class="slide active" loop="" muted="" playsinline="">
+<source src="assets/video/hero-video.mp4" type="video/mp4"/>
+</video>
+<img alt="Hackathon Achievement" class="slide" src="assets/img/slide1.jpeg"/>
+<img alt="Certificate Moment" class="slide" src="assets/img/slide2.jpeg"/>
+<img alt="Team Achievement" class="slide" src="assets/img/slide6.jpeg"/>
+<img alt="Project Presentation" class="slide" src="assets/img/slide4.jpeg"/>
+<img alt="Indradhanu Finale" class="slide" src="assets/img/slide5.jpeg"/>
+</div>
+<div class="hero-overlay"></div>
+<div aria-hidden="true" class="home-cosmic-bg hero-grid-bg">
+<span class="grid-node node-1"></span>
+<span class="grid-node node-2"></span>
+<span class="grid-node node-3"></span>
+<span class="grid-node node-4"></span>
+<span class="grid-node node-5"></span>
+<span class="grid-card grid-card-1">
+<i class="bx bx-code-alt"></i>
     AI Systems
   </span>
-
-  <span class="grid-card grid-card-2">
-    <i class="bx bx-chip"></i>
+<span class="grid-card grid-card-2">
+<i class="bx bx-chip"></i>
     Full Stack
   </span>
-
-  <span class="grid-card grid-card-3">
-    <i class="bx bx-cloud"></i>
+<span class="grid-card grid-card-3">
+<i class="bx bx-cloud"></i>
     Cloud Ready
   </span>
-
-  <span class="grid-line line-1"></span>
-  <span class="grid-line line-2"></span>
-  <span class="grid-line line-3"></span>
+<span class="grid-line line-1"></span>
+<span class="grid-line line-2"></span>
+<span class="grid-line line-3"></span>
 </div>
-
-  <div class="home-content">
-    <p class="tagline">Hey there! My Name is</p>
-
-<h1 id="finalHeroName" class="final-hero-name" aria-label="Rahul Takale">
-  <span id="finalFirstName" class="final-name-line final-first-name"></span>
-  <span id="finalLastName" class="final-name-line final-last-name"></span>
+<div class="home-content">
+<p class="tagline">Hey there! My Name is</p>
+<h1 aria-label="Rahul Takale" class="final-hero-name" id="finalHeroName">
+<span class="final-name-line final-first-name" id="finalFirstName"></span>
+<span class="final-name-line final-last-name" id="finalLastName"></span>
 </h1>
-
-    <h3 class="hero-role">
-      AI Engineer & Software Developer
+<h3 class="hero-role">
+      AI Engineer &amp; Software Developer
       <span class="typing-cursor"></span>
-    </h3>
-
-    <p class="home-text">
+</h3>
+<p class="home-text">
       Building real-world AI, web and data-driven solutions. Experienced in
       developing scalable applications and AI-based projects through internships,
       hackathons and collaborative engineering projects.
     </p>
-
-    <div class="home-buttons">
-      <a href="ResumeRahulTakale.pdf" class="btn primary magnetic-btn" download>
-        <i class="bx bx-download"></i>
+<div class="home-buttons">
+<a class="btn primary magnetic-btn" download="" href="ResumeRahulTakale.pdf">
+<i class="bx bx-download"></i>
         Download Resume
       </a>
-
-      <a href="#projects" class="btn secondary magnetic-btn">
-        <i class="bx bx-rocket"></i>
+<a class="btn secondary magnetic-btn" href="#projects">
+<i class="bx bx-rocket"></i>
         View Projects
       </a>
-    </div>
-  </div>
-
-  <div class="hero-badges floating-badges">
-  <span><i class="bx bx-trophy"></i> Code</span>
-  <span><i class="bx bx-code-alt"></i> Create</span>
-  <span><i class="bx bx-cloud"></i> Innovate</span>
-  </div>
-
-  <a href="#about" class="scroll-down" aria-label="Scroll to about section">
-    <i class="bx bx-mouse"></i>
-    <i class="bx bx-down-arrow-alt"></i>
-  </a>
+</div>
+</div>
+<div class="hero-badges floating-badges">
+<span><i class="bx bx-trophy"></i> Code</span>
+<span><i class="bx bx-code-alt"></i> Create</span>
+<span><i class="bx bx-cloud"></i> Innovate</span>
+</div>
+<a aria-label="Scroll to about section" class="scroll-down" href="#about">
+<i class="bx bx-mouse"></i>
+<i class="bx bx-down-arrow-alt"></i>
+</a>
 </section>
-
-    <!-- ABOUT -->
+<!-- ABOUT -->
 <section class="about-cinematic section-motion" id="about">
-  <img
-    src="assets/img/about.jpg"
-    alt=""
-    class="about-cinematic-bg"
-    aria-hidden="true"
-  />
-  <div class="about-cinematic-fade" aria-hidden="true"></div>
-  <div class="about-cinematic-texture" aria-hidden="true"></div>
-
-  <div class="section-heading about-cinematic-heading">
-    <p class="section-badge">About Me</p>
-    <h2>Engineering with <span>Purpose</span></h2>
-    <span>A concise view of how I build, experiment and approach technology.</span>
-  </div>
-
-  <div class="about-cinematic-layout">
-    <div class="about-cinematic-photo-space" aria-hidden="true"></div>
-
-    <div class="about-cinematic-copy">
-      <p class="about-cinematic-lead">
+<img alt="" aria-hidden="true" class="about-cinematic-bg" src="assets/img/about.jpg"/>
+<div aria-hidden="true" class="about-cinematic-fade"></div>
+<div aria-hidden="true" class="about-cinematic-texture"></div>
+<div class="section-heading about-cinematic-heading">
+<p class="section-badge">About Me</p>
+<h2>Engineering with <span>Purpose</span></h2>
+<span>A concise view of how I build, experiment and approach technology.</span>
+</div>
+<div class="about-cinematic-layout">
+<div aria-hidden="true" class="about-cinematic-photo-space"></div>
+<div class="about-cinematic-copy">
+<p class="about-cinematic-lead">
         My Name is Rahul Takale, Final Year B.Tech Computer Science engineering undergraduate specializing in Artificial Intelligence and Analytics. I work across software engineering and intelligent systems, building practical
         products, experimenting with emerging technologies and improving them through
         real implementation and measurable iteration.
       </p>
-
-      <div class="about-cinematic-list">
-        <div class="about-cinematic-row">
-          <span>01</span>
-          <div>
-            <small>FOCUS</small>
-            <strong>AI Systems &amp; Software Engineering</strong>
-            <p>Backend systems, retrieval, computer vision and full-stack development.</p>
-          </div>
-        </div>
-
-        <div class="about-cinematic-row">
-          <span>02</span>
-          <div>
-            <small>APPROACH</small>
-            <strong>Build → Test → Measure → Improve</strong>
-            <p>Implementation first, then debugging, evaluation and refinement.</p>
-          </div>
-        </div>
-
-        <div class="about-cinematic-row">
-          <span>03</span>
-          <div>
-            <small>EXPLORATION</small>
-            <strong>RAG · Graph Intelligence · Quantum Computing</strong>
-            <p>Research-driven work beyond conventional application development.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-cinematic-footer">
-        <span></span>
-        <p>Interested in systems that can be reasoned about, evaluated, scaled and improved.</p>
-      </div>
-    </div>
-  </div>
+<div class="about-cinematic-list">
+<div class="about-cinematic-row">
+<span>01</span>
+<div>
+<small>FOCUS</small>
+<strong>AI Systems &amp; Software Engineering</strong>
+<p>Backend systems, retrieval, computer vision and full-stack development.</p>
+</div>
+</div>
+<div class="about-cinematic-row">
+<span>02</span>
+<div>
+<small>APPROACH</small>
+<strong>Build → Test → Measure → Improve</strong>
+<p>Implementation first, then debugging, evaluation and refinement.</p>
+</div>
+</div>
+<div class="about-cinematic-row">
+<span>03</span>
+<div>
+<small>EXPLORATION</small>
+<strong>RAG · Graph Intelligence · Quantum Computing</strong>
+<p>Research-driven work beyond conventional application development.</p>
+</div>
+</div>
+</div>
+<div class="about-cinematic-footer">
+<span></span>
+<p>Interested in systems that can be reasoned about, evaluated, scaled and improved.</p>
+</div>
+</div>
+</div>
 </section>
-
 <!-- SKILLS -->
 <section class="tech-section tech-console section-motion" id="skills">
-  <div class="tech-console-grid" aria-hidden="true"></div>
-
-  <div class="tech-console-shell">
-    <div class="section-heading tech-console-heading">
-      <p class="section-badge">My Expertise</p>
-      <h2>Technology Stack</h2>
-      <span>
+<div aria-hidden="true" class="tech-console-grid"></div>
+<div class="tech-console-shell">
+<div class="section-heading tech-console-heading">
+<p class="section-badge">My Expertise</p>
+<h2>Technology Stack</h2>
+<span>
         Technologies grouped by how I actually use them while building systems,
         not as isolated tool badges.
       </span>
-    </div>
-
-    <div class="tech-console-layout">
-      <aside class="tech-console-rail" aria-label="Technology domains">
-        <button class="tech-rail-item active" data-tech-panel="backend">
-          <span>01</span>
-          <strong>Backend</strong>
-        </button>
-        <button class="tech-rail-item" data-tech-panel="ai">
-          <span>02</span>
-          <strong>AI / ML</strong>
-        </button>
-        <button class="tech-rail-item" data-tech-panel="frontend">
-          <span>03</span>
-          <strong>Frontend</strong>
-        </button>
-        <button class="tech-rail-item" data-tech-panel="data">
-          <span>04</span>
-          <strong>Data Layer</strong>
-        </button>
-        <button class="tech-rail-item" data-tech-panel="cloud">
-          <span>05</span>
-          <strong>Cloud / Dev</strong>
-        </button>
-      </aside>
-
-      <div class="tech-console-panels">
-        <article class="tech-console-panel active" data-tech-content="backend">
-          <div class="tech-panel-heading">
-            <span class="tech-panel-code">BACKEND.SYSTEMS</span>
-            <h3>Backend Engineering</h3>
-            <p>Designing application logic, APIs, authentication flows and service layers.</p>
-          </div>
-          <div class="tech-panel-matrix">
-            <div><small>LANGUAGES</small><strong>Java · Python · JavaScript</strong></div>
-            <div><small>FRAMEWORKS</small><strong>Spring Boot · FastAPI · Node.js · Express.js</strong></div>
-            <div><small>API WORK</small><strong>REST APIs · JWT · Authentication · Integration</strong></div>
-            <div><small>CORE</small><strong>OOP · Collections · Service Design · Error Handling</strong></div>
-          </div>
-        </article>
-
-        <article class="tech-console-panel" data-tech-content="ai">
-          <div class="tech-panel-heading">
-            <span class="tech-panel-code">INTELLIGENCE.LAYER</span>
-            <h3>AI / ML Systems</h3>
-            <p>Building applied AI workflows that combine models, retrieval and domain logic.</p>
-          </div>
-          <div class="tech-panel-matrix">
-            <div><small>GENAI</small><strong>LLMs · RAG · LangChain · Hugging Face</strong></div>
-            <div><small>VISION</small><strong>OpenCV · MediaPipe · YOLO</strong></div>
-            <div><small>ML</small><strong>scikit-learn · NLP · Embeddings</strong></div>
-            <div><small>RETRIEVAL</small><strong>Qdrant · GraphRAG · Vector Search</strong></div>
-          </div>
-        </article>
-
-        <article class="tech-console-panel" data-tech-content="frontend">
-          <div class="tech-panel-heading">
-            <span class="tech-panel-code">INTERFACE.LAYER</span>
-            <h3>Frontend Engineering</h3>
-            <p>Creating responsive interfaces that connect cleanly with backend systems.</p>
-          </div>
-          <div class="tech-panel-matrix">
-            <div><small>UI</small><strong>React.js · HTML5 · CSS3</strong></div>
-            <div><small>STYLING</small><strong>Tailwind CSS · Responsive UI</strong></div>
-            <div><small>CLIENT LOGIC</small><strong>JavaScript · Vite</strong></div>
-            <div><small>INTEGRATION</small><strong>REST APIs · Auth Flows · Forms</strong></div>
-          </div>
-        </article>
-
-        <article class="tech-console-panel" data-tech-content="data">
-          <div class="tech-panel-heading">
-            <span class="tech-panel-code">DATA.LAYER</span>
-            <h3>Databases & Storage</h3>
-            <p>Working with relational, document and vector data across application layers.</p>
-          </div>
-          <div class="tech-panel-matrix">
-            <div><small>RELATIONAL</small><strong>MySQL · PostgreSQL · SQLite</strong></div>
-            <div><small>DOCUMENT</small><strong>MongoDB · Firebase</strong></div>
-            <div><small>VECTOR</small><strong>Qdrant</strong></div>
-            <div><small>WORK</small><strong>Schema Design · CRUD · Querying · Integration</strong></div>
-          </div>
-        </article>
-
-        <article class="tech-console-panel" data-tech-content="cloud">
-          <div class="tech-panel-heading">
-            <span class="tech-panel-code">DELIVERY.LAYER</span>
-            <h3>Cloud & Developer Tools</h3>
-            <p>Using practical engineering tools for local development, testing and deployment workflows.</p>
-          </div>
-          <div class="tech-panel-matrix">
-            <div><small>CLOUD</small><strong>AWS · Google Cloud</strong></div>
-            <div><small>DEV</small><strong>Git · GitHub · VS Code · Linux</strong></div>
-            <div><small>TESTING</small><strong>Postman</strong></div>
-            <div><small>CONTAINERS</small><strong>Docker</strong></div>
-          </div>
-        </article>
-      </div>
-    </div>
-
-    <div class="tech-console-footer">
-      <span>ACTIVE STACK</span>
-      <strong>Java · Python · React · Spring Boot · FastAPI · RAG · MongoDB · MySQL</strong>
-    </div>
-  </div>
+</div>
+<div class="tech-console-layout">
+<aside aria-label="Technology domains" class="tech-console-rail">
+<button class="tech-rail-item active" data-tech-panel="backend">
+<span>01</span>
+<strong>Backend</strong>
+</button>
+<button class="tech-rail-item" data-tech-panel="ai">
+<span>02</span>
+<strong>AI / ML</strong>
+</button>
+<button class="tech-rail-item" data-tech-panel="frontend">
+<span>03</span>
+<strong>Frontend</strong>
+</button>
+<button class="tech-rail-item" data-tech-panel="data">
+<span>04</span>
+<strong>Data Layer</strong>
+</button>
+<button class="tech-rail-item" data-tech-panel="cloud">
+<span>05</span>
+<strong>Cloud / Dev</strong>
+</button>
+</aside>
+<div class="tech-console-panels">
+<article class="tech-console-panel active" data-tech-content="backend">
+<div class="tech-panel-heading">
+<span class="tech-panel-code">BACKEND.SYSTEMS</span>
+<h3>Backend Engineering</h3>
+<p>Designing application logic, APIs, authentication flows and service layers.</p>
+</div>
+<div class="tech-panel-matrix">
+<div><small>LANGUAGES</small><strong>Java · Python · JavaScript</strong></div>
+<div><small>FRAMEWORKS</small><strong>Spring Boot · FastAPI · Node.js · Express.js</strong></div>
+<div><small>API WORK</small><strong>REST APIs · JWT · Authentication · Integration</strong></div>
+<div><small>CORE</small><strong>OOP · Collections · Service Design · Error Handling</strong></div>
+</div>
+</article>
+<article class="tech-console-panel" data-tech-content="ai">
+<div class="tech-panel-heading">
+<span class="tech-panel-code">INTELLIGENCE.LAYER</span>
+<h3>AI / ML Systems</h3>
+<p>Building applied AI workflows that combine models, retrieval and domain logic.</p>
+</div>
+<div class="tech-panel-matrix">
+<div><small>GENAI</small><strong>LLMs · RAG · LangChain · Hugging Face</strong></div>
+<div><small>VISION</small><strong>OpenCV · MediaPipe · YOLO</strong></div>
+<div><small>ML</small><strong>scikit-learn · NLP · Embeddings</strong></div>
+<div><small>RETRIEVAL</small><strong>Qdrant · GraphRAG · Vector Search</strong></div>
+</div>
+</article>
+<article class="tech-console-panel" data-tech-content="frontend">
+<div class="tech-panel-heading">
+<span class="tech-panel-code">INTERFACE.LAYER</span>
+<h3>Frontend Engineering</h3>
+<p>Creating responsive interfaces that connect cleanly with backend systems.</p>
+</div>
+<div class="tech-panel-matrix">
+<div><small>UI</small><strong>React.js · HTML5 · CSS3</strong></div>
+<div><small>STYLING</small><strong>Tailwind CSS · Responsive UI</strong></div>
+<div><small>CLIENT LOGIC</small><strong>JavaScript · Vite</strong></div>
+<div><small>INTEGRATION</small><strong>REST APIs · Auth Flows · Forms</strong></div>
+</div>
+</article>
+<article class="tech-console-panel" data-tech-content="data">
+<div class="tech-panel-heading">
+<span class="tech-panel-code">DATA.LAYER</span>
+<h3>Databases &amp; Storage</h3>
+<p>Working with relational, document and vector data across application layers.</p>
+</div>
+<div class="tech-panel-matrix">
+<div><small>RELATIONAL</small><strong>MySQL · PostgreSQL · SQLite</strong></div>
+<div><small>DOCUMENT</small><strong>MongoDB · Firebase</strong></div>
+<div><small>VECTOR</small><strong>Qdrant</strong></div>
+<div><small>WORK</small><strong>Schema Design · CRUD · Querying · Integration</strong></div>
+</div>
+</article>
+<article class="tech-console-panel" data-tech-content="cloud">
+<div class="tech-panel-heading">
+<span class="tech-panel-code">DELIVERY.LAYER</span>
+<h3>Cloud &amp; Developer Tools</h3>
+<p>Using practical engineering tools for local development, testing and deployment workflows.</p>
+</div>
+<div class="tech-panel-matrix">
+<div><small>CLOUD</small><strong>AWS · Google Cloud</strong></div>
+<div><small>DEV</small><strong>Git · GitHub · VS Code · Linux</strong></div>
+<div><small>TESTING</small><strong>Postman</strong></div>
+<div><small>CONTAINERS</small><strong>Docker</strong></div>
+</div>
+</article>
+</div>
+</div>
+<div class="tech-console-footer">
+<span>ACTIVE STACK</span>
+<strong>Java · Python · React · Spring Boot · FastAPI · RAG · MongoDB · MySQL</strong>
+</div>
+</div>
 </section>
-
 <!-- ==================== PROJECTS SECTION START ==================== -->
 <section class="projects-section section-motion" id="projects">
-
-  <!-- ==================== PROJECTS BACKGROUND MOTION ==================== -->
-  <div class="motion-bg projects-bg" aria-hidden="true">
-    <span class="tool tool-vscode">⌨ VS Code</span>
-    <span class="tool tool-postman">⚡ Postman</span>
-    <span class="tool tool-github">⌘ GitHub</span>
-    <span class="tool tool-api">{ API }</span>
-    <span class="tool tool-terminal">$ npm run dev</span>
-    <span class="tool tool-database">🗄 Database</span>
-    <span class="tool tool-coderabbit">🐇 CodeRabbit</span>
-    <span class="tool tool-docker">🐳 Docker</span>
-
-    <span class="code-rain">
+<!-- ==================== PROJECTS BACKGROUND MOTION ==================== -->
+<div aria-hidden="true" class="motion-bg projects-bg">
+<span class="tool tool-vscode">⌨ VS Code</span>
+<span class="tool tool-postman">⚡ Postman</span>
+<span class="tool tool-github">⌘ GitHub</span>
+<span class="tool tool-api">{ API }</span>
+<span class="tool tool-terminal">$ npm run dev</span>
+<span class="tool tool-database">🗄 Database</span>
+<span class="tool tool-coderabbit">🐇 CodeRabbit</span>
+<span class="tool tool-docker">🐳 Docker</span>
+<span class="code-rain">
       const build = () =&gt; impact;
     </span>
-
-    <span class="code-rain">
+<span class="code-rain">
       POST /api/projects
     </span>
-  </div>
-
-
-  <!-- ==================== PROJECTS SECTION HEADING ==================== -->
-  <div class="section-heading projects-heading">
-
-    <p class="section-badge">
+</div>
+<!-- ==================== PROJECTS SECTION HEADING ==================== -->
+<div class="section-heading projects-heading">
+<p class="section-badge">
       Portfolio Highlights
     </p>
-
-    <h2>
+<h2>
       Projects That Solve Real Problems
     </h2>
-
-    <span>
+<span>
       Real-world software, AI and computer vision solutions built through
       internships, hackathons and independent development.
     </span>
-
-  </div>
-
-
-  <!-- ==================== PROJECTS GRID START ==================== -->
-  <div class="projects-grid">
-
-
-    <!-- ==================== AEROPONICS PROJECT ==================== -->
-    <article class="project-card">
-
-      <!-- Project Image -->
-      <div class="project-img">
-        <img
-          src="assets/img/project-aeroponics.jpg"
-          alt="AI and IoT Aeroponics System"
-        />
-      </div>
-
-      <!-- Project Content -->
-      <div class="project-content">
-
-        <span class="project-type">
+</div>
+<!-- ==================== PROJECTS GRID START ==================== -->
+<div class="projects-grid">
+<!-- ==================== AEROPONICS PROJECT ==================== -->
+<article aria-label="Open detailed case study: AI &amp; IoT Aeroponics System" class="project-card" data-detail-id="project-ai-and-iot-aeroponics-system" role="link" tabindex="0">
+<!-- Project Image -->
+<div class="project-img">
+<img alt="AI and IoT Aeroponics System" src="assets/img/project-aeroponics.jpg"/>
+</div>
+<!-- Project Content -->
+<div class="project-content">
+<span class="project-type">
           AI, IoT and Smart Agriculture
         </span>
-
-        <div class="project-title-row">
-
-          <h3>
+<div class="project-title-row">
+<h3>
             AI &amp; IoT Aeroponics System
           </h3>
-
-          <a
-            href="https://github.com/rahultakale44"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-github"
-          >
-            <i class="bx bxl-github"></i>
-            <span>Code</span>
-          </a>
-
-        </div>
-
-        <p>
+<a class="project-github" href="https://github.com/rahultakale44" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
           Developed an AI and IoT-powered aeroponics system for sustainable
           urban farming with real-time sensor monitoring and an LLM-powered
           plant assistant using Ollama for intelligent crop and nutrient
           recommendations.
         </p>
-
-        <div class="project-tech">
-          <span>Node.js</span>
-          <span>React.js</span>
-          <span>IoT</span>
-          <span>LLM Integration</span>
-          <span>ESP32</span>
-        </div>
-
-      </div>
-    </article>
-
-
-    <!-- ==================== CCTV SURVEILLANCE PROJECT ==================== -->
-    <article class="project-card">
-
-      <!-- Project Image -->
-      <div class="project-img">
-        <img
-          src="assets/img/kumbhpic.png"
-          alt="AI Powered CCTV Surveillance System"
-        />
-      </div>
-
-      <!-- Project Content -->
-      <div class="project-content">
-
-        <span class="project-type">
+<div class="project-tech">
+<span>Node.js</span>
+<span>React.js</span>
+<span>IoT</span>
+<span>LLM Integration</span>
+<span>ESP32</span>
+</div>
+</div>
+</article>
+<!-- ==================== CCTV SURVEILLANCE PROJECT ==================== -->
+<article aria-label="Open detailed case study: AI Powered CCTV Surveillance System for Kumbh Mela" class="project-card" data-detail-id="project-ai-powered-cctv-surveillance-system-for-kumbh-mela" role="link" tabindex="0">
+<!-- Project Image -->
+<div class="project-img">
+<img alt="AI Powered CCTV Surveillance System" src="assets/img/kumbhpic.png"/>
+</div>
+<!-- Project Content -->
+<div class="project-content">
+<span class="project-type">
           AI &amp; Computer Vision
         </span>
-
-        <div class="project-title-row">
-
-          <h3>
+<div class="project-title-row">
+<h3>
             AI Powered CCTV Surveillance System for Kumbh Mela
           </h3>
-
-          <a
-            href="https://github.com/rahultakale44"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-github"
-          >
-            <i class="bx bxl-github"></i>
-            <span>Code</span>
-          </a>
-
-        </div>
-
-        <p>
+<a class="project-github" href="https://github.com/rahultakale44" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
           Designed and studied an AI-powered CCTV surveillance solution for
           crowd management and public safety during large-scale religious
           gatherings. Explored Python, OpenCV, object detection, people counting
           and crowd-density estimation for CCTV video streams.
         </p>
-
-        <div class="project-tech">
-          <span>OpenCV</span>
-          <span>YOLO</span>
-          <span>Flask</span>
-          <span>Python</span>
-          <span>HTML CSS JS</span>
-        </div>
-
-      </div>
-    </article>
-
-
-    <!-- ==================== DOCMATE PROJECT ==================== -->
-    <article class="project-card">
-
-      <!-- Project Image -->
-      <div class="project-img">
-        <img
-          src="assets/img/docmate.png"
-          alt="DocMate Healthcare Appointment Management Platform"
-        />
-      </div>
-
-      <!-- Project Content -->
-      <div class="project-content">
-
-        <span class="project-type">
+<div class="project-tech">
+<span>OpenCV</span>
+<span>YOLO</span>
+<span>Flask</span>
+<span>Python</span>
+<span>HTML CSS JS</span>
+</div>
+</div>
+</article>
+<!-- ==================== DOCMATE PROJECT ==================== -->
+<article aria-label="Open detailed case study: DocMate – Healthcare Appointment Management Platform" class="project-card" data-detail-id="project-docmate-healthcare-appointment-management-platform" role="link" tabindex="0">
+<!-- Project Image -->
+<div class="project-img">
+<img alt="DocMate Healthcare Appointment Management Platform" src="assets/img/docmate.png"/>
+</div>
+<!-- Project Content -->
+<div class="project-content">
+<span class="project-type">
           MERN Stack Development
         </span>
-
-        <div class="project-title-row">
-
-          <h3>
+<div class="project-title-row">
+<h3>
             DocMate – Healthcare Appointment Management Platform
           </h3>
-
-          <a
-            href="https://github.com/rahultakale44/docmate-healthcare-platform"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-github"
-          >
-            <i class="bx bxl-github"></i>
-            <span>Code</span>
-          </a>
-
-        </div>
-
-        <p>
+<a class="project-github" href="https://github.com/rahultakale44/docmate-healthcare-platform" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
           DocMate is a full-stack healthcare appointment platform that allows
           patients to discover doctors, book or cancel appointments and manage
           their consultation history. It provides secure role-based dashboards
           for patients, doctors and administrators with JWT authentication and
           appointment management.
         </p>
-
-        <div class="project-tech">
-          <span>React.js</span>
-          <span>Node.js</span>
-          <span>Express.js</span>
-          <span>MongoDB</span>
-          <span>JWT</span>
-        </div>
-
-      </div>
-    </article>
-
-
-    <!-- ==================== SHOPSPHERE PROJECT ==================== -->
-    <article class="project-card">
-
-      <!-- Project Image -->
-      <div class="project-img">
-        <img
-          src="assets/img/shopsphere.png"
-          alt="ShopSphere Java Full Stack E-Commerce Platform"
-        />
-      </div>
-
-      <!-- Project Content -->
-      <div class="project-content">
-
-        <span class="project-type">
+<div class="project-tech">
+<span>React.js</span>
+<span>Node.js</span>
+<span>Express.js</span>
+<span>MongoDB</span>
+<span>JWT</span>
+</div>
+</div>
+</article>
+<!-- ==================== SHOPSPHERE PROJECT ==================== -->
+<article aria-label="Open detailed case study: ShopSphere – Java Full Stack E-Commerce Platform" class="project-card" data-detail-id="project-shopsphere-java-full-stack-e-commerce-platform" role="link" tabindex="0">
+<!-- Project Image -->
+<div class="project-img">
+<img alt="ShopSphere Java Full Stack E-Commerce Platform" src="assets/img/shopsphere.png"/>
+</div>
+<!-- Project Content -->
+<div class="project-content">
+<span class="project-type">
           Java Full Stack Development
         </span>
-
-        <div class="project-title-row">
-
-          <h3>
+<div class="project-title-row">
+<h3>
             ShopSphere – Java Full Stack
-            <br />
+            <br/>
             E-Commerce Platform
           </h3>
-
-          <a
-            href="https://github.com/rahultakale44"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-github"
-          >
-            <i class="bx bxl-github"></i>
-            <span>Code</span>
-          </a>
-
-        </div>
-
-        <p>
+<a class="project-github" href="https://github.com/rahultakale44" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
           ShopSphere is a complete Java full-stack e-commerce platform featuring
           secure user authentication, product browsing, search, cart and
           wishlist management, checkout, online payment and order tracking.
           It also includes an admin dashboard for managing products, inventory
           and customer orders.
         </p>
-
-        <div class="project-tech">
-          <span>React.js</span>
-          <span>Spring Boot</span>
-          <span>Spring Security</span>
-          <span>MySQL</span>
-          <span>JWT</span>
-        </div>
-
-      </div>
-    </article>
-
-
-    <!-- ==================== CAMPUSCARE PROJECT ==================== -->
-    <article class="project-card">
-
-      <!-- Project Image -->
-      <div class="project-img">
-        <img
-          src="assets/img/ach-campuscare.jpeg"
-          alt="CampusCare Smart Campus Complaint Management System"
-        />
-      </div>
-
-      <!-- Project Content -->
-      <div class="project-content">
-
-        <span class="project-type">
+<div class="project-tech">
+<span>React.js</span>
+<span>Spring Boot</span>
+<span>Spring Security</span>
+<span>MySQL</span>
+<span>JWT</span>
+</div>
+</div>
+</article>
+<!-- ==================== CAMPUSCARE PROJECT ==================== -->
+<article aria-label="Open detailed case study: CampusCare – Smart Campus Complaint Management System" class="project-card" data-detail-id="project-campuscare-smart-campus-complaint-management-system" role="link" tabindex="0">
+<!-- Project Image -->
+<div class="project-img">
+<img alt="CampusCare Smart Campus Complaint Management System" src="assets/img/ach-campuscare.jpeg"/>
+</div>
+<!-- Project Content -->
+<div class="project-content">
+<span class="project-type">
           Java Full Stack Development
         </span>
-
-        <div class="project-title-row">
-
-          <h3>
+<div class="project-title-row">
+<h3>
             CampusCare – Smart Campus Complaint Management System
           </h3>
-
-          <a
-            href="https://github.com/rahultakale44/campuscare-backend"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-github"
-          >
-            <i class="bx bxl-github"></i>
-            <span>Code</span>
-          </a>
-
-        </div>
-
-        <p>
+<a class="project-github" href="https://github.com/rahultakale44/campuscare-backend" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
           CampusCare is a full-stack campus complaint management platform built
           using React.js, Spring Boot and MySQL. It includes JWT authentication,
           role-based access control, complaint tracking, analytics and CSV
           report export.
         </p>
-
-        <div class="project-tech">
-          <span>React.js</span>
-          <span>Spring Boot</span>
-          <span>JWT</span>
-          <span>MySQL</span>
-          <span>REST APIs</span>
-        </div>
-
-      </div>
-    </article>
-
-
-    <!-- ==================== FITNESS PROJECT ==================== -->
-    <article class="project-card">
-
-      <!-- Project Image -->
-      <div class="project-img">
-        <img
-          src="assets/img/project-fitness.jpg"
-          alt="Intelligent Fitness Posture Detection System"
-        />
-      </div>
-
-      <!-- Project Content -->
-      <div class="project-content">
-
-        <span class="project-type">
+<div class="project-tech">
+<span>React.js</span>
+<span>Spring Boot</span>
+<span>JWT</span>
+<span>MySQL</span>
+<span>REST APIs</span>
+</div>
+</div>
+</article>
+<!-- ==================== FITNESS PROJECT ==================== -->
+<article aria-label="Open detailed case study: Intelligent Fitness Posture Detection System" class="project-card" data-detail-id="project-intelligent-fitness-posture-detection-system" role="link" tabindex="0">
+<!-- Project Image -->
+<div class="project-img">
+<img alt="Intelligent Fitness Posture Detection System" src="assets/img/project-fitness.jpg"/>
+</div>
+<!-- Project Content -->
+<div class="project-content">
+<span class="project-type">
           AI Fitness Application
         </span>
-
-        <div class="project-title-row">
-
-          <h3>
+<div class="project-title-row">
+<h3>
             Intelligent Fitness Posture Detection System
           </h3>
-
-          <a
-            href="https://github.com/rahultakale44/ai-fitness-coach"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-github"
-          >
-            <i class="bx bxl-github"></i>
-            <span>Code</span>
-          </a>
-
-        </div>
-
-        <p>
+<a class="project-github" href="https://github.com/rahultakale44/ai-fitness-coach" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
           Developed a computer vision-based fitness posture detection system
           using Python, OpenCV and MediaPipe Pose to analyze body movements,
           calculate joint angles and provide corrective posture feedback.
         </p>
-
-        <div class="project-tech">
-          <span>Python</span>
-          <span>OpenCV</span>
-          <span>Pose Estimation</span>
-          <span>MediaPipe</span>
-          <span>SQLite</span>
-        </div>
-
-      </div>
-    </article>
-
-
+<div class="project-tech">
+<span>Python</span>
+<span>OpenCV</span>
+<span>Pose Estimation</span>
+<span>MediaPipe</span>
+<span>SQLite</span>
+</div>
+</div>
+</article>
 <!-- ==================== MEDSCOPE PROJECT ==================== -->
-<article class="project-card">
-
-  <div class="project-img">
-    <img
-      src="assets/img/medscope.jpg"
-      alt="MedScope Medical Literature Retrieval System"
-    />
-  </div>
-
-  <div class="project-content">
-
-    <span class="project-type">
-      Medical RAG & Evidence Retrieval
+<article aria-label="Open detailed case study: MedScope – Evidence Grounded Medical Literature Retrieval System" class="project-card" data-detail-id="project-medscope-evidence-grounded-medical-literature-retrieval-system" role="link" tabindex="0">
+<div class="project-img">
+<img alt="MedScope Medical Literature Retrieval System" src="assets/img/medscope.jpg"/>
+</div>
+<div class="project-content">
+<span class="project-type">
+      Medical RAG &amp; Evidence Retrieval
     </span>
-
-    <div class="project-title-row">
-
-      <h3>
+<div class="project-title-row">
+<h3>
         MedScope – Evidence Grounded Medical Literature Retrieval System
       </h3>
-
-      <a
-        href="https://github.com/rahultakale44/medscope"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="project-github"
-      >
-        <i class="bx bxl-github"></i>
-        <span>Code</span>
-      </a>
-
-    </div>
-
-    <p>
+<a class="project-github" href="https://github.com/rahultakale44/medscope" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
       MedScope is a privacy-focused medical literature RAG application that
       allows users to upload trusted research PDFs, perform domain-specific
       semantic search and generate evidence-grounded answers using a locally
@@ -745,50 +554,33 @@
       medical document retrieval, while displaying source documents, page
       numbers and similarity scores with every generated response.
     </p>
-
-    <div class="project-tech">
-      <span>React.js</span>
-      <span>FastAPI</span>
-      <span>LangChain</span>
-      <span>BioMistral-7B</span>
-      <span>PubMedBERT</span>
-      <span>Qdrant</span>
-    </div>
-
-  </div>
+<div class="project-tech">
+<span>React.js</span>
+<span>FastAPI</span>
+<span>LangChain</span>
+<span>BioMistral-7B</span>
+<span>PubMedBERT</span>
+<span>Qdrant</span>
+</div>
+</div>
 </article>
-
 <!-- ==================== CARTWISE PROJECT ==================== -->
-<article class="project-card">
-
-  <div class="project-img">
-    <img
-      src="assets/img/cartwise.jpg"
-      alt="CartWise AI Powered Shopping Assistant"
-    />
-  </div>
-
-  <div class="project-content">
-
-    <span class="project-type">
-      Generative AI & Product Discovery
+<article aria-label="Open detailed case study: CartWise – AI Powered Shopping Assistant" class="project-card" data-detail-id="project-cartwise-ai-powered-shopping-assistant" role="link" tabindex="0">
+<div class="project-img">
+<img alt="CartWise AI Powered Shopping Assistant" src="assets/img/cartwise.jpg"/>
+</div>
+<div class="project-content">
+<span class="project-type">
+      Generative AI &amp; Product Discovery
     </span>
-
-    <div class="project-title-row">
-      <h3>CartWise – AI Powered Shopping Assistant</h3>
-
-      <a
-        href="https://github.com/rahultakale44/CartWise"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="project-github"
-      >
-        <i class="bx bxl-github"></i>
-        <span>Code</span>
-      </a>
-    </div>
-
-    <p>
+<div class="project-title-row">
+<h3>CartWise – AI Powered Shopping Assistant</h3>
+<a class="project-github" href="https://github.com/rahultakale44/CartWise" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
       CartWise is an AI-powered product discovery and shopping assistant that
       helps users search, compare and understand products through natural
       language conversations. Built with React and FastAPI, it uses LangChain,
@@ -796,56 +588,43 @@
       recommendations, product comparisons and reliable answers to shopping
       policy questions.
     </p>
-
-    <div class="project-tech">
-      <span>React.js</span>
-      <span>FastAPI</span>
-      <span>LangChain</span>
-      <span>Groq</span>
-      <span>Llama</span>
-      <span>RAG</span>
-    </div>
-
-  </div>
+<div class="project-tech">
+<span>React.js</span>
+<span>FastAPI</span>
+<span>LangChain</span>
+<span>Groq</span>
+<span>Llama</span>
+<span>RAG</span>
+</div>
+</div>
 </article>
-
-
-    <!-- ==================== FEATURED CONTACTLESS BIOMETRICS PROJECT ==================== -->
-    <article class="project-card project-card-featured biometric-project">
-      <div class="biometric-visual" aria-hidden="true">
-        <div class="biometric-grid"></div>
-        <div class="fingerprint-shell">
-          <i class="bx bx-fingerprint"></i>
-          <span class="scan-line"></span>
-          <span class="scan-corner corner-one"></span>
-          <span class="scan-corner corner-two"></span>
-          <span class="scan-corner corner-three"></span>
-          <span class="scan-corner corner-four"></span>
-        </div>
-        <div class="biometric-status">
-          <span><i class="bx bx-radio-circle-marked"></i> CONTACTLESS CAPTURE</span>
-          <strong>IDENTITY VERIFIED</strong>
-        </div>
-      </div>
-
-      <div class="project-content biometric-content">
-        <span class="project-type">Computer Vision & Biometric Security</span>
-
-        <div class="project-title-row">
-          <h3>Contactless Biometric Fingerprint Authentication System</h3>
-          <a
-            href="https://github.com/rahultakale44"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-github"
-            aria-label="View biometric project code on GitHub"
-          >
-            <i class="bx bxl-github"></i>
-            <span>Code</span>
-          </a>
-        </div>
-
-        <p>
+<!-- ==================== FEATURED CONTACTLESS BIOMETRICS PROJECT ==================== -->
+<article aria-label="Open detailed case study: Contactless Biometric Fingerprint Authentication System" class="project-card project-card-featured biometric-project" data-detail-id="project-contactless-biometric-fingerprint-authentication-system" role="link" tabindex="0">
+<div aria-hidden="true" class="biometric-visual">
+<div class="biometric-grid"></div>
+<div class="fingerprint-shell">
+<i class="bx bx-fingerprint"></i>
+<span class="scan-line"></span>
+<span class="scan-corner corner-one"></span>
+<span class="scan-corner corner-two"></span>
+<span class="scan-corner corner-three"></span>
+<span class="scan-corner corner-four"></span>
+</div>
+<div class="biometric-status">
+<span><i class="bx bx-radio-circle-marked"></i> CONTACTLESS CAPTURE</span>
+<strong>IDENTITY VERIFIED</strong>
+</div>
+</div>
+<div class="project-content biometric-content">
+<span class="project-type">Computer Vision &amp; Biometric Security</span>
+<div class="project-title-row">
+<h3>Contactless Biometric Fingerprint Authentication System</h3>
+<a aria-label="View biometric project code on GitHub" class="project-github" href="https://github.com/rahultakale44" rel="noopener noreferrer" target="_blank">
+<i class="bx bxl-github"></i>
+<span>Code</span>
+</a>
+</div>
+<p>
           Designed a contactless biometric authentication prototype that captures
           fingerprint imagery without requiring a physical scanner. The workflow
           applies computer-vision preprocessing to isolate the fingerprint region,
@@ -854,753 +633,602 @@
           to conventional fingerprint devices for attendance, access control and
           secure identity verification scenarios.
         </p>
-
-        <div class="biometric-highlights">
-          <span><i class="bx bx-camera"></i> Touch-free image capture</span>
-          <span><i class="bx bx-scan"></i> Fingerprint region extraction</span>
-          <span><i class="bx bx-shield-quarter"></i> Secure identity matching</span>
-        </div>
-
-        <div class="project-tech">
-          <span>Python</span>
-          <span>OpenCV</span>
-          <span>Image Processing</span>
-          <span>Biometrics</span>
-          <span>Feature Matching</span>
-          <span>Computer Vision</span>
-        </div>
-      </div>
-    </article>
-
-  </div>
-  <!-- ==================== PROJECTS GRID END ==================== -->
-
+<div class="biometric-highlights">
+<span><i class="bx bx-camera"></i> Touch-free image capture</span>
+<span><i class="bx bx-scan"></i> Fingerprint region extraction</span>
+<span><i class="bx bx-shield-quarter"></i> Secure identity matching</span>
+</div>
+<div class="project-tech">
+<span>Python</span>
+<span>OpenCV</span>
+<span>Image Processing</span>
+<span>Biometrics</span>
+<span>Feature Matching</span>
+<span>Computer Vision</span>
+</div>
+</div>
+</article>
+</div>
+<!-- ==================== PROJECTS GRID END ==================== -->
 </section>
 <!-- ==================== PROJECTS SECTION END ==================== -->
-
 <!-- ==================== RESEARCH & HYPOTHESES ==================== -->
 <section class="research-section section-motion" id="research">
-  <div class="motion-bg research-bg" aria-hidden="true">
-    <span class="research-orbit research-orbit-one"></span>
-    <span class="research-orbit research-orbit-two"></span>
-    <span class="research-particle research-particle-one"></span>
-    <span class="research-particle research-particle-two"></span>
-    <span class="research-formula formula-one">|ψ(t)〉 = e<sup>-iHt</sup>|ψ(0)〉</span>
-    <span class="research-formula formula-two">P(v) = |α<sub>v</sub>|²</span>
-  </div>
-
-  <div class="section-heading research-heading">
-    <p class="section-badge">Research &amp; Hypotheses</p>
-    <h2>Exploring Ideas Beyond Conventional Computing</h2>
-    <span>Independent research hypotheses and scientific explorations spanning quantum intelligence, cosmology and planetary science.</span>
-  </div>
-
-  <!-- 01 — QUANTUM GRAPH INTELLIGENCE -->
-  <article class="research-card">
-    <div class="research-poster" role="img" aria-label="Quantum Graph Intelligence research concept">
-      <img src="assets/img/quantum-research.png" alt="Quantum Graph Intelligence visualization" />
-      <div class="research-poster-fade" aria-hidden="true"></div>
-      <div class="research-poster-noise" aria-hidden="true"></div>
-    </div>
-
-    <div class="research-content">
-      <div class="research-meta-row">
-        <span class="research-index">01 / QUANTUM COMPUTING × GRAPH INTELLIGENCE</span>
-        <span class="research-status"><i class="bx bx-pulse"></i> HYPOTHESIS FORMULATED</span>
-      </div>
-
-      <h3>Quantum Graph Intelligence</h3>
-      <p class="research-subtitle">Quantum-Walk-Based Multi-Hop Knowledge Retrieval</p>
-
-      <p class="research-hypothesis">
+<div aria-hidden="true" class="motion-bg research-bg">
+<span class="research-orbit research-orbit-one"></span>
+<span class="research-orbit research-orbit-two"></span>
+<span class="research-particle research-particle-one"></span>
+<span class="research-particle research-particle-two"></span>
+<span class="research-formula formula-one">|ψ(t)〉 = e<sup>-iHt</sup>|ψ(0)〉</span>
+<span class="research-formula formula-two">P(v) = |α<sub>v</sub>|²</span>
+</div>
+<div class="section-heading research-heading">
+<p class="section-badge">Research &amp; Hypotheses</p>
+<h2>Exploring Ideas Beyond Conventional Computing</h2>
+<span>Independent research hypotheses and scientific explorations spanning quantum intelligence, cosmology and planetary science.</span>
+</div>
+<!-- 01 — QUANTUM GRAPH INTELLIGENCE -->
+<article aria-label="Open research detail: Quantum Graph Intelligence" class="research-card" data-detail-id="research-quantum-graph-intelligence" role="link" tabindex="0">
+<div aria-label="Quantum Graph Intelligence research concept" class="research-poster" role="img">
+<img alt="Quantum Graph Intelligence visualization" src="assets/img/quantum-research.png"/>
+<div aria-hidden="true" class="research-poster-fade"></div>
+<div aria-hidden="true" class="research-poster-noise"></div>
+</div>
+<div class="research-content">
+<div class="research-meta-row">
+<span class="research-index">01 / QUANTUM COMPUTING × GRAPH INTELLIGENCE</span>
+<span class="research-status"><i class="bx bx-pulse"></i> HYPOTHESIS FORMULATED</span>
+</div>
+<h3>Quantum Graph Intelligence</h3>
+<p class="research-subtitle">Quantum-Walk-Based Multi-Hop Knowledge Retrieval</p>
+<p class="research-hypothesis">
         Exploring whether query-conditioned quantum walks can use interference across multiple reasoning paths to concentrate more retrieval probability on answer supporting subgraphs than bounded classical graph traversal under an equivalent exploration budget.
       </p>
-
-      <div class="research-core-question">
-        <span>CORE QUESTION</span>
-        <strong>Can quantum interference become a mechanism for relational evidence aggregation?</strong>
-      </div>
-
-      <div class="research-hypotheses-grid">
-        <div class="research-hypothesis-chip">
-          <b>H₁</b>
-          <span>Structural Advantage</span>
-          <p>Quantum walks may preserve long range dependencies and higher-order graph structure more effectively under a fixed retrieval budget.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>H₂</b>
-          <span>Path Consensus</span>
-          <p>Constructive interference may amplify evidence supported by multiple semantically consistent reasoning paths.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>H₃</b>
-          <span>Complexity Crossover</span>
-          <p>A graph complexity threshold may exist beyond which quantum retrieval begins outperforming bounded classical traversal.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>H₄</b>
-          <span>Quantum-Stochastic Optimum</span>
-          <p>An intermediate stochastic quantum regime may achieve stronger retrieval than either purely classical or fully coherent walks.</p>
-        </div>
-      </div>
-
-      <div class="research-pipeline" aria-label="Proposed Q-GraphRAG pipeline">
-        <span>Query</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Entity Linking</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Knowledge Graph</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Quantum Walk</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Evidence Subgraph</span><i class="bx bx-right-arrow-alt"></i>
-        <span>LLM</span>
-      </div>
-
-      <div class="research-tags">
-        <span>Q-GraphRAG</span><span>Quantum Walks</span><span>Knowledge Graphs</span><span>GraphRAG</span><span>Multi-Hop Reasoning</span>
-      </div>
-    </div>
-  </article>
-
-  <!-- 02 — ANDROMEDA GALAXY -->
-  <article class="research-card research-card-andromeda">
-    <div class="research-poster" role="img" aria-label="Andromeda Galaxy research exploration">
-      <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2026/07/STScI-01KXZZ6H029XBJTKYKRPARFJE9.jpg?crop=faces%2Cfocalpoint&amp;fit=clip&amp;h=4935&amp;w=8502" alt="Andromeda Galaxy observed by NASA Hubble" />
-      <div class="research-poster-fade" aria-hidden="true"></div>
-      <div class="research-poster-noise" aria-hidden="true"></div>
-    </div>
-
-    <div class="research-content">
-      <div class="research-meta-row">
-        <span class="research-index">02 / COSMOLOGY × GALAXY EVOLUTION</span>
-        <span class="research-status"><i class="bx bx-pulse"></i> RESEARCH EXPLORATION</span>
-      </div>
-
-      <h3>Andromeda Galaxy</h3>
-      <p class="research-subtitle">Structure, Motion &amp; the Future of Our Galactic Neighbourhood</p>
-
-      <p class="research-hypothesis">
+<div class="research-core-question">
+<span>CORE QUESTION</span>
+<strong>Can quantum interference become a mechanism for relational evidence aggregation?</strong>
+</div>
+<div class="research-hypotheses-grid">
+<div class="research-hypothesis-chip">
+<b>H₁</b>
+<span>Structural Advantage</span>
+<p>Quantum walks may preserve long range dependencies and higher-order graph structure more effectively under a fixed retrieval budget.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>H₂</b>
+<span>Path Consensus</span>
+<p>Constructive interference may amplify evidence supported by multiple semantically consistent reasoning paths.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>H₃</b>
+<span>Complexity Crossover</span>
+<p>A graph complexity threshold may exist beyond which quantum retrieval begins outperforming bounded classical traversal.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>H₄</b>
+<span>Quantum-Stochastic Optimum</span>
+<p>An intermediate stochastic quantum regime may achieve stronger retrieval than either purely classical or fully coherent walks.</p>
+</div>
+</div>
+<div aria-label="Proposed Q-GraphRAG pipeline" class="research-pipeline">
+<span>Query</span><i class="bx bx-right-arrow-alt"></i>
+<span>Entity Linking</span><i class="bx bx-right-arrow-alt"></i>
+<span>Knowledge Graph</span><i class="bx bx-right-arrow-alt"></i>
+<span>Quantum Walk</span><i class="bx bx-right-arrow-alt"></i>
+<span>Evidence Subgraph</span><i class="bx bx-right-arrow-alt"></i>
+<span>LLM</span>
+</div>
+<div class="research-tags">
+<span>Q-GraphRAG</span><span>Quantum Walks</span><span>Knowledge Graphs</span><span>GraphRAG</span><span>Multi-Hop Reasoning</span>
+</div>
+</div>
+</article>
+<!-- 02 — ANDROMEDA GALAXY -->
+<article aria-label="Open research detail: Andromeda Galaxy" class="research-card research-card-andromeda" data-detail-id="research-andromeda-galaxy" role="link" tabindex="0">
+<div aria-label="Andromeda Galaxy research exploration" class="research-poster" role="img">
+<img alt="Andromeda Galaxy observed by NASA Hubble" src="https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2026/07/STScI-01KXZZ6H029XBJTKYKRPARFJE9.jpg?crop=faces%2Cfocalpoint&amp;fit=clip&amp;h=4935&amp;w=8502"/>
+<div aria-hidden="true" class="research-poster-fade"></div>
+<div aria-hidden="true" class="research-poster-noise"></div>
+</div>
+<div class="research-content">
+<div class="research-meta-row">
+<span class="research-index">02 / COSMOLOGY × GALAXY EVOLUTION</span>
+<span class="research-status"><i class="bx bx-pulse"></i> RESEARCH EXPLORATION</span>
+</div>
+<h3>Andromeda Galaxy</h3>
+<p class="research-subtitle">Structure, Motion &amp; the Future of Our Galactic Neighbourhood</p>
+<p class="research-hypothesis">
         Exploring Andromeda as a nearby laboratory for studying spiral-galaxy structure, stellar populations, dark matter and the uncertain long-term gravitational evolution of the Local Group.
       </p>
-
-      <div class="research-core-question">
-        <span>CORE QUESTION</span>
-        <strong>What can Andromeda reveal about galaxy evolution, hidden mass and the future interaction of the Milky Way–Andromeda system?</strong>
-      </div>
-
-      <div class="research-hypotheses-grid">
-        <div class="research-hypothesis-chip">
-          <b>A₁</b>
-          <span>Galactic Structure</span>
-          <p>Study the disk, bulge, halo, dust lanes and star-forming regions to understand how massive spiral galaxies are organized.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>A₂</b>
-          <span>Motion &amp; Dark Matter</span>
-          <p>Use rotation, stellar motions and satellite dynamics to investigate how visible matter traces a much larger gravitational mass.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>A₃</b>
-          <span>Local Group Future</span>
-          <p>Explore competing orbital scenarios; current observations still leave major uncertainty over whether a future Milky Way merger occurs.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>A₄</b>
-          <span>Stellar Archaeology</span>
-          <p>Compare stellar ages and populations across Andromeda to reconstruct episodes of star formation and past galactic interactions.</p>
-        </div>
-      </div>
-
-      <div class="research-pipeline" aria-label="Andromeda research workflow">
-        <span>Observation</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Spectral Analysis</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Galaxy Mapping</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Dynamics Modeling</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Future Simulation</span>
-      </div>
-
-      <div class="research-tags">
-        <span>Andromeda</span><span>Galaxy Evolution</span><span>Dark Matter</span><span>Astrophysics</span><span>Local Group</span>
-      </div>
-    </div>
-  </article>
-
-  <!-- 03 — ORIGIN OF EARTH'S WATER -->
-  <article class="research-card research-card-ocean-origin">
-    <div class="research-poster" role="img" aria-label="Origin of Earth's oceans research exploration">
-      <img src="assets/img/ocean-waves.jpg" alt="NASA artist concept related to ocean-bearing rocky planets and water delivery" />
-      <div class="research-poster-fade" aria-hidden="true"></div>
-      <div class="research-poster-noise" aria-hidden="true"></div>
-    </div>
-
-    <div class="research-content">
-      <div class="research-meta-row">
-        <span class="research-index">03 / PLANETARY SCIENCE × OCEAN ORIGINS</span>
-        <span class="research-status"><i class="bx bx-pulse"></i> RESEARCH EXPLORATION</span>
-      </div>
-
-      <h3>Who Brought Water to Earth?</h3>
-      <p class="research-subtitle">Tracing the Origin of Earth’s Oceans Through Planetary Evidence</p>
-
-      <p class="research-hypothesis">
+<div class="research-core-question">
+<span>CORE QUESTION</span>
+<strong>What can Andromeda reveal about galaxy evolution, hidden mass and the future interaction of the Milky Way–Andromeda system?</strong>
+</div>
+<div class="research-hypotheses-grid">
+<div class="research-hypothesis-chip">
+<b>A₁</b>
+<span>Galactic Structure</span>
+<p>Study the disk, bulge, halo, dust lanes and star-forming regions to understand how massive spiral galaxies are organized.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>A₂</b>
+<span>Motion &amp; Dark Matter</span>
+<p>Use rotation, stellar motions and satellite dynamics to investigate how visible matter traces a much larger gravitational mass.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>A₃</b>
+<span>Local Group Future</span>
+<p>Explore competing orbital scenarios; current observations still leave major uncertainty over whether a future Milky Way merger occurs.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>A₄</b>
+<span>Stellar Archaeology</span>
+<p>Compare stellar ages and populations across Andromeda to reconstruct episodes of star formation and past galactic interactions.</p>
+</div>
+</div>
+<div aria-label="Andromeda research workflow" class="research-pipeline">
+<span>Observation</span><i class="bx bx-right-arrow-alt"></i>
+<span>Spectral Analysis</span><i class="bx bx-right-arrow-alt"></i>
+<span>Galaxy Mapping</span><i class="bx bx-right-arrow-alt"></i>
+<span>Dynamics Modeling</span><i class="bx bx-right-arrow-alt"></i>
+<span>Future Simulation</span>
+</div>
+<div class="research-tags">
+<span>Andromeda</span><span>Galaxy Evolution</span><span>Dark Matter</span><span>Astrophysics</span><span>Local Group</span>
+</div>
+</div>
+</article>
+<!-- 03 — ORIGIN OF EARTH'S WATER -->
+<article aria-label="Open research detail: Who Brought Water to Earth?" class="research-card research-card-ocean-origin" data-detail-id="research-who-brought-water-to-earth" role="link" tabindex="0">
+<div aria-label="Origin of Earth's oceans research exploration" class="research-poster" role="img">
+<img alt="NASA artist concept related to ocean-bearing rocky planets and water delivery" src="assets/img/ocean-waves.jpg"/>
+<div aria-hidden="true" class="research-poster-fade"></div>
+<div aria-hidden="true" class="research-poster-noise"></div>
+</div>
+<div class="research-content">
+<div class="research-meta-row">
+<span class="research-index">03 / PLANETARY SCIENCE × OCEAN ORIGINS</span>
+<span class="research-status"><i class="bx bx-pulse"></i> RESEARCH EXPLORATION</span>
+</div>
+<h3>Who Brought Water to Earth?</h3>
+<p class="research-subtitle">Tracing the Origin of Earth’s Oceans Through Planetary Evidence</p>
+<p class="research-hypothesis">
         Exploring how Earth acquired its water by comparing evidence for water inherited during planet formation, water rich asteroids and meteorites, cometary delivery and later geological recycling inside the young Earth.
       </p>
-
-      <div class="research-core-question">
-        <span>CORE QUESTION</span>
-        <strong>How much of Earth’s ocean water was inherited locally, delivered by asteroids, contributed by comets, or released from Earth’s interior?</strong>
-      </div>
-
-      <div class="research-hypotheses-grid">
-        <div class="research-hypothesis-chip">
-          <b>O₁</b>
-          <span>Asteroid Delivery</span>
-          <p>Water-rich carbonaceous asteroid material is a leading candidate because its chemical fingerprints resemble important parts of Earth’s volatile inventory.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>O₂</b>
-          <span>Comet Contribution</span>
-          <p>Some comet families contain water with Earth-like isotope ratios, keeping comets viable as contributors even if they were not the only source.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>O₃</b>
-          <span>Primordial Water</span>
-          <p>Hydrogen and water-bearing material may also have been incorporated during Earth’s formation rather than arriving entirely after the planet formed.</p>
-        </div>
-        <div class="research-hypothesis-chip">
-          <b>O₄</b>
-          <span>Isotope Evidence</span>
-          <p>Hydrogen isotope ratios, meteorites, mineral chemistry and planetary models can be combined to constrain the relative contribution of each source.</p>
-        </div>
-      </div>
-
-      <div class="research-pipeline" aria-label="Ocean origin research workflow">
-        <span>Early Solar System</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Meteorite Evidence</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Isotope Analysis</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Planet Formation Models</span><i class="bx bx-right-arrow-alt"></i>
-        <span>Ocean Origin Study</span>
-      </div>
-
-      <div class="research-tags">
-        <span>Earth Oceans</span><span>Asteroids</span><span>Comets</span><span>Planetary Science</span><span>Origins of Water</span>
-      </div>
-    </div>
-  </article>
+<div class="research-core-question">
+<span>CORE QUESTION</span>
+<strong>How much of Earth’s ocean water was inherited locally, delivered by asteroids, contributed by comets, or released from Earth’s interior?</strong>
+</div>
+<div class="research-hypotheses-grid">
+<div class="research-hypothesis-chip">
+<b>O₁</b>
+<span>Asteroid Delivery</span>
+<p>Water-rich carbonaceous asteroid material is a leading candidate because its chemical fingerprints resemble important parts of Earth’s volatile inventory.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>O₂</b>
+<span>Comet Contribution</span>
+<p>Some comet families contain water with Earth-like isotope ratios, keeping comets viable as contributors even if they were not the only source.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>O₃</b>
+<span>Primordial Water</span>
+<p>Hydrogen and water-bearing material may also have been incorporated during Earth’s formation rather than arriving entirely after the planet formed.</p>
+</div>
+<div class="research-hypothesis-chip">
+<b>O₄</b>
+<span>Isotope Evidence</span>
+<p>Hydrogen isotope ratios, meteorites, mineral chemistry and planetary models can be combined to constrain the relative contribution of each source.</p>
+</div>
+</div>
+<div aria-label="Ocean origin research workflow" class="research-pipeline">
+<span>Early Solar System</span><i class="bx bx-right-arrow-alt"></i>
+<span>Meteorite Evidence</span><i class="bx bx-right-arrow-alt"></i>
+<span>Isotope Analysis</span><i class="bx bx-right-arrow-alt"></i>
+<span>Planet Formation Models</span><i class="bx bx-right-arrow-alt"></i>
+<span>Ocean Origin Study</span>
+</div>
+<div class="research-tags">
+<span>Earth Oceans</span><span>Asteroids</span><span>Comets</span><span>Planetary Science</span><span>Origins of Water</span>
+</div>
+</div>
+</article>
 </section>
 <!-- ==================== RESEARCH & HYPOTHESES END ==================== -->
-
 <!-- ==================== RESEARCH → EXPERIENCE TRANSITION ==================== -->
-<div class="vault-transition" id="vault-transition" aria-hidden="true">
-  <div class="vault-transition-grid"></div>
-
-  <div class="vault-beam vault-beam-left"></div>
-  <div class="vault-beam vault-beam-right"></div>
-
-  <div class="vault-side-label vault-side-left">
-    <span class="vault-index">03</span>
-    <span>RESEARCH ARCHIVE</span>
-  </div>
-
-  <div class="vault-lock-stage">
-    <div class="vault-orbit vault-orbit-outer"></div>
-    <div class="vault-orbit vault-orbit-inner"></div>
-
-    <span class="vault-scan-line"></span>
-
-    <div class="vault-lock-shell">
-      <div class="vault-lock-glow"></div>
-      <i class="bx bx-lock-open-alt vault-lock-open"></i>
-      <i class="bx bx-lock-alt vault-lock-closed"></i>
-    </div>
-
-    <span class="vault-node vault-node-one"></span>
-    <span class="vault-node vault-node-two"></span>
-    <span class="vault-node vault-node-three"></span>
-    <span class="vault-node vault-node-four"></span>
-  </div>
-
-  <div class="vault-side-label vault-side-right">
-    <span>PROFESSIONAL JOURNEY</span>
-    <span class="vault-index">04</span>
-  </div>
-
-  <div class="vault-transition-copy">
-    <span class="vault-status-dot"></span>
-    <span class="vault-status-text">SECURING RESEARCH ARCHIVE</span>
-    <span class="vault-status-separator">/</span>
-    <span class="vault-status-next">ENTERING PROFESSIONAL MODE</span>
-  </div>
+<div aria-hidden="true" class="vault-transition" id="vault-transition">
+<div class="vault-transition-grid"></div>
+<div class="vault-beam vault-beam-left"></div>
+<div class="vault-beam vault-beam-right"></div>
+<div class="vault-side-label vault-side-left">
+<span class="vault-index">03</span>
+<span>RESEARCH ARCHIVE</span>
+</div>
+<div class="vault-lock-stage">
+<div class="vault-orbit vault-orbit-outer"></div>
+<div class="vault-orbit vault-orbit-inner"></div>
+<span class="vault-scan-line"></span>
+<div class="vault-lock-shell">
+<div class="vault-lock-glow"></div>
+<i class="bx bx-lock-open-alt vault-lock-open"></i>
+<i class="bx bx-lock-alt vault-lock-closed"></i>
+</div>
+<span class="vault-node vault-node-one"></span>
+<span class="vault-node vault-node-two"></span>
+<span class="vault-node vault-node-three"></span>
+<span class="vault-node vault-node-four"></span>
+</div>
+<div class="vault-side-label vault-side-right">
+<span>PROFESSIONAL JOURNEY</span>
+<span class="vault-index">04</span>
+</div>
+<div class="vault-transition-copy">
+<span class="vault-status-dot"></span>
+<span class="vault-status-text">SECURING RESEARCH ARCHIVE</span>
+<span class="vault-status-separator">/</span>
+<span class="vault-status-next">ENTERING PROFESSIONAL MODE</span>
+</div>
 </div>
 <!-- ==================== RESEARCH → EXPERIENCE TRANSITION END ==================== -->
-
 <!-- ==================== EXPERIENCE ==================== -->
 <section class="experience-section section-motion" id="experience">
-
-  <!-- Background Animation -->
-  <div class="motion-bg experience-bg" aria-hidden="true">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <!-- Section Heading -->
-  <div class="section-heading experience-heading">
-    <p class="section-badge">Professional Journey</p>
-
-    <h2>Experience That Built My Foundation</h2>
-
-    <span class="experience-subtitle">
+<!-- Background Animation -->
+<div aria-hidden="true" class="motion-bg experience-bg">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<!-- Section Heading -->
+<div class="section-heading experience-heading">
+<p class="section-badge">Professional Journey</p>
+<h2>Experience That Built My Foundation</h2>
+<span class="experience-subtitle">
       Practical exposure through full-stack development, hardware prototyping,
       IoT systems and real-world project collaboration.
     </span>
-  </div>
-
-  <!-- Experience Cards -->
-  <div class="experience-grid">
-
-    <!-- ==================== INNOBYTES EXPERIENCE ==================== -->
-    <article class="experience-card">
-
-      <!-- Experience Images -->
-      <div class="experience-images">
-        <img
-          src="assets/img/BizGrowth.png"
-          alt="BizGrowth Business Networking Platform"
-        />
-
-        <img
-          src="assets/img/InnoHubs.png"
-          alt="InnoHubs Innovation Platform"
-        />
-      </div>
-
-      <!-- Experience Content -->
-      <div class="experience-content">
-
-        <div class="experience-top">
-
-          <span class="experience-icon">
-            <i class="bx bx-code-alt"></i>
-          </span>
-
-          <div>
-            <h3>Development Intern</h3>
-
-            <h4>
+</div>
+<!-- Experience Cards -->
+<div class="experience-grid">
+<!-- ==================== INNOBYTES EXPERIENCE ==================== -->
+<article aria-label="Open experience detail: Development Intern · INNOBYTES (Erfinden Technologies Pvt. Ltd.)" class="experience-card" data-detail-id="experience-development-intern-innobytes-erfinden-technologies-pvt-ltd" role="link" tabindex="0">
+<!-- Experience Images -->
+<div class="experience-images">
+<img alt="BizGrowth Business Networking Platform" src="assets/img/BizGrowth.png"/>
+<img alt="InnoHubs Innovation Platform" src="assets/img/InnoHubs.png"/>
+</div>
+<!-- Experience Content -->
+<div class="experience-content">
+<div class="experience-top">
+<span class="experience-icon">
+<i class="bx bx-code-alt"></i>
+</span>
+<div>
+<h3>Development Intern</h3>
+<h4>
               INNOBYTES
               <span>(Erfinden Technologies Pvt. Ltd.)</span>
-            </h4>
-
-            <p>6 Months · Pimpri Chinchwad, Maharashtra · 2025</p>
-          </div>
-
-        </div>
-
-        <!-- BizGrowth -->
-        <div class="experience-project">
-
-          <h5>BizGrowth – Business Networking Platform</h5>
-
-          <ul>
-            <li>
+</h4>
+<p>6 Months · Pimpri Chinchwad, Maharashtra · 2025</p>
+</div>
+</div>
+<!-- BizGrowth -->
+<div class="experience-project">
+<h5>BizGrowth – Business Networking Platform</h5>
+<ul>
+<li>
               Developed a full-stack MERN business networking platform that
               connects entrepreneurs, startups and enterprises.
             </li>
-
-            <li>
+<li>
               Implemented JWT authentication, protected routes, password
               hashing and token-based user sessions.
             </li>
-
-            <li>
+<li>
               Built business listing management, advanced search, category
               filters and user-specific dashboards.
             </li>
-          </ul>
-
-        </div>
-
-        <!-- InnoHubs -->
-       <div class="experience-project">
-  <h5>InnoHubs – Global Innovation & Entrepreneurship Platform</h5>
-
-  <ul>
-    <li>
+</ul>
+</div>
+<!-- InnoHubs -->
+<div class="experience-project">
+<h5>InnoHubs – Global Innovation &amp; Entrepreneurship Platform</h5>
+<ul>
+<li>
       Contributed to a MERN-based global innovation platform connecting
       entrepreneurs, students, researchers, professionals, academia and
       corporations.
     </li>
-
-    <li>
+<li>
       Developed responsive frontend components for innovation programs,
       startup collaboration, ecosystem partnerships and entrepreneurship
       opportunities.
     </li>
-
-    <li>
+<li>
       Supported platform modules focused on startup incubation, global
       partnerships, market access, corporate co-creation and innovation
       ecosystem development.
     </li>
-  </ul>
+</ul>
 </div>
-
-        <!-- Technology Tags -->
-        <div class="experience-tech">
-          <span>MongoDB</span>
-          <span>Express.js</span>
-          <span>React.js</span>
-          <span>Node.js</span>
-          <span>JWT</span>
-        </div>
-
-      </div>
-    </article>
-
-
-    <!-- ==================== RED CREST EXPERIENCE ==================== -->
-    <article class="experience-card">
-
-      <!-- Experience Images -->
-      <div class="experience-images">
-        <img
-          src="assets/img/redcrest-1.jpg"
-          alt="PrakritiAI Hardware Prototype"
-        />
-
-        <img
-          src="assets/img/redcrest-2.jpg"
-          alt="PrakritiAI Smart Farming Monitoring System"
-        />
-      </div>
-
-      <!-- Experience Content -->
-      <div class="experience-content">
-
-        <div class="experience-top">
-
-          <span class="experience-icon">
-            <i class="bx bx-chip"></i>
-          </span>
-
-          <div>
-            <h3>Hardware Intern</h3>
-
-            <h4>
+<!-- Technology Tags -->
+<div class="experience-tech">
+<span>MongoDB</span>
+<span>Express.js</span>
+<span>React.js</span>
+<span>Node.js</span>
+<span>JWT</span>
+</div>
+</div>
+</article>
+<!-- ==================== RED CREST EXPERIENCE ==================== -->
+<article aria-label="Open experience detail: Hardware Intern · Red Crest Charitable Trust under NGO Tech Work" class="experience-card" data-detail-id="experience-hardware-intern-red-crest-charitable-trust-under-ngo-tech-work" role="link" tabindex="0">
+<!-- Experience Images -->
+<div class="experience-images">
+<img alt="PrakritiAI Hardware Prototype" src="assets/img/redcrest-1.jpg"/>
+<img alt="PrakritiAI Smart Farming Monitoring System" src="assets/img/redcrest-2.jpg"/>
+</div>
+<!-- Experience Content -->
+<div class="experience-content">
+<div class="experience-top">
+<span class="experience-icon">
+<i class="bx bx-chip"></i>
+</span>
+<div>
+<h3>Hardware Intern</h3>
+<h4>
               Red Crest Charitable Trust
               <span>under NGO Tech Work</span>
-            </h4>
-
-            <p>15 June 2025 – 15 July 2025 · 4 Weeks</p>
-          </div>
-
-        </div>
-
-        <!-- PrakritiAI -->
-        <div class="experience-project">
-
-          <h5>PrakritiAI – Smart Farming Monitoring System</h5>
-
-          <ul>
-            <li>
+</h4>
+<p>15 June 2025 – 15 July 2025 · 4 Weeks</p>
+</div>
+</div>
+<!-- PrakritiAI -->
+<div class="experience-project">
+<h5>PrakritiAI – Smart Farming Monitoring System</h5>
+<ul>
+<li>
               Contributed to the hardware prototyping and sensor integration
               of an IoT-based smart farming monitoring system.
             </li>
-
-            <li>
+<li>
               Worked with NodeMCU ESP8266 and environmental sensors for
               temperature, humidity, soil moisture and air-quality monitoring.
             </li>
-
-            <li>
+<li>
               Assisted in testing sensor readings, embedded components and
               real-world hardware outputs.
             </li>
-          </ul>
-          
-        </div>
-
-        <!-- Technical Contributions -->
-        <div class="experience-project">
-
-          <h5>Monitoring and System Integration</h5>
-
-          <ul>
-            <li>
+</ul>
+</div>
+<!-- Technical Contributions -->
+<div class="experience-project">
+<h5>Monitoring and System Integration</h5>
+<ul>
+<li>
               Supported real-time sensor data monitoring through dashboards,
               visual summaries and threshold-based alerts.
             </li>
-
-            <li>
+<li>
               Explored MQTT and Wi-Fi communication for transmitting sensor
               readings to a central processing system.
             </li>
-
-            <li>
+<li>
               Contributed to documentation, calibration, testing workflows
               and evaluation of the working prototype.
             </li>
-          </ul>
-
-        </div>
-        <br>
-        <!-- Technology Tags -->
-        <div class="experience-tech">
-          <br>
-          <span>NodeMCU</span>
-          <span>ESP8266</span>
-          <span>IoT Sensors</span>
-          <span>Hardware Testing</span>
-        </div>
-
-      </div>
-    </article>
-
-  </div>
+</ul>
+</div>
+<br/>
+<!-- Technology Tags -->
+<div class="experience-tech">
+<br/>
+<span>NodeMCU</span>
+<span>ESP8266</span>
+<span>IoT Sensors</span>
+<span>Hardware Testing</span>
+</div>
+</div>
+</article>
+</div>
 </section>
-
-    <!-- ACHIEVEMENTS -->
-    <section class="achievements-section section-motion" id="achievements">
-      <div class="motion-bg achievements-bg" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><i class="bx bx-trophy"></i><i class="bx bx-medal"></i></div>
-      <div class="section-heading achievements-heading">
-        <p class="section-badge">Achievements</p>
-        <h2>HACKATHONS, PROGRAMS & MILESTONES</h2>
-        <span class="achievements-subtitle">A collection of my real-world innovation journeys, hackathon experiences, leadership roles and technical milestones.</span>
-      </div>
-
-      <div class="achievements-grid">
-        <article class="achievement-card featured-achievement">
-          <div class="achievement-gallery"><img src="assets/img/ach-indradhanu-1.jpeg" alt="Indradhanu Grand Finale" /><img src="assets/img/ach-indradhanu-2.jpeg" alt="Indradhanu Certificate" /><img src="assets/img/ach-indradhanu-3.jpeg" alt="Indradhanu Team" /></div>
-          <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-trophy"></i></span><div><h3>Indradhanu International Grand Challenge Finale</h3><p>PCCOE · AI for Climate Change</p></div></div><div class="achievement-badges"><span>Top 20 Finalist</span><span>1002+ Teams</span><span>3-Month Phase</span></div><p>Our team <b>CODEXCELLENCE</b> was shortlisted among the Top 20 teams and presented <b>Seed2Sustain</b>, an AI-driven climate-smart aeroponics solution for urban sustainability.</p><ul><li>Designed a soil-less aeroponics system for sustainable farming.</li><li>Integrated IoT-based real-time monitoring for plant conditions.</li><li>Applied AI-driven insights for plant health and system reliability.</li></ul></div>
-        </article>
-
-        <article class="achievement-card">
-          <div class="achievement-gallery"><img src="assets/img/ach-vit-1.jpg" alt="VIT PRISM Sociothon" /><img src="assets/img/ach-vit-2.jpg" alt="VIT Hackathon Team" /><img src="assets/img/ach-vit-3.jpg" alt="CarbonVision Project" /></div>
-          <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-leaf"></i></span><div><h3>PRISM Sociothon 2025</h3><p>BRACT’s VIT Bibwewadi, Pune</p></div></div><div class="achievement-badges"><span>Top 180</span><span>792 Participants</span><span>Team Leader</span></div><p>Led team <b>Sync4Tech</b> under the theme “Tech for a Sustainable Planet” and proposed <b>CarbonVision</b>, an AI-powered industrial emission monitoring system.</p><ul><li>Analyzed chimney/drone video feeds using computer vision.</li><li>Estimated smoke density, color and emission levels.</li><li>Planned real-time dashboards, alerts and trend analytics.</li><li>Explored weather API integration for pollution dispersion prediction.</li></ul></div>
-        </article>
-
+<!-- ACHIEVEMENTS -->
+<section class="achievements-section section-motion" id="achievements">
+<div aria-hidden="true" class="motion-bg achievements-bg"><span></span><span></span><span></span><span></span><span></span><i class="bx bx-trophy"></i><i class="bx bx-medal"></i></div>
+<div class="section-heading achievements-heading">
+<p class="section-badge">Achievements</p>
+<h2>HACKATHONS, PROGRAMS &amp; MILESTONES</h2>
+<span class="achievements-subtitle">A collection of my real-world innovation journeys, hackathon experiences, leadership roles and technical milestones.</span>
+</div>
+<div class="achievements-grid">
+<article aria-label="Open achievement detail: Indradhanu International Grand Challenge Finale" class="achievement-card featured-achievement" data-detail-id="achievement-indradhanu-international-grand-challenge-finale" role="link" tabindex="0">
+<div class="achievement-gallery"><img alt="Indradhanu Grand Finale" src="assets/img/ach-indradhanu-1.jpeg"/><img alt="Indradhanu Certificate" src="assets/img/ach-indradhanu-2.jpeg"/><img alt="Indradhanu Team" src="assets/img/ach-indradhanu-3.jpeg"/></div>
+<div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-trophy"></i></span><div><h3>Indradhanu International Grand Challenge Finale</h3><p>PCCOE · AI for Climate Change</p></div></div><div class="achievement-badges"><span>Top 20 Finalist</span><span>1002+ Teams</span><span>3-Month Phase</span></div><p>Our team <b>CODEXCELLENCE</b> was shortlisted among the Top 20 teams and presented <b>Seed2Sustain</b>, an AI-driven climate-smart aeroponics solution for urban sustainability.</p><ul><li>Designed a soil-less aeroponics system for sustainable farming.</li><li>Integrated IoT-based real-time monitoring for plant conditions.</li><li>Applied AI-driven insights for plant health and system reliability.</li></ul></div>
+</article>
+<article aria-label="Open achievement detail: PRISM Sociothon 2025" class="achievement-card" data-detail-id="achievement-prism-sociothon-2025" role="link" tabindex="0">
+<div class="achievement-gallery"><img alt="VIT PRISM Sociothon" src="assets/img/ach-vit-1.jpg"/><img alt="VIT Hackathon Team" src="assets/img/ach-vit-2.jpg"/><img alt="CarbonVision Project" src="assets/img/ach-vit-3.jpg"/></div>
+<div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-leaf"></i></span><div><h3>PRISM Sociothon 2025</h3><p>BRACT’s VIT Bibwewadi, Pune</p></div></div><div class="achievement-badges"><span>Top 180</span><span>792 Participants</span><span>Team Leader</span></div><p>Led team <b>Sync4Tech</b> under the theme “Tech for a Sustainable Planet” and proposed <b>CarbonVision</b>, an AI-powered industrial emission monitoring system.</p><ul><li>Analyzed chimney/drone video feeds using computer vision.</li><li>Estimated smoke density, color and emission levels.</li><li>Planned real-time dashboards, alerts and trend analytics.</li><li>Explored weather API integration for pollution dispersion prediction.</li></ul></div>
+</article>
 <!-- ==================== KUMBATHON ACHIEVEMENT ==================== -->
-<article class="achievement-card">
-  <div class="achievement-gallery">
-    <img src="assets/img/ach-kumbathon-1.jpg" alt="Kumbathon 2026" />
-    <img src="assets/img/ach-kumbathon-2.jpg" alt="Smart CCTV Prototype" />
-    <img src="assets/img/ach-kumbathon-3.jpg" alt="Kumbathon Team" />
-  </div>
-
-  <div class="achievement-content">
-    <div class="achievement-top">
-      <span class="achievement-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <rect x="3" y="6" width="13" height="10" rx="2"></rect>
-          <path d="M16 9L21 6V16L16 13Z"></path>
-          <circle cx="9.5" cy="11" r="2.5"></circle>
-          <path d="M7 19H14"></path>
-          <path d="M10.5 16V19"></path>
-        </svg>
-      </span>
-
-      <div>
-        <h3>Kumbathon 2026</h3>
-        <p>MIT ADT University · National Startup Day</p>
-      </div>
-    </div>
-
-    <div class="achievement-badges">
-      <span>AI Surveillance</span>
-      <span>Working Prototype</span>
-      <span>Command Centre</span>
-    </div>
-
-    <p>
+<article aria-label="Open achievement detail: Kumbathon 2026" class="achievement-card" data-detail-id="achievement-kumbathon-2026" role="link" tabindex="0">
+<div class="achievement-gallery">
+<img alt="Kumbathon 2026" src="assets/img/ach-kumbathon-1.jpg"/>
+<img alt="Smart CCTV Prototype" src="assets/img/ach-kumbathon-2.jpg"/>
+<img alt="Kumbathon Team" src="assets/img/ach-kumbathon-3.jpg"/>
+</div>
+<div class="achievement-content">
+<div class="achievement-top">
+<span aria-hidden="true" class="achievement-icon">
+<svg viewbox="0 0 24 24">
+<rect height="10" rx="2" width="13" x="3" y="6"></rect>
+<path d="M16 9L21 6V16L16 13Z"></path>
+<circle cx="9.5" cy="11" r="2.5"></circle>
+<path d="M7 19H14"></path>
+<path d="M10.5 16V19"></path>
+</svg>
+</span>
+<div>
+<h3>Kumbathon 2026</h3>
+<p>MIT ADT University · National Startup Day</p>
+</div>
+</div>
+<div class="achievement-badges">
+<span>AI Surveillance</span>
+<span>Working Prototype</span>
+<span>Command Centre</span>
+</div>
+<p>
       Team <b>Triveni Tech</b> showcased an AI-Based Smart CCTV Surveillance
       and Command Centre System designed for monitoring large-scale events such
       as the Kumbh Mela.
     </p>
-
-    <ul>
-      <li>Detected crowd-density risks and potentially unsafe situations.</li>
-      <li>
+<ul>
+<li>Detected crowd-density risks and potentially unsafe situations.</li>
+<li>
         Converted live CCTV feeds into real-time monitoring and decision-support
         insights.
       </li>
-      <li>
+<li>
         Built an alert workflow connected to a centralized administration
         dashboard.
       </li>
-
-    </ul>
-  </div>
+</ul>
+</div>
 </article>
-
-
 <!-- ==================== AUDITX ACHIEVEMENT ==================== -->
-<article class="achievement-card">
-  <div class="achievement-gallery">
-    <img src="assets/img/ach-auditx-1.jpg" alt="AuditX Presentation" />
-    <img src="assets/img/ach-auditx-2.jpeg" alt="AI Grand Challenge" />
-    <img src="assets/img/ach-auditx-3.jpg" alt="AuditX Team" />
-  </div>
-
-  <div class="achievement-content">
-    <div class="achievement-top">
-      <span class="achievement-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <path
-            d="M12 3L20 6V11C20 16.2 16.6 20.4 12 22C7.4 20.4 4 16.2 4 11V6L12 3Z"
-          ></path>
-          <path d="M12 7V17"></path>
-          <path d="M8 11H16"></path>
-        </svg>
-      </span>
-
-      <div>
-        <h3>MIT ADT AI Grand Challenge 2026</h3>
-        <p>Blockchain &amp; AI Innovation Category</p>
-      </div>
-    </div>
-
-    <div class="achievement-badges">
-      <span>Top 7 Teams</span>
-      <span>Blockchain</span>
-      <span>AI Fraud Detection</span>
-    </div>
-
-    <p>
+<article aria-label="Open achievement detail: MIT ADT AI Grand Challenge 2026" class="achievement-card" data-detail-id="achievement-mit-adt-ai-grand-challenge-2026" role="link" tabindex="0">
+<div class="achievement-gallery">
+<img alt="AuditX Presentation" src="assets/img/ach-auditx-1.jpg"/>
+<img alt="AI Grand Challenge" src="assets/img/ach-auditx-2.jpeg"/>
+<img alt="AuditX Team" src="assets/img/ach-auditx-3.jpg"/>
+</div>
+<div class="achievement-content">
+<div class="achievement-top">
+<span aria-hidden="true" class="achievement-icon">
+<svg viewbox="0 0 24 24">
+<path d="M12 3L20 6V11C20 16.2 16.6 20.4 12 22C7.4 20.4 4 16.2 4 11V6L12 3Z"></path>
+<path d="M12 7V17"></path>
+<path d="M8 11H16"></path>
+</svg>
+</span>
+<div>
+<h3>MIT ADT AI Grand Challenge 2026</h3>
+<p>Blockchain &amp; AI Innovation Category</p>
+</div>
+</div>
+<div class="achievement-badges">
+<span>Top 7 Teams</span>
+<span>Blockchain</span>
+<span>AI Fraud Detection</span>
+</div>
+<p>
       Developed <b>AuditX</b>, an AI and Blockchain-powered financial fraud
       prevention system designed to detect suspicious transactions before
       execution through real-time risk analysis.
     </p>
-
-    <ul>
-      <li>
+<ul>
+<li>
         Implemented Isolation Forest-based anomaly detection for fraud-risk
         scoring.
       </li>
-      <li>Designed Solidity smart-contract rules for transaction validation.</li>
-      <li>
+<li>Designed Solidity smart-contract rules for transaction validation.</li>
+<li>
         Integrated blockchain logging to maintain transaction integrity and
         transparency.
       </li>
-    </ul>
-  </div>
+</ul>
+</div>
 </article>
-
 <!-- ==================== UNESCO YOUTH HACKATHON ==================== -->
-<article class="achievement-card unesco-video-card">
-
+<article aria-label="Open achievement detail: UNESCO Youth Hackathon 2025" class="achievement-card unesco-video-card" data-detail-id="achievement-unesco-youth-hackathon-2025" role="link" tabindex="0">
 <div class="achievement-video-wrapper">
-  <video
-    id="unesco-video"
-    class="achievement-video"
-    muted
-    loop
-    playsinline
-    controls
-    preload="metadata"
-    poster="assets/img/unesco-video-poster.jpg"
-  >
-    <source
-      src="assets/video/unesco-hackathon.mp4"
-      type="video/mp4"
-    />
+<video class="achievement-video" controls="" id="unesco-video" loop="" muted="" playsinline="" poster="assets/img/unesco-video-poster.jpg" preload="metadata">
+<source src="assets/video/unesco-hackathon.mp4" type="video/mp4"/>
 
     Your browser does not support the video tag.
   </video>
 </div>
-
-  <div class="achievement-content">
-
-    <div class="achievement-top">
-      <span class="achievement-icon">
-        <i class="bx bx-world"></i>
-      </span>
-
-      <div>
-        <h3>UNESCO Youth Hackathon 2025</h3>
-        <p>Global Platform · SDG Innovation</p>
-      </div>
-    </div>
-
-    <div class="achievement-badges">
-      <span>Global Hackathon</span>
-      <span>SDG 3</span>
-      <span>SDG 12</span>
-    </div>
-
-    <p>
+<div class="achievement-content">
+<div class="achievement-top">
+<span class="achievement-icon">
+<i class="bx bx-world"></i>
+</span>
+<div>
+<h3>UNESCO Youth Hackathon 2025</h3>
+<p>Global Platform · SDG Innovation</p>
+</div>
+</div>
+<div class="achievement-badges">
+<span>Global Hackathon</span>
+<span>SDG 3</span>
+<span>SDG 12</span>
+</div>
+<p>
       Built <b>NutriCheck</b>, an AI-powered nutrition label analysis system
       that helps users decode food packaging and make healthier choices.
     </p>
-
-    <ul>
-      <li>Used Flask for AI and OCR processing.</li>
-      <li>Built the frontend using React and Tailwind CSS.</li>
-      <li>
+<ul>
+<li>Used Flask for AI and OCR processing.</li>
+<li>Built the frontend using React and Tailwind CSS.</li>
+<li>
         Integrated Tesseract OCR and machine learning for nutrient detection.
       </li>
-      <li>
+<li>
         Presented the complete solution through a team-recorded project video
         for the UNESCO Youth Hackathon.
       </li>
-    </ul>
-
-  </div>
+</ul>
+</div>
 </article>
-
-        <article class="achievement-card compact-achievement">
-          <div class="achievement-gallery"><img src="assets/img/ach-parikshak-1.jpg" alt="Parikshak AI Badge" /><img src="assets/img/ach-parikshak-2.jpg" alt="Campus Ambassador" /><img src="assets/img/ach-parikshak-3.jpg" alt="Growth Partner Program" /></div>
-          <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-medal"></i></span><div><h3>Campus Ambassador</h3><p>Parikshak.ai · Growth Partner Program</p></div></div><div class="achievement-badges"><span>Growth Partner</span><span>Leadership</span><span>Career Tech</span></div><p>Selected as a Campus Ambassador for the Parikshak.ai Growth Partner Program, where I contributed to promoting AI-powered interview preparation and career development resources among students. I supported student outreach, awareness campaigns and community engagement while helping learners understand modern interview practices, placement preparation and AI-driven learning tools.</p></div>
-        </article>
-
-        <article class="achievement-card compact-achievement">
-          <div class="achievement-gallery"><img src="assets/img/ach-gcloud-1.jpg" alt="Google Cloud Arcade" /><img src="assets/img/ach-gcloud-2.jpg" alt="Google Cloud Badge" /><img src="assets/img/ach-gcloud-3.jpg" alt="Cloud Milestone" /></div>
-          <div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-cloud"></i></span><div><h3>Google Cloud Arcade Facilitator Program 2024</h3><p>Premium Plus Milestone Level</p></div></div><div class="achievement-badges"><span>Premium Plus</span><span>Kubernetes</span><span>AI/ML</span></div><p>Successfully achieved the Premium Plus Milestone in the Google Cloud Arcade Facilitator Program 2024 by completing multiple hands on labs, skill badges and cloud-learning challenges. Gained practical exposure to Google Cloud services, Kubernetes, AI/ML, cloud security, networking and infrastructure fundamentals.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact-section section-motion" id="contact">
-      <div class="motion-bg contact-bg" aria-hidden="true">
-        <span>✉</span><span>in</span><span>⌘</span><span>⌁</span><span>💬</span><span>↗</span>
-      </div>
-      <div class="section-heading contact-heading">
-        <p class="section-badge">Contact</p>
-        <h2>Let’s Build Something Great</h2>
-        <span class="contact-subtitle">Open to internships, project collaborations, hackathons and software development opportunities.</span>
-      </div>
-
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="contact-card"><i class="bx bx-envelope"></i><div><h3>Email</h3><a href="mailto:rahultakale698@gmail.com">rahultakale698@gmail.com</a></div></div>
-          <div class="contact-card"><i class="bx bxl-linkedin"></i><div><h3>LinkedIn</h3><a href="https://www.linkedin.com/in/rahultakale/" target="_blank" rel="noopener noreferrer">Rahul Takale</a></div></div>
-          <div class="contact-card"><i class="bx bxl-github"></i><div><h3>GitHub</h3><a href="https://github.com/rahultakale44" target="_blank" rel="noopener noreferrer">rahultakale44</a></div></div>
-          <div class="contact-card"><i class="bx bx-file"></i><div><h3>Resume</h3><a href="ResumeRT.pdf" download>Download Resume</a></div></div>
-        </div>
-
-        <form class="contact-form" id="contact-form">
-          <input type="text" name="from_name" placeholder="Your Name" required />
-          <input type="email" name="from_email" placeholder="Your Email" required />
-          <input type="text" name="subject" placeholder="Subject" required />
-          <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-          <button type="submit" class="contact-btn" id="contact-btn"><i class="bx bx-send"></i> Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <h3>Rahul <span>Takale</span></h3>
-    <p>AI Engineer & Software Developer</p>
-    <div class="footer-icons">
-      <a href="https://www.linkedin.com/in/rahultakale/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
-      <a href="https://github.com/rahultakale44" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
-      <a href="mailto:rahultakale698@gmail.com"><i class="bx bx-envelope"></i></a>
-    </div>
-    <p class="footer-copy">© 2026 Rahul Takale. All rights reserved.</p>
-  </footer>
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="assets/js/main.js"></script>
+<article aria-label="Open achievement detail: Campus Ambassador" class="achievement-card compact-achievement" data-detail-id="achievement-campus-ambassador" role="link" tabindex="0">
+<div class="achievement-gallery"><img alt="Parikshak AI Badge" src="assets/img/ach-parikshak-1.jpg"/><img alt="Campus Ambassador" src="assets/img/ach-parikshak-2.jpg"/><img alt="Growth Partner Program" src="assets/img/ach-parikshak-3.jpg"/></div>
+<div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-medal"></i></span><div><h3>Campus Ambassador</h3><p>Parikshak.ai · Growth Partner Program</p></div></div><div class="achievement-badges"><span>Growth Partner</span><span>Leadership</span><span>Career Tech</span></div><p>Selected as a Campus Ambassador for the Parikshak.ai Growth Partner Program, where I contributed to promoting AI-powered interview preparation and career development resources among students. I supported student outreach, awareness campaigns and community engagement while helping learners understand modern interview practices, placement preparation and AI-driven learning tools.</p></div>
+</article>
+<article aria-label="Open achievement detail: Google Cloud Arcade Facilitator Program 2024" class="achievement-card compact-achievement" data-detail-id="achievement-google-cloud-arcade-facilitator-program-2024" role="link" tabindex="0">
+<div class="achievement-gallery"><img alt="Google Cloud Arcade" src="assets/img/ach-gcloud-1.jpg"/><img alt="Google Cloud Badge" src="assets/img/ach-gcloud-2.jpg"/><img alt="Cloud Milestone" src="assets/img/ach-gcloud-3.jpg"/></div>
+<div class="achievement-content"><div class="achievement-top"><span class="achievement-icon"><i class="bx bx-cloud"></i></span><div><h3>Google Cloud Arcade Facilitator Program 2024</h3><p>Premium Plus Milestone Level</p></div></div><div class="achievement-badges"><span>Premium Plus</span><span>Kubernetes</span><span>AI/ML</span></div><p>Successfully achieved the Premium Plus Milestone in the Google Cloud Arcade Facilitator Program 2024 by completing multiple hands on labs, skill badges and cloud-learning challenges. Gained practical exposure to Google Cloud services, Kubernetes, AI/ML, cloud security, networking and infrastructure fundamentals.</p></div>
+</article>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="contact-section section-motion" id="contact">
+<div aria-hidden="true" class="motion-bg contact-bg">
+<span>✉</span><span>in</span><span>⌘</span><span>⌁</span><span>💬</span><span>↗</span>
+</div>
+<div class="section-heading contact-heading">
+<p class="section-badge">Contact</p>
+<h2>Let’s Build Something Great</h2>
+<span class="contact-subtitle">Open to internships, project collaborations, hackathons and software development opportunities.</span>
+</div>
+<div class="contact-container">
+<div class="contact-info">
+<div class="contact-card"><i class="bx bx-envelope"></i><div><h3>Email</h3><a href="mailto:rahultakale698@gmail.com">rahultakale698@gmail.com</a></div></div>
+<div class="contact-card"><i class="bx bxl-linkedin"></i><div><h3>LinkedIn</h3><a href="https://www.linkedin.com/in/rahultakale/" rel="noopener noreferrer" target="_blank">Rahul Takale</a></div></div>
+<div class="contact-card"><i class="bx bxl-github"></i><div><h3>GitHub</h3><a href="https://github.com/rahultakale44" rel="noopener noreferrer" target="_blank">rahultakale44</a></div></div>
+<div class="contact-card"><i class="bx bx-file"></i><div><h3>Resume</h3><a download="" href="ResumeRT.pdf">Download Resume</a></div></div>
+</div>
+<form class="contact-form" id="contact-form">
+<input name="from_name" placeholder="Your Name" required="" type="text"/>
+<input name="from_email" placeholder="Your Email" required="" type="email"/>
+<input name="subject" placeholder="Subject" required="" type="text"/>
+<textarea name="message" placeholder="Your Message" required="" rows="7"></textarea>
+<button class="contact-btn" id="contact-btn" type="submit"><i class="bx bx-send"></i> Send Message</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="footer">
+<h3>Rahul <span>Takale</span></h3>
+<p>AI Engineer &amp; Software Developer</p>
+<div class="footer-icons">
+<a href="https://www.linkedin.com/in/rahultakale/" rel="noopener noreferrer" target="_blank"><i class="bx bxl-linkedin"></i></a>
+<a href="https://github.com/rahultakale44" rel="noopener noreferrer" target="_blank"><i class="bx bxl-github"></i></a>
+<a href="mailto:rahultakale698@gmail.com"><i class="bx bx-envelope"></i></a>
+</div>
+<p class="footer-copy">© 2026 Rahul Takale. All rights reserved.</p>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

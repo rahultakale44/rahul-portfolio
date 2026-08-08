@@ -1098,3 +1098,259 @@ if (isMobile) {
 
   aboutEntryObserver.observe(aboutSection);
 })();
+
+
+/* =====================================================
+   INTERACTIVE PORTFOLIO CARD DETAIL SYSTEM
+===================================================== */
+
+const portfolioDetailData = {"project-ai-and-iot-aeroponics-system": {"id": "project-ai-and-iot-aeroponics-system", "category": "Project", "anchor": "projects", "title": "AI & IoT Aeroponics System", "eyebrow": "AI, IoT and Smart Agriculture", "summary": "Developed an AI and IoT-powered aeroponics system for sustainable urban farming with real-time sensor monitoring and an LLM-powered plant assistant using Ollama for intelligent crop and nutrient recommendations.", "images": ["assets/img/project-aeroponics.jpg"], "tags": ["Node.js", "React.js", "IoT", "LLM Integration", "ESP32"], "github": "https://github.com/rahultakale44", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "The project explores how urban farming can be made more observable and intelligent by combining aeroponics, connected sensors and an AI-assisted decision layer instead of relying only on manual checking.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["ESP32 and IoT sensors capture plant-environment readings.", "The application layer organizes real-time monitoring for the growing system.", "A Node.js backend connects device data with the web experience.", "React.js presents system status and useful monitoring information.", "An Ollama-powered plant assistant supports crop and nutrient recommendations."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["Real-time sensing and connected-device monitoring", "AI-assisted crop and nutrient guidance", "Web-based visibility for an aeroponics setup", "Integration of software, IoT and an LLM assistant"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["Node.js", "React.js", "IoT", "LLM Integration", "ESP32"]}]}, "project-ai-powered-cctv-surveillance-system-for-kumbh-mela": {"id": "project-ai-powered-cctv-surveillance-system-for-kumbh-mela", "category": "Project", "anchor": "projects", "title": "AI Powered CCTV Surveillance System for Kumbh Mela", "eyebrow": "AI & Computer Vision", "summary": "Designed and studied an AI-powered CCTV surveillance solution for crowd management and public safety during large-scale religious gatherings. Explored Python, OpenCV, object detection, people counting and crowd-density estimation for CCTV video streams.", "images": ["assets/img/kumbhpic.png"], "tags": ["OpenCV", "YOLO", "Flask", "Python", "HTML CSS JS"], "github": "https://github.com/rahultakale44", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "Large public gatherings create a monitoring problem where raw CCTV feeds can overwhelm human operators. This project studies how computer vision can convert video into crowd-management signals that are easier to act on.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["CCTV/video frames are ingested through a Python/OpenCV pipeline.", "Object detection identifies people in monitored regions.", "People-count and crowd-density logic turns detections into measurable signals.", "Flask exposes the processed results to a lightweight monitoring interface.", "Alerts and visual feedback support faster operational awareness."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["Crowd-density estimation", "People counting from CCTV streams", "Object detection with YOLO", "Public-safety monitoring and decision support"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["OpenCV", "YOLO", "Flask", "Python", "HTML CSS JS"]}]}, "project-docmate-healthcare-appointment-management-platform": {"id": "project-docmate-healthcare-appointment-management-platform", "category": "Project", "anchor": "projects", "title": "DocMate – Healthcare Appointment Management Platform", "eyebrow": "MERN Stack Development", "summary": "DocMate is a full-stack healthcare appointment platform that allows patients to discover doctors, book or cancel appointments and manage their consultation history. It provides secure role-based dashboards for patients, doctors and administrators with JWT authentication and appointment management.", "images": ["assets/img/docmate.png"], "tags": ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"], "github": "https://github.com/rahultakale44/docmate-healthcare-platform", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "DocMate focuses on the everyday coordination problem between patients, doctors and administrators: discovering doctors, booking consultations, managing appointments and preserving role-specific access.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["React.js provides patient, doctor and administrator interfaces.", "Node.js and Express.js implement the application API layer.", "MongoDB stores users, doctors and appointment information.", "JWT authentication protects role-specific routes and dashboards.", "Appointment actions support booking, cancellation and consultation-history management."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["Role-based healthcare workflows", "Secure authentication with JWT", "Appointment lifecycle management", "Patient, doctor and admin dashboards"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"]}]}, "project-shopsphere-java-full-stack-e-commerce-platform": {"id": "project-shopsphere-java-full-stack-e-commerce-platform", "category": "Project", "anchor": "projects", "title": "ShopSphere – Java Full Stack E-Commerce Platform", "eyebrow": "Java Full Stack Development", "summary": "ShopSphere is a complete Java full-stack e-commerce platform featuring secure user authentication, product browsing, search, cart and wishlist management, checkout, online payment and order tracking. It also includes an admin dashboard for managing products, inventory and customer orders.", "images": ["assets/img/shopsphere.png"], "tags": ["React.js", "Spring Boot", "Spring Security", "MySQL", "JWT"], "github": "https://github.com/rahultakale44", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "ShopSphere is built around the complete e-commerce lifecycle rather than a single catalogue screen: users need discovery, secure identity, cart state, checkout, payment, order tracking and administrative control.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["React.js provides product discovery, cart, checkout and account interfaces.", "Spring Boot exposes REST APIs for the commerce workflow.", "Spring Security and JWT protect authenticated operations.", "MySQL persists users, products, cart/order data and related transactional state.", "The admin flow supports product, inventory and customer-order management."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["End-to-end commerce workflow", "Secure Java backend architecture", "Cart, wishlist and checkout state", "Payment and order-management integration"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["React.js", "Spring Boot", "Spring Security", "MySQL", "JWT"]}]}, "project-campuscare-smart-campus-complaint-management-system": {"id": "project-campuscare-smart-campus-complaint-management-system", "category": "Project", "anchor": "projects", "title": "CampusCare – Smart Campus Complaint Management System", "eyebrow": "Java Full Stack Development", "summary": "CampusCare is a full-stack campus complaint management platform built using React.js, Spring Boot and MySQL. It includes JWT authentication, role-based access control, complaint tracking, analytics and CSV report export.", "images": ["assets/img/ach-campuscare.jpeg"], "tags": ["React.js", "Spring Boot", "JWT", "MySQL", "REST APIs"], "github": "https://github.com/rahultakale44/campuscare-backend", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "CampusCare addresses the gap between reporting a campus issue and being able to track its resolution. The system structures complaint intake, access control, tracking and administrative reporting.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["React.js provides the user-facing complaint experience.", "Spring Boot exposes the complaint-management REST API.", "JWT and role-based access control separate user and administrative operations.", "MySQL stores complaint and user data.", "Analytics and CSV export support reporting and operational review."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["Complaint lifecycle tracking", "Role-based access control", "Operational analytics", "CSV report export"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["React.js", "Spring Boot", "JWT", "MySQL", "REST APIs"]}]}, "project-intelligent-fitness-posture-detection-system": {"id": "project-intelligent-fitness-posture-detection-system", "category": "Project", "anchor": "projects", "title": "Intelligent Fitness Posture Detection System", "eyebrow": "AI Fitness Application", "summary": "Developed a computer vision-based fitness posture detection system using Python, OpenCV and MediaPipe Pose to analyze body movements, calculate joint angles and provide corrective posture feedback.", "images": ["assets/img/project-fitness.jpg"], "tags": ["Python", "OpenCV", "Pose Estimation", "MediaPipe", "SQLite"], "github": "https://github.com/rahultakale44/ai-fitness-coach", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "The project explores how camera-based pose estimation can turn body movement into measurable joint-angle feedback for exercise posture without requiring dedicated wearable hardware.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["Camera frames are processed with Python and OpenCV.", "MediaPipe Pose identifies body landmarks.", "Joint-angle calculations translate landmarks into posture measurements.", "Rule-based checks identify posture deviations.", "Corrective feedback is presented to the user while session data can be persisted with SQLite."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["Pose landmark detection", "Joint-angle analysis", "Corrective posture feedback", "Computer-vision fitness assistance"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["Python", "OpenCV", "Pose Estimation", "MediaPipe", "SQLite"]}]}, "project-medscope-evidence-grounded-medical-literature-retrieval-system": {"id": "project-medscope-evidence-grounded-medical-literature-retrieval-system", "category": "Project", "anchor": "projects", "title": "MedScope – Evidence Grounded Medical Literature Retrieval System", "eyebrow": "Medical RAG & Evidence Retrieval", "summary": "MedScope is a privacy-focused medical literature RAG application that allows users to upload trusted research PDFs, perform domain-specific semantic search and generate evidence-grounded answers using a locally hosted BioMistral-7B model. It uses PubMedBERT embeddings and Qdrant for medical document retrieval, while displaying source documents, page numbers and similarity scores with every generated response.", "images": ["assets/img/medscope.jpg"], "tags": ["React.js", "FastAPI", "LangChain", "BioMistral-7B", "PubMedBERT", "Qdrant"], "github": "https://github.com/rahultakale44/medscope", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "MedScope focuses on evidence-grounded medical retrieval: answers should come from trusted uploaded literature and remain traceable to the supporting document rather than behaving like an unconstrained general chatbot.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["Trusted medical PDFs are ingested into the retrieval workflow.", "PubMedBERT creates domain-specific document embeddings.", "Qdrant stores and retrieves semantically relevant chunks.", "A locally hosted BioMistral-7B model generates answers from retrieved evidence.", "Responses surface source documents, page numbers and similarity scores for traceability."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["Privacy-focused local medical RAG", "Domain-specific PubMedBERT embeddings", "Qdrant vector retrieval", "Source and page-level evidence traceability"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["React.js", "FastAPI", "LangChain", "BioMistral-7B", "PubMedBERT", "Qdrant"]}]}, "project-cartwise-ai-powered-shopping-assistant": {"id": "project-cartwise-ai-powered-shopping-assistant", "category": "Project", "anchor": "projects", "title": "CartWise – AI Powered Shopping Assistant", "eyebrow": "Generative AI & Product Discovery", "summary": "CartWise is an AI-powered product discovery and shopping assistant that helps users search, compare and understand products through natural language conversations. Built with React and FastAPI, it uses LangChain, Groq, Llama and retrieval-augmented generation to deliver personalized recommendations, product comparisons and reliable answers to shopping policy questions.", "images": ["assets/img/cartwise.jpg"], "tags": ["React.js", "FastAPI", "LangChain", "Groq", "Llama", "RAG"], "github": "https://github.com/rahultakale44/CartWise", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "CartWise explores conversational product discovery so users can search, compare and understand products using natural language instead of navigating only through fixed filters and static product pages.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["React.js provides the conversational shopping interface.", "FastAPI exposes the backend orchestration layer.", "LangChain coordinates retrieval and generation steps.", "Groq/Llama provide the language-model layer.", "RAG supports product recommendations, comparisons and shopping-policy questions."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["Natural-language product discovery", "Product comparison", "Retrieval-augmented shopping Q&A", "FastAPI-based AI backend"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["React.js", "FastAPI", "LangChain", "Groq", "Llama", "RAG"]}]}, "project-contactless-biometric-fingerprint-authentication-system": {"id": "project-contactless-biometric-fingerprint-authentication-system", "category": "Project", "anchor": "projects", "title": "Contactless Biometric Fingerprint Authentication System", "eyebrow": "Computer Vision & Biometric Security", "summary": "Designed a contactless biometric authentication prototype that captures fingerprint imagery without requiring a physical scanner. The workflow applies computer-vision preprocessing to isolate the fingerprint region, improve ridge visibility and prepare distinctive biometric features for identity matching. The project explores a hygienic, touch-free alternative to conventional fingerprint devices for attendance, access control and secure identity verification scenarios.", "images": [], "tags": ["Python", "OpenCV", "Image Processing", "Biometrics", "Feature Matching", "Computer Vision"], "github": "https://github.com/rahultakale44", "metrics": [], "steps": [{"kicker": "01 · Context", "title": "Problem & Intent", "text": "The prototype investigates whether fingerprint identity workflows can be made touch-free by capturing fingerprint imagery without a conventional physical scanner and then applying computer-vision preprocessing for matching.", "bullets": []}, {"kicker": "02 · System", "title": "How the System Works", "text": "The implementation connects the technologies shown on the original project card into one end-to-end workflow.", "bullets": ["A camera-based workflow captures fingerprint imagery without physical scanner contact.", "Image-processing steps isolate the fingerprint region.", "Preprocessing improves ridge visibility and prepares the image for feature analysis.", "Distinctive biometric features are prepared for identity matching.", "The approach is positioned for attendance, access-control and identity-verification scenarios."]}, {"kicker": "03 · Engineering", "title": "Core Engineering Focus", "text": "The project is designed around practical implementation rather than a standalone demo screen.", "bullets": ["Touch-free biometric capture", "Fingerprint region extraction", "Ridge enhancement and preprocessing", "Feature-based identity matching"]}, {"kicker": "04 · Stack", "title": "Technology Map", "text": "The stack below is taken directly from the portfolio project card.", "bullets": ["Python", "OpenCV", "Image Processing", "Biometrics", "Feature Matching", "Computer Vision"]}]}, "research-quantum-graph-intelligence": {"id": "research-quantum-graph-intelligence", "category": "Research", "anchor": "research", "title": "Quantum Graph Intelligence", "eyebrow": "Quantum-Walk-Based Multi-Hop Knowledge Retrieval", "summary": "Exploring whether query-conditioned quantum walks can use interference across multiple reasoning paths to concentrate more retrieval probability on answer supporting subgraphs than bounded classical graph traversal under an equivalent exploration budget.", "images": ["assets/img/quantum-research.png"], "tags": ["Q-GraphRAG", "Quantum Walks", "Knowledge Graphs", "GraphRAG", "Multi-Hop Reasoning"], "github": "", "metrics": ["HYPOTHESIS FORMULATED"], "steps": [{"kicker": "01 · Research Question", "title": "What I Am Exploring", "text": "Exploring whether query-conditioned quantum walks can use interference across multiple reasoning paths to concentrate more retrieval probability on answer supporting subgraphs than bounded classical graph traversal under an equivalent exploration budget.", "bullets": ["Can quantum interference become a mechanism for relational evidence aggregation?"]}, {"kicker": "02 · Hypotheses", "title": "Working Hypotheses", "text": "The research card defines the following testable or investigatory directions.", "bullets": ["H₁ — Structural Advantage: Quantum walks may preserve long range dependencies and higher-order graph structure more effectively under a fixed retrieval budget.", "H₂ — Path Consensus: Constructive interference may amplify evidence supported by multiple semantically consistent reasoning paths.", "H₃ — Complexity Crossover: A graph complexity threshold may exist beyond which quantum retrieval begins outperforming bounded classical traversal.", "H₄ — Quantum-Stochastic Optimum: An intermediate stochastic quantum regime may achieve stronger retrieval than either purely classical or fully coherent walks."]}, {"kicker": "03 · Method", "title": "Exploration Workflow", "text": "The portfolio frames the investigation as a staged workflow.", "bullets": ["Query", "Entity Linking", "Knowledge Graph", "Quantum Walk", "Evidence Subgraph", "LLM"]}, {"kicker": "04 · Domain", "title": "Research Themes", "text": "These tags define the technical or scientific territory of the exploration.", "bullets": ["Q-GraphRAG", "Quantum Walks", "Knowledge Graphs", "GraphRAG", "Multi-Hop Reasoning"]}]}, "research-andromeda-galaxy": {"id": "research-andromeda-galaxy", "category": "Research", "anchor": "research", "title": "Andromeda Galaxy", "eyebrow": "Structure, Motion & the Future of Our Galactic Neighbourhood", "summary": "Exploring Andromeda as a nearby laboratory for studying spiral-galaxy structure, stellar populations, dark matter and the uncertain long-term gravitational evolution of the Local Group.", "images": ["https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2026/07/STScI-01KXZZ6H029XBJTKYKRPARFJE9.jpg?crop=faces%2Cfocalpoint&fit=clip&h=4935&w=8502"], "tags": ["Andromeda", "Galaxy Evolution", "Dark Matter", "Astrophysics", "Local Group"], "github": "", "metrics": ["RESEARCH EXPLORATION"], "steps": [{"kicker": "01 · Research Question", "title": "What I Am Exploring", "text": "Exploring Andromeda as a nearby laboratory for studying spiral-galaxy structure, stellar populations, dark matter and the uncertain long-term gravitational evolution of the Local Group.", "bullets": ["What can Andromeda reveal about galaxy evolution, hidden mass and the future interaction of the Milky Way–Andromeda system?"]}, {"kicker": "02 · Hypotheses", "title": "Working Hypotheses", "text": "The research card defines the following testable or investigatory directions.", "bullets": ["A₁ — Galactic Structure: Study the disk, bulge, halo, dust lanes and star-forming regions to understand how massive spiral galaxies are organized.", "A₂ — Motion & Dark Matter: Use rotation, stellar motions and satellite dynamics to investigate how visible matter traces a much larger gravitational mass.", "A₃ — Local Group Future: Explore competing orbital scenarios; current observations still leave major uncertainty over whether a future Milky Way merger occurs.", "A₄ — Stellar Archaeology: Compare stellar ages and populations across Andromeda to reconstruct episodes of star formation and past galactic interactions."]}, {"kicker": "03 · Method", "title": "Exploration Workflow", "text": "The portfolio frames the investigation as a staged workflow.", "bullets": ["Observation", "Spectral Analysis", "Galaxy Mapping", "Dynamics Modeling", "Future Simulation"]}, {"kicker": "04 · Domain", "title": "Research Themes", "text": "These tags define the technical or scientific territory of the exploration.", "bullets": ["Andromeda", "Galaxy Evolution", "Dark Matter", "Astrophysics", "Local Group"]}]}, "research-who-brought-water-to-earth": {"id": "research-who-brought-water-to-earth", "category": "Research", "anchor": "research", "title": "Who Brought Water to Earth?", "eyebrow": "Tracing the Origin of Earth’s Oceans Through Planetary Evidence", "summary": "Exploring how Earth acquired its water by comparing evidence for water inherited during planet formation, water rich asteroids and meteorites, cometary delivery and later geological recycling inside the young Earth.", "images": ["assets/img/ocean-waves.jpg"], "tags": ["Earth Oceans", "Asteroids", "Comets", "Planetary Science", "Origins of Water"], "github": "", "metrics": ["RESEARCH EXPLORATION"], "steps": [{"kicker": "01 · Research Question", "title": "What I Am Exploring", "text": "Exploring how Earth acquired its water by comparing evidence for water inherited during planet formation, water rich asteroids and meteorites, cometary delivery and later geological recycling inside the young Earth.", "bullets": ["How much of Earth’s ocean water was inherited locally, delivered by asteroids, contributed by comets, or released from Earth’s interior?"]}, {"kicker": "02 · Hypotheses", "title": "Working Hypotheses", "text": "The research card defines the following testable or investigatory directions.", "bullets": ["O₁ — Asteroid Delivery: Water-rich carbonaceous asteroid material is a leading candidate because its chemical fingerprints resemble important parts of Earth’s volatile inventory.", "O₂ — Comet Contribution: Some comet families contain water with Earth-like isotope ratios, keeping comets viable as contributors even if they were not the only source.", "O₃ — Primordial Water: Hydrogen and water-bearing material may also have been incorporated during Earth’s formation rather than arriving entirely after the planet formed.", "O₄ — Isotope Evidence: Hydrogen isotope ratios, meteorites, mineral chemistry and planetary models can be combined to constrain the relative contribution of each source."]}, {"kicker": "03 · Method", "title": "Exploration Workflow", "text": "The portfolio frames the investigation as a staged workflow.", "bullets": ["Early Solar System", "Meteorite Evidence", "Isotope Analysis", "Planet Formation Models", "Ocean Origin Study"]}, {"kicker": "04 · Domain", "title": "Research Themes", "text": "These tags define the technical or scientific territory of the exploration.", "bullets": ["Earth Oceans", "Asteroids", "Comets", "Planetary Science", "Origins of Water"]}]}, "experience-development-intern-innobytes-erfinden-technologies-pvt-ltd": {"id": "experience-development-intern-innobytes-erfinden-technologies-pvt-ltd", "category": "Experience", "anchor": "experience", "title": "Development Intern · INNOBYTES (Erfinden Technologies Pvt. Ltd.)", "eyebrow": "6 Months · Pimpri Chinchwad, Maharashtra · 2025", "summary": "Developed a full-stack MERN business networking platform that connects entrepreneurs, startups and enterprises.", "images": ["assets/img/BizGrowth.png", "assets/img/InnoHubs.png"], "tags": ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"], "github": "", "metrics": ["Development Intern", "INNOBYTES (Erfinden Technologies Pvt. Ltd.)", "6 Months · Pimpri Chinchwad, Maharashtra · 2025"], "steps": [{"kicker": "01 · Role", "title": "Internship Context", "text": "Development Intern at INNOBYTES (Erfinden Technologies Pvt. Ltd.). 6 Months · Pimpri Chinchwad, Maharashtra · 2025", "bullets": []}, {"kicker": "02 · Workstream", "title": "BizGrowth – Business Networking Platform", "text": "Key responsibilities and implementation work from this internship.", "bullets": ["Developed a full-stack MERN business networking platform that connects entrepreneurs, startups and enterprises.", "Implemented JWT authentication, protected routes, password hashing and token-based user sessions.", "Built business listing management, advanced search, category filters and user-specific dashboards."]}, {"kicker": "03 · Workstream", "title": "InnoHubs – Global Innovation & Entrepreneurship Platform", "text": "Key responsibilities and implementation work from this internship.", "bullets": ["Contributed to a MERN-based global innovation platform connecting entrepreneurs, students, researchers, professionals, academia and corporations.", "Developed responsive frontend components for innovation programs, startup collaboration, ecosystem partnerships and entrepreneurship opportunities.", "Supported platform modules focused on startup incubation, global partnerships, market access, corporate co-creation and innovation ecosystem development."]}, {"kicker": "04 · Stack", "title": "Tools & Technologies", "text": "Technologies highlighted in the experience card.", "bullets": ["MongoDB", "Express.js", "React.js", "Node.js", "JWT"]}]}, "experience-hardware-intern-red-crest-charitable-trust-under-ngo-tech-work": {"id": "experience-hardware-intern-red-crest-charitable-trust-under-ngo-tech-work", "category": "Experience", "anchor": "experience", "title": "Hardware Intern · Red Crest Charitable Trust under NGO Tech Work", "eyebrow": "15 June 2025 – 15 July 2025 · 4 Weeks", "summary": "Contributed to the hardware prototyping and sensor integration of an IoT-based smart farming monitoring system.", "images": ["assets/img/redcrest-1.jpg", "assets/img/redcrest-2.jpg"], "tags": ["NodeMCU", "ESP8266", "IoT Sensors", "Hardware Testing"], "github": "", "metrics": ["Hardware Intern", "Red Crest Charitable Trust under NGO Tech Work", "15 June 2025 – 15 July 2025 · 4 Weeks"], "steps": [{"kicker": "01 · Role", "title": "Internship Context", "text": "Hardware Intern at Red Crest Charitable Trust under NGO Tech Work. 15 June 2025 – 15 July 2025 · 4 Weeks", "bullets": []}, {"kicker": "02 · Workstream", "title": "PrakritiAI – Smart Farming Monitoring System", "text": "Key responsibilities and implementation work from this internship.", "bullets": ["Contributed to the hardware prototyping and sensor integration of an IoT-based smart farming monitoring system.", "Worked with NodeMCU ESP8266 and environmental sensors for temperature, humidity, soil moisture and air-quality monitoring.", "Assisted in testing sensor readings, embedded components and real-world hardware outputs."]}, {"kicker": "03 · Workstream", "title": "Monitoring and System Integration", "text": "Key responsibilities and implementation work from this internship.", "bullets": ["Supported real-time sensor data monitoring through dashboards, visual summaries and threshold-based alerts.", "Explored MQTT and Wi-Fi communication for transmitting sensor readings to a central processing system.", "Contributed to documentation, calibration, testing workflows and evaluation of the working prototype."]}, {"kicker": "04 · Stack", "title": "Tools & Technologies", "text": "Technologies highlighted in the experience card.", "bullets": ["NodeMCU", "ESP8266", "IoT Sensors", "Hardware Testing"]}]}, "achievement-indradhanu-international-grand-challenge-finale": {"id": "achievement-indradhanu-international-grand-challenge-finale", "category": "Achievement", "anchor": "achievements", "title": "Indradhanu International Grand Challenge Finale", "eyebrow": "PCCOE · AI for Climate Change", "summary": "Our team CODEXCELLENCE was shortlisted among the Top 20 teams and presented Seed2Sustain , an AI-driven climate-smart aeroponics solution for urban sustainability.", "images": ["assets/img/ach-indradhanu-1.jpeg", "assets/img/ach-indradhanu-2.jpeg", "assets/img/ach-indradhanu-3.jpeg"], "tags": ["Top 20 Finalist", "1002+ Teams", "3-Month Phase"], "github": "", "metrics": ["Top 20 Finalist", "1002+ Teams", "3-Month Phase"], "steps": [{"kicker": "01 · Milestone", "title": "What This Achievement Represents", "text": "Our team CODEXCELLENCE was shortlisted among the Top 20 teams and presented Seed2Sustain , an AI-driven climate-smart aeroponics solution for urban sustainability.", "bullets": []}, {"kicker": "02 · Highlights", "title": "Key Highlights", "text": "The original portfolio card highlights the following outcomes, responsibilities or technical contributions.", "bullets": ["Designed a soil-less aeroponics system for sustainable farming.", "Integrated IoT-based real-time monitoring for plant conditions.", "Applied AI-driven insights for plant health and system reliability."]}, {"kicker": "03 · Evidence", "title": "Recognition & Context", "text": "PCCOE · AI for Climate Change", "bullets": ["Top 20 Finalist", "1002+ Teams", "3-Month Phase"]}]}, "achievement-prism-sociothon-2025": {"id": "achievement-prism-sociothon-2025", "category": "Achievement", "anchor": "achievements", "title": "PRISM Sociothon 2025", "eyebrow": "BRACT’s VIT Bibwewadi, Pune", "summary": "Led team Sync4Tech under the theme “Tech for a Sustainable Planet” and proposed CarbonVision , an AI-powered industrial emission monitoring system.", "images": ["assets/img/ach-vit-1.jpg", "assets/img/ach-vit-2.jpg", "assets/img/ach-vit-3.jpg"], "tags": ["Top 180", "792 Participants", "Team Leader"], "github": "", "metrics": ["Top 180", "792 Participants", "Team Leader"], "steps": [{"kicker": "01 · Milestone", "title": "What This Achievement Represents", "text": "Led team Sync4Tech under the theme “Tech for a Sustainable Planet” and proposed CarbonVision , an AI-powered industrial emission monitoring system.", "bullets": []}, {"kicker": "02 · Highlights", "title": "Key Highlights", "text": "The original portfolio card highlights the following outcomes, responsibilities or technical contributions.", "bullets": ["Analyzed chimney/drone video feeds using computer vision.", "Estimated smoke density, color and emission levels.", "Planned real-time dashboards, alerts and trend analytics.", "Explored weather API integration for pollution dispersion prediction."]}, {"kicker": "03 · Evidence", "title": "Recognition & Context", "text": "BRACT’s VIT Bibwewadi, Pune", "bullets": ["Top 180", "792 Participants", "Team Leader"]}]}, "achievement-kumbathon-2026": {"id": "achievement-kumbathon-2026", "category": "Achievement", "anchor": "achievements", "title": "Kumbathon 2026", "eyebrow": "MIT ADT University · National Startup Day", "summary": "Team Triveni Tech showcased an AI-Based Smart CCTV Surveillance and Command Centre System designed for monitoring large-scale events such as the Kumbh Mela.", "images": ["assets/img/ach-kumbathon-1.jpg", "assets/img/ach-kumbathon-2.jpg", "assets/img/ach-kumbathon-3.jpg"], "tags": ["AI Surveillance", "Working Prototype", "Command Centre"], "github": "", "metrics": ["AI Surveillance", "Working Prototype", "Command Centre"], "steps": [{"kicker": "01 · Milestone", "title": "What This Achievement Represents", "text": "Team Triveni Tech showcased an AI-Based Smart CCTV Surveillance and Command Centre System designed for monitoring large-scale events such as the Kumbh Mela.", "bullets": []}, {"kicker": "02 · Highlights", "title": "Key Highlights", "text": "The original portfolio card highlights the following outcomes, responsibilities or technical contributions.", "bullets": ["Detected crowd-density risks and potentially unsafe situations.", "Converted live CCTV feeds into real-time monitoring and decision-support insights.", "Built an alert workflow connected to a centralized administration dashboard."]}, {"kicker": "03 · Evidence", "title": "Recognition & Context", "text": "MIT ADT University · National Startup Day", "bullets": ["AI Surveillance", "Working Prototype", "Command Centre"]}]}, "achievement-mit-adt-ai-grand-challenge-2026": {"id": "achievement-mit-adt-ai-grand-challenge-2026", "category": "Achievement", "anchor": "achievements", "title": "MIT ADT AI Grand Challenge 2026", "eyebrow": "Blockchain & AI Innovation Category", "summary": "Developed AuditX , an AI and Blockchain-powered financial fraud prevention system designed to detect suspicious transactions before execution through real-time risk analysis.", "images": ["assets/img/ach-auditx-1.jpg", "assets/img/ach-auditx-2.jpeg", "assets/img/ach-auditx-3.jpg"], "tags": ["Top 7 Teams", "Blockchain", "AI Fraud Detection"], "github": "", "metrics": ["Top 7 Teams", "Blockchain", "AI Fraud Detection"], "steps": [{"kicker": "01 · Milestone", "title": "What This Achievement Represents", "text": "Developed AuditX , an AI and Blockchain-powered financial fraud prevention system designed to detect suspicious transactions before execution through real-time risk analysis.", "bullets": []}, {"kicker": "02 · Highlights", "title": "Key Highlights", "text": "The original portfolio card highlights the following outcomes, responsibilities or technical contributions.", "bullets": ["Implemented Isolation Forest-based anomaly detection for fraud-risk scoring.", "Designed Solidity smart-contract rules for transaction validation.", "Integrated blockchain logging to maintain transaction integrity and transparency."]}, {"kicker": "03 · Evidence", "title": "Recognition & Context", "text": "Blockchain & AI Innovation Category", "bullets": ["Top 7 Teams", "Blockchain", "AI Fraud Detection"]}]}, "achievement-unesco-youth-hackathon-2025": {"id": "achievement-unesco-youth-hackathon-2025", "category": "Achievement", "anchor": "achievements", "title": "UNESCO Youth Hackathon 2025", "eyebrow": "Global Platform · SDG Innovation", "summary": "Built NutriCheck , an AI-powered nutrition label analysis system that helps users decode food packaging and make healthier choices.", "images": [], "tags": ["Global Hackathon", "SDG 3", "SDG 12"], "github": "", "metrics": ["Global Hackathon", "SDG 3", "SDG 12"], "steps": [{"kicker": "01 · Milestone", "title": "What This Achievement Represents", "text": "Built NutriCheck , an AI-powered nutrition label analysis system that helps users decode food packaging and make healthier choices.", "bullets": []}, {"kicker": "02 · Highlights", "title": "Key Highlights", "text": "The original portfolio card highlights the following outcomes, responsibilities or technical contributions.", "bullets": ["Used Flask for AI and OCR processing.", "Built the frontend using React and Tailwind CSS.", "Integrated Tesseract OCR and machine learning for nutrient detection.", "Presented the complete solution through a team-recorded project video for the UNESCO Youth Hackathon."]}, {"kicker": "03 · Evidence", "title": "Recognition & Context", "text": "Global Platform · SDG Innovation", "bullets": ["Global Hackathon", "SDG 3", "SDG 12"]}]}, "achievement-campus-ambassador": {"id": "achievement-campus-ambassador", "category": "Achievement", "anchor": "achievements", "title": "Campus Ambassador", "eyebrow": "Parikshak.ai · Growth Partner Program", "summary": "Selected as a Campus Ambassador for the Parikshak.ai Growth Partner Program, where I contributed to promoting AI-powered interview preparation and career development resources among students. I supported student outreach, awareness campaigns and community engagement while helping learners understand modern interview practices, placement preparation and AI-driven learning tools.", "images": ["assets/img/ach-parikshak-1.jpg", "assets/img/ach-parikshak-2.jpg", "assets/img/ach-parikshak-3.jpg"], "tags": ["Growth Partner", "Leadership", "Career Tech"], "github": "", "metrics": ["Growth Partner", "Leadership", "Career Tech"], "steps": [{"kicker": "01 · Milestone", "title": "What This Achievement Represents", "text": "Selected as a Campus Ambassador for the Parikshak.ai Growth Partner Program, where I contributed to promoting AI-powered interview preparation and career development resources among students. I supported student outreach, awareness campaigns and community engagement while helping learners understand modern interview practices, placement preparation and AI-driven learning tools.", "bullets": []}, {"kicker": "02 · Highlights", "title": "Key Highlights", "text": "The original portfolio card highlights the following outcomes, responsibilities or technical contributions.", "bullets": ["Growth Partner", "Leadership", "Career Tech"]}, {"kicker": "03 · Evidence", "title": "Recognition & Context", "text": "Parikshak.ai · Growth Partner Program", "bullets": ["Growth Partner", "Leadership", "Career Tech"]}]}, "achievement-google-cloud-arcade-facilitator-program-2024": {"id": "achievement-google-cloud-arcade-facilitator-program-2024", "category": "Achievement", "anchor": "achievements", "title": "Google Cloud Arcade Facilitator Program 2024", "eyebrow": "Premium Plus Milestone Level", "summary": "Successfully achieved the Premium Plus Milestone in the Google Cloud Arcade Facilitator Program 2024 by completing multiple hands on labs, skill badges and cloud-learning challenges. Gained practical exposure to Google Cloud services, Kubernetes, AI/ML, cloud security, networking and infrastructure fundamentals.", "images": ["assets/img/ach-gcloud-1.jpg", "assets/img/ach-gcloud-2.jpg", "assets/img/ach-gcloud-3.jpg"], "tags": ["Premium Plus", "Kubernetes", "AI/ML"], "github": "", "metrics": ["Premium Plus", "Kubernetes", "AI/ML"], "steps": [{"kicker": "01 · Milestone", "title": "What This Achievement Represents", "text": "Successfully achieved the Premium Plus Milestone in the Google Cloud Arcade Facilitator Program 2024 by completing multiple hands on labs, skill badges and cloud-learning challenges. Gained practical exposure to Google Cloud services, Kubernetes, AI/ML, cloud security, networking and infrastructure fundamentals.", "bullets": []}, {"kicker": "02 · Highlights", "title": "Key Highlights", "text": "The original portfolio card highlights the following outcomes, responsibilities or technical contributions.", "bullets": ["Premium Plus", "Kubernetes", "AI/ML"]}, {"kicker": "03 · Evidence", "title": "Recognition & Context", "text": "Premium Plus Milestone Level", "bullets": ["Premium Plus", "Kubernetes", "AI/ML"]}]}};
+
+(function initPortfolioCardNavigation() {
+  const cards = document.querySelectorAll(
+    ".project-card[data-detail-id], .research-card[data-detail-id], .experience-card[data-detail-id], .achievement-card[data-detail-id]"
+  );
+
+  const openCard = (card) => {
+    const id = card.dataset.detailId;
+    const item = portfolioDetailData[id];
+    if (!id || !item) return;
+
+    sessionStorage.setItem(
+      "portfolioDetailReturn",
+      `index.html#${item.anchor || "home"}`
+    );
+
+    window.location.href = `detail.html?id=${encodeURIComponent(id)}`;
+  };
+
+  cards.forEach((card) => {
+    card.addEventListener("click", (event) => {
+      const interactive = event.target.closest("a, button, input, textarea, select");
+      if (interactive) return;
+      openCard(card);
+    });
+
+    card.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      if (event.target.closest("a, button, input, textarea, select")) return;
+      event.preventDefault();
+      openCard(card);
+    });
+  });
+})();
+
+(function initPortfolioDetailPage() {
+  const root = document.getElementById("detail-root");
+  if (!root) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const item = id ? portfolioDetailData[id] : null;
+
+  const backButton = document.getElementById("detail-back");
+  const fallbackBack = item
+    ? `index.html#${item.anchor || "home"}`
+    : "index.html#home";
+
+  if (backButton) {
+    backButton.addEventListener("click", () => {
+      const stored = sessionStorage.getItem("portfolioDetailReturn");
+      window.location.href = stored || fallbackBack;
+    });
+  }
+
+  if (!item) {
+    root.innerHTML = `
+      <section class="detail-not-found">
+        <h1>Detail not found</h1>
+        <p>The requested portfolio entry could not be loaded.</p>
+        <a class="detail-action primary" href="index.html#home">
+          <i class="bx bx-left-arrow-alt"></i> Return to Portfolio
+        </a>
+      </section>
+    `;
+    return;
+  }
+
+  document.title = `${item.title} | Rahul Takale`;
+
+  const esc = (value = "") =>
+    String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+
+  const heroImage = item.images && item.images.length ? item.images[0] : "";
+  const heroMedia = heroImage
+    ? `<div class="detail-hero-media"><img src="${esc(heroImage)}" alt="${esc(item.title)}" /></div>`
+    : `<div class="detail-hero-media detail-no-image"></div>`;
+
+  const githubAction = item.github
+    ? `
+      <a class="detail-action primary" href="${esc(item.github)}" target="_blank" rel="noopener noreferrer">
+        <i class="bx bxl-github"></i>
+        View GitHub Code
+      </a>
+    `
+    : "";
+
+  const tags = (item.tags || [])
+    .map((tag) => `<span>${esc(tag)}</span>`)
+    .join("");
+
+  const steps = (item.steps || [])
+    .map((step, index) => {
+      const bullets = (step.bullets || [])
+        .filter(Boolean)
+        .map((bullet) => `<div class="detail-bullet">${esc(bullet)}</div>`)
+        .join("");
+
+      return `
+        <article class="detail-story-step" id="story-step-${index + 1}" data-detail-step="${index}">
+          <span class="step-kicker">${esc(step.kicker || `Step ${index + 1}`)}</span>
+          <h3>${esc(step.title || "")}</h3>
+          <p>${esc(step.text || "")}</p>
+          ${bullets ? `<div class="detail-bullets">${bullets}</div>` : ""}
+        </article>
+      `;
+    })
+    .join("");
+
+  const nav = (item.steps || [])
+    .map(
+      (step, index) => `
+        <button type="button" data-step-target="${index}" class="${index === 0 ? "active" : ""}">
+          ${String(index + 1).padStart(2, "0")} · ${esc(step.title || "Story")}
+        </button>
+      `
+    )
+    .join("");
+
+  const mediaImages = (item.images || [])
+    .map(
+      (src, index) =>
+        `<img loading="lazy" src="${esc(src)}" alt="${esc(item.title)} supporting visual ${index + 1}" />`
+    )
+    .join("");
+
+  root.innerHTML = `
+    <section class="detail-hero">
+      ${heroMedia}
+      <div class="detail-hero-shade"></div>
+      <div class="detail-hero-inner">
+        <span class="detail-category"><i class="bx bx-layer"></i>${esc(item.category)}</span>
+        <h1>${esc(item.title)}</h1>
+        <p class="detail-eyebrow">${esc(item.eyebrow || "")}</p>
+        <p class="detail-summary">${esc(item.summary || "")}</p>
+        <div class="detail-actions">
+          ${githubAction}
+          <button class="detail-action" type="button" id="detail-inline-back">
+            <i class="bx bx-left-arrow-alt"></i> Back to ${esc(item.category)}
+          </button>
+        </div>
+        ${tags ? `<div class="detail-tags">${tags}</div>` : ""}
+      </div>
+    </section>
+
+    <section class="detail-story">
+      <aside class="detail-story-rail">
+        <small>SCROLLY STORY</small>
+        <h2>Inside the Work</h2>
+        <div class="detail-progress-track">
+          <span class="detail-progress-fill" id="detail-progress-fill"></span>
+        </div>
+        <div class="detail-step-nav">${nav}</div>
+      </aside>
+
+      <div class="detail-story-content">
+        ${steps}
+      </div>
+    </section>
+
+    ${
+      mediaImages
+        ? `
+          <section class="detail-media-strip">
+            <h2>Supporting Visuals</h2>
+            <div class="detail-media-grid">${mediaImages}</div>
+          </section>
+        `
+        : ""
+    }
+  `;
+
+  const inlineBack = document.getElementById("detail-inline-back");
+  if (inlineBack) {
+    inlineBack.addEventListener("click", () => {
+      window.location.href =
+        sessionStorage.getItem("portfolioDetailReturn") || fallbackBack;
+    });
+  }
+
+  const storySteps = [...document.querySelectorAll(".detail-story-step")];
+  const navButtons = [...document.querySelectorAll("[data-step-target]")];
+  const progressFill = document.getElementById("detail-progress-fill");
+  const mobileQuery = window.matchMedia("(max-width: 900px)");
+
+  const setActiveStep = (index) => {
+    navButtons.forEach((button, buttonIndex) => {
+      button.classList.toggle("active", buttonIndex === index);
+    });
+
+    const total = Math.max(1, storySteps.length - 1);
+    const progress = storySteps.length <= 1 ? 100 : (index / total) * 100;
+
+    if (progressFill) {
+      if (mobileQuery.matches) {
+        progressFill.style.width = `${progress}%`;
+        progressFill.style.height = "100%";
+      } else {
+        progressFill.style.height = `${progress}%`;
+        progressFill.style.width = "100%";
+      }
+    }
+  };
+
+  navButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = Number(button.dataset.stepTarget || 0);
+      storySteps[target]?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    });
+  });
+
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+  if (reducedMotion) {
+    storySteps.forEach((step) => step.classList.add("in-view"));
+    setActiveStep(0);
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const index = Number(entry.target.dataset.detailStep || 0);
+        entry.target.classList.add("in-view");
+        setActiveStep(index);
+      });
+    },
+    {
+      threshold: 0.44,
+      rootMargin: "-10% 0px -28% 0px",
+    }
+  );
+
+  storySteps.forEach((step) => observer.observe(step));
+
+  if (storySteps[0]) storySteps[0].classList.add("in-view");
+  setActiveStep(0);
+})();
