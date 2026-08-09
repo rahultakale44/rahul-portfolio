@@ -9138,3 +9138,121 @@ body.is-loading {
     transition: none !important;
   }
 }
+
+
+/* =========================================
+   FINAL RESEARCH CARD IMAGE CLIP FIX
+========================================= */
+
+.research-card {
+  position: relative;
+  overflow: hidden !important;
+  isolation: isolate;
+}
+
+.research-poster {
+  position: absolute;
+  inset: 0;
+  overflow: hidden !important;
+  border-radius: 28px;
+  clip-path: inset(0 round 28px);
+}
+
+.research-poster img {
+  position: absolute;
+  inset: 0 0 0 auto;
+
+  width: 72%;
+  height: 100%;
+
+  object-fit: cover;
+
+  /* IMPORTANT */
+  max-width: none;
+  overflow: hidden;
+
+  /* scale bahar leak na kare */
+  transform-origin: center center;
+
+  border-radius: 0 28px 28px 0;
+}
+
+/* Hover zoom thoda controlled */
+.research-card:hover .research-poster img {
+  transform: scale(1.035);
+}
+
+/* overlays bhi card boundary ke andar */
+.research-poster-fade,
+.research-poster-noise {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+/* extra safety */
+.research-card::after {
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+/* ==========================================
+   RESEARCH IMAGE EDGE LEAK — ACTUAL FIX
+========================================== */
+
+.research-card {
+  position: relative;
+  overflow: hidden !important;
+  border-radius: 28px;
+  background: #030813 !important;
+}
+
+/* image layer ko outer border se andar lao */
+.research-poster {
+  position: absolute !important;
+
+  top: 2px !important;
+  right: 2px !important;
+  bottom: 2px !important;
+  left: 2px !important;
+
+  border-radius: 26px !important;
+  overflow: hidden !important;
+}
+
+/* actual image ko bhi boundary ke andar rakho */
+.research-poster img {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+
+  width: 72% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+  border-radius: 0 26px 26px 0 !important;
+}
+
+/* bottom edge par dark safety mask */
+.research-card::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 4px;
+
+  background: #030813;
+  z-index: 20;
+
+  pointer-events: none;
+}
+
+/* outer border always clean */
+.research-card {
+  border: 1px solid rgba(24, 224, 168, 0.22) !important;
+}
