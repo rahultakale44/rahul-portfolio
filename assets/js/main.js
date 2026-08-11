@@ -428,7 +428,21 @@ animatedElements.forEach((element) => {
     "(prefers-reduced-motion: reduce)"
   ).matches;
 
-  if (prefersReduced) return;
+  const mobileLike = window.matchMedia(
+    "(max-width: 768px), (hover: none), (pointer: coarse)"
+  ).matches;
+
+  if (prefersReduced || mobileLike) {
+    const cursorDot = document.querySelector(".cursor-dot");
+    const cursorOrb = document.querySelector(".cursor-orb");
+    const canvas = document.getElementById("cosmic-canvas");
+
+    if (cursorDot) cursorDot.style.display = "none";
+    if (cursorOrb) cursorOrb.style.display = "none";
+    if (canvas) canvas.style.display = "none";
+
+    return;
+  }
 
   const cursorDot = document.querySelector(".cursor-dot");
   const cursorOrb = document.querySelector(".cursor-orb");

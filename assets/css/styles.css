@@ -9256,3 +9256,308 @@ body.is-loading {
 .research-card {
   border: 1px solid rgba(24, 224, 168, 0.22) !important;
 }
+/* =====================================================
+   FINAL MOBILE STABILITY + PERFORMANCE PATCH
+   Keeps desktop styling unchanged; targets touch/mobile only.
+===================================================== */
+
+/* Global overflow safety */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+main,
+section,
+.header,
+.footer {
+  width: 100%;
+  max-width: 100%;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-pad: 78px 18px;
+  }
+
+  html,
+  body {
+    min-width: 0 !important;
+    overflow-x: clip !important;
+  }
+
+  body {
+    cursor: auto !important;
+  }
+
+  main,
+  section {
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    overflow-x: clip !important;
+  }
+
+  /* Desktop-only cursor/cosmic effects waste GPU on phones */
+  .cursor-dot,
+  .cursor-orb,
+  #cosmic-canvas {
+    display: none !important;
+  }
+
+  /* Avoid expensive blur/compositing on mobile */
+  .header,
+  .hero-badges span,
+  .btn.secondary,
+  .research-core-question,
+  .research-hypothesis-chip {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /* Keep fixed header inside viewport */
+  .header {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .navbar {
+    max-width: min(280px, 86vw) !important;
+  }
+
+  /* Universal section/container safety */
+  .section-heading,
+  .home-content,
+  .about-cinematic-layout,
+  .about-cinematic-copy,
+  .tech-console-shell,
+  .tech-console-layout,
+  .tech-console-panels,
+  .projects-grid,
+  .research-card,
+  .research-content,
+  .experience-grid,
+  .contact-container,
+  .achievement-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* About: remove desktop two-column minimums completely */
+  .about-cinematic {
+    min-height: auto !important;
+    padding: 78px 18px 42px !important;
+  }
+
+  .about-cinematic-layout {
+    display: block !important;
+    min-height: 0 !important;
+  }
+
+  .about-cinematic-photo-space {
+    min-height: 330px !important;
+  }
+
+  .about-cinematic-copy {
+    margin: 0 !important;
+    padding: 20px 0 0 !important;
+  }
+
+  .about-cinematic-heading h2 {
+    font-size: clamp(30px, 9vw, 38px) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -1px !important;
+    overflow-wrap: anywhere;
+  }
+
+  /* Tech console: horizontal rail is allowed internally, never page-wide */
+  .tech-console {
+    padding: 82px 18px !important;
+    overflow: hidden !important;
+  }
+
+  .tech-console-rail {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+
+  .tech-console-rail::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tech-rail-item {
+    flex: 0 0 auto !important;
+    min-width: 132px !important;
+  }
+
+  .tech-console-panels {
+    padding: 28px 0 10px !important;
+  }
+
+  .tech-panel-matrix {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Projects always become a single fluid column */
+  .projects-section {
+    padding: 82px 18px 90px !important;
+    overflow: hidden !important;
+  }
+
+  .projects-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .project-card,
+  .project-img,
+  .project-content {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .project-title-row {
+    flex-direction: column !important;
+  }
+
+  /* Research was the most fragile section on narrow screens */
+  .research-section {
+    padding: 82px 18px 90px !important;
+    overflow: hidden !important;
+  }
+
+  .research-card {
+    min-height: 0 !important;
+    height: auto !important;
+    border-radius: 22px !important;
+    overflow: hidden !important;
+  }
+
+  .research-poster {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 260px !important;
+    border-radius: 22px 22px 0 0 !important;
+    overflow: hidden !important;
+  }
+
+  .research-poster img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 0 !important;
+    transform: none !important;
+  }
+
+  .research-poster-fade,
+  .research-poster-noise {
+    border-radius: 22px 22px 0 0 !important;
+  }
+
+  .research-poster-fade {
+    background: linear-gradient(180deg, rgba(3,8,19,.02), rgba(3,8,19,.72) 88%, #030813 100%) !important;
+  }
+
+  .research-content {
+    position: relative !important;
+    min-height: 0 !important;
+    padding: 26px 20px 30px !important;
+    justify-content: flex-start !important;
+  }
+
+  .research-content h3 {
+    font-size: clamp(32px, 10vw, 44px) !important;
+    line-height: 1.03 !important;
+    letter-spacing: -1px !important;
+    overflow-wrap: anywhere;
+  }
+
+  .research-hypotheses-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Remove transform-based entry offsets that can visually clip content */
+  .about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-lead,
+  .about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-footer,
+  .about-cinematic.about-entry-ready:not(.about-entry-active) .about-cinematic-row,
+  .reveal-card,
+  .section-motion {
+    transform: none !important;
+  }
+
+  /* Reduce continuous decorative motion */
+  .motion-bg,
+  .research-bg,
+  .tech-console-grid,
+  .about-cinematic-texture {
+    animation: none !important;
+  }
+
+  .projects-bg .tool,
+  .research-orbit,
+  .research-particle,
+  .grid-node,
+  .code-rain {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .home {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  #finalHeroName.final-hero-name {
+    font-size: clamp(44px, 14vw, 54px) !important;
+  }
+
+  .hero-role,
+  .home-content h3 {
+    font-size: clamp(21px, 7vw, 27px) !important;
+  }
+
+  .home-text {
+    font-size: 15px !important;
+  }
+
+  .section-heading h2,
+  .tech-console-heading h2 {
+    font-size: clamp(30px, 9vw, 40px) !important;
+    letter-spacing: -1px !important;
+  }
+
+  .project-content {
+    padding: 22px !important;
+  }
+}
+
+/* Respect user/device reduced-motion preference everywhere */
+@media (prefers-reduced-motion: reduce) {
+  #cosmic-canvas,
+  .cursor-dot,
+  .cursor-orb {
+    display: none !important;
+  }
+}
